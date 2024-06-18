@@ -3,7 +3,7 @@ name: Publish webpage
 on: 
   push:
     branches:
-      - main
+      - master
 
 jobs:
   publish:
