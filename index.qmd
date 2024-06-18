@@ -442,15 +442,24 @@ aws.s3::s3write_using(
 Pour lister les fichiers dans un _bucket_:
 
 ```r
-bucket <- "donnees-funathon"
-aws.s3::get_bucket(bucket, region = "", prefix = "2023/sujet2/diffusion")
+bucket <- "projet-funathon"
+aeroports <- aws.s3::get_bucket(bucket, region = "", prefix = "2024/sujet2/")
 ```
 
 Pour lire un fichier directement:
 
 ```r
 bucket <- "donnees-funathon"
-aws.s3::get_bucket(bucket, region = "", prefix = "2023/sujet2/diffusion")
+aeroports <- aws.s3::s3read_using(
+  object = objets$Contents$Key,
+  FUN = sf::st_read,
+  bucket = bucket,
+  opts = list(region = "")
+)
+
+library(leaflet)
+leaflet(aeroports) %>% addTiles() %>%
+  addMarkers(popup = ~Nom)
 ```
 
 
