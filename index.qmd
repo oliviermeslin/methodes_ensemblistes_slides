@@ -44,6 +44,24 @@ from: markdown+emoji
 
 - organisation des cas d'usage.
 
+
+
+# Cas d'usage
+
+## Imputation de valeurs manquantes {.smaller}
+
+
+
+## Repondération {.smaller}
+
+
+
+## Lissage spatial {.smaller}
+
+
+
+
+
 # Le Funathon
 
 ## Principe {.smaller}
