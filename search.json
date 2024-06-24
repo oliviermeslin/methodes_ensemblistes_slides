@@ -18,7 +18,14 @@
     "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Rattraper le retard pris par la statistique publique",
-    "text": "Rattraper le retard pris par la statistique publique\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique.\nPublic;\nContenu;\nObjectif pédagogique;\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
+    "text": "Rattraper le retard pris par la statistique publique\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique."
+  },
+  {
+    "objectID": "index.html#champ-couvert-par-le-document-de-travail",
+    "href": "index.html#champ-couvert-par-le-document-de-travail",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Champ couvert par le document de travail",
+    "text": "Champ couvert par le document de travail\nPrincipe: présenter en détail un nombre réduit d’approches:\n\nMéthodes ensemblistes à base d’arbres:\n\nBagging et forêts aléatoires;\nGradient boosting.\n\nApproches d’interprétabilité:\n\nMesures d’importance;\nvaleurs de Shapley;\nLIME.\n\nAspects non couverts:\n\nMéthodes: stacking, boosting adaptatif;\nMesure de l’incertitude (notamment la prédiction conforme).\n\nPublic;\nContenu;\nObjectif pédagogique;\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
