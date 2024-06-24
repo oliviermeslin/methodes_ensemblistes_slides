@@ -76,6 +76,24 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 - organisation des cas d'usage.
 
+
+
+# Cas d'usage
+
+## Imputation de valeurs manquantes {.smaller}
+
+
+
+## Repondération {.smaller}
+
+
+
+## Lissage spatial {.smaller}
+
+
+
+
+
 # Le Funathon
 
 ## Principe {.smaller}
