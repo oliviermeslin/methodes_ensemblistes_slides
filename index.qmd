@@ -35,7 +35,7 @@ Friedman 2001, Breiman 2001
 
 XGBoost, LightGBM
 
-## Rattraper le retard pris par la statistique publique
+## Rattraper le retard pris par la statistique publique {.smaller}
 
 Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:
 
@@ -49,7 +49,7 @@ Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique pub
 
 Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.blue2}__.
 
-## Rattraper le retard pris par la statistique publique
+## Rattraper le retard pris par la statistique publique {.smaller}
 
 - __[Objectif pédagogique]{.orange}__: __[faciliter l'appropriation de ces méthodes]{.blue2}__ par la statistique publique $\Rightarrow$ Ce n'est pas un travail de recherche.
 
@@ -61,7 +61,22 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 - __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage montrant leur apport aux travaux de la statistique publique.
 
+## Champ couvert par le document de travail {.smaller}
 
+Principe: présenter en détail un nombre réduit d'approches:
+
+- Méthodes ensemblistes à base d'arbres:
+    - _Bagging_ et forêts aléatoires;
+    - _Gradient boosting_.
+- Approches d'interprétabilité:
+    - Mesures d'importance;
+    - valeurs de Shapley;
+    - LIME.
+
+
+- Aspects non couverts: 
+    - Méthodes: _stacking_, _boosting_ adaptatif;
+    - Mesure de l'incertitude (notamment la prédiction conforme).
 
 - Public;
 - Contenu;
