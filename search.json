@@ -4,7 +4,21 @@
     "href": "index.html#une-belle-intro",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Une belle intro",
-    "text": "Une belle intro\n\nPublic;\nContenu;\nObjectif pédagogique;\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
+    "text": "Une belle intro\nFriedman 2001, Breiman 2001\nXGBoost, LightGBM"
+  },
+  {
+    "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
+    "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Rattraper le retard pris par la statistique publique",
+    "text": "Rattraper le retard pris par la statistique publique\nLes méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
+  },
+  {
+    "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique-1",
+    "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Rattraper le retard pris par la statistique publique",
+    "text": "Rattraper le retard pris par la statistique publique\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique.\nPublic;\nContenu;\nObjectif pédagogique;\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
