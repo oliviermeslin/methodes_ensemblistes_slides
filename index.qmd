@@ -31,6 +31,38 @@ from: markdown+emoji
 ## Une belle intro {.smaller}
 
 
+Friedman 2001, Breiman 2001
+
+XGBoost, LightGBM
+
+## Rattraper le retard pris par la statistique publique
+
+Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:
+
+- Omniprésence de __[données tabulaires]{.blue2}__;
+- Multiplicité des __[cas d'usage]{.blue2}__:
+    - __[Classification binaire]{.orange}__: correction de la non-réponse dans les enquêtes, repérage d'_outliers_, modélisation, imputation (ex: emploi/chômage); 
+    - __[Classification multiclasse]{.orange}__: imputation (ex: niveau de diplôme);
+    - __[Régression]{.orange}__: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial...
+
+. . .
+
+Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.blue2}__.
+
+## Rattraper le retard pris par la statistique publique
+
+- __[Objectif pédagogique]{.orange}__: __[faciliter l'appropriation de ces méthodes]{.blue2}__ par la statistique publique $\Rightarrow$ Ce n'est pas un travail de recherche.
+
+. . .
+
+- __[Public]{.orange}__: les agents de la statistique publique qui connaissent les cas d'usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du _machine learning_.
+
+. . .
+
+- __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage montrant leur apport aux travaux de la statistique publique.
+
+
+
 - Public;
 - Contenu;
 - Objectif pédagogique;
@@ -83,14 +115,14 @@ L'ensemble des ressources de l'an dernier (_"Du champ à l'assiette"_) peut êtr
 
 ## Modalités pratiques {.smaller}
 
-- [__Événement 💯% virtuel sur 2 jours__]{.blue2}:
+- __[Événement 💯% virtuel sur 2 jours]{.blue2}__:
     + [Premier jour]{.orange}: introduction à __9h30__ ;
     + [Deuxième jour]{.orange}: fin du travail sur les sujets à __16h30__, restitution et conclusion ensuite 
 
 . . .
 
 
-- [__Assistance sur Tchap et Zoom__]{.blue2} (liens 👇️):
+- __[Assistance sur Tchap et Zoom]{.blue2}__ (liens 👇️):
     + Assistance garantie: 10h-17h30 (sauf le midi 🍔) ;
     + Ne restez pas bloqués, [posez des questions !]{.orange}
 
@@ -104,7 +136,7 @@ L'ensemble des ressources de l'an dernier (_"Du champ à l'assiette"_) peut êtr
 
 ## Les 4 sujets {.smaller}
 
-- [__Ressources {{< fa brands r-project >}} et {{< fa brands python >}} sur *open data* de la DGAC__]{.blue2} :
+- __[Ressources {{< fa brands r-project >}} et {{< fa brands python >}} sur *open data* de la DGAC]{.blue2}__ :
   + [2 sujets]{.orange} permettent de faire du {{< fa brands r-project >}}
   + [3 sujets]{.orange} permettent de faire du {{< fa brands python >}}
   + Niveaux techniques indiqués sur les sujets
@@ -113,7 +145,7 @@ L'ensemble des ressources de l'an dernier (_"Du champ à l'assiette"_) peut êtr
 
 - Tutoriels complets __[avec corrections]{.blue2}__
   + Cherchez avant de regarder la correction, c'est le meilleur apprentissage !
-  + Objectif secondaire: [__se former à `Git` {{< fa brands git-alt >}} et à la reproductibilité__]{.blue2}
+  + Objectif secondaire: __[se former à `Git` {{< fa brands git-alt >}} et à la reproductibilité]{.blue2}__
 
 
 ::: {.callout-note}
