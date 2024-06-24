@@ -32,7 +32,7 @@
     "href": "index.html#champ-couvert-par-le-document-de-travail-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": " Champ couvert par le document de travail",
-    "text": "Champ couvert par le document de travail\n\nPrincipe: présenter les méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
+    "text": "Champ couvert par le document de travail\n\nPrincipe: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
   },
   {
     "objectID": "index.html#cas-dusage",
