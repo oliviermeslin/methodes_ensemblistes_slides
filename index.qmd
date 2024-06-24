@@ -61,26 +61,30 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 - __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage montrant leur apport aux travaux de la statistique publique.
 
-## Champ couvert par le document de travail {.smaller}
+## {{< fa circle-question >}} Champ couvert par le document de travail {.smaller}
 
-Principe: présenter en détail un nombre réduit d'approches:
-
-- Méthodes ensemblistes à base d'arbres:
+- Principe: [__présenter en détail un nombre réduit d'approches__]{.blue2}:
+    - CART;
     - _Bagging_ et forêts aléatoires;
     - _Gradient boosting_.
-- Approches d'interprétabilité:
-    - Mesures d'importance;
-    - valeurs de Shapley;
-    - LIME.
 
 
-- Aspects non couverts: 
-    - Méthodes: _stacking_, _boosting_ adaptatif;
-    - Mesure de l'incertitude (notamment la prédiction conforme).
+- Méthodes non couvertes:
+    - _Stacking_;
+    - _Boosting_ adaptatif.
 
-- Public;
-- Contenu;
-- Objectif pédagogique;
+## {{< fa circle-question >}} Champ couvert par le document de travail {.smaller}
+
+
+- Principe: [__présenter les méthodes d'interprétabilité__]{.blue2}:
+    - Approches globales (PDP, ALE plots);
+    - Approches locales (valeurs de Shapley, LIME);
+
+- Non couvert: mesure de l'incertitude (notamment la prédiction conforme).
+
+
+## {{< fa circle-question >}} Cas d'usage
+
 
 - Scope du DT.
 
@@ -159,6 +163,7 @@ L'ensemble des ressources de l'an dernier (_"Du champ à l'assiette"_) peut êtr
     + Assistance garantie: 10h-17h30 (sauf le midi 🍔) ;
     + Ne restez pas bloqués, [posez des questions !]{.orange}
 
+:burger:
 
 ::: {.callout-note}
 ## Liens utiles
