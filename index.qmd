@@ -96,6 +96,17 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 - organisation des cas d'usage.
 
 
+## Exemple de figures: CART
+
+![](./figures/output2.svg)
+
+## Exemple de figures: forêt aléatoire
+
+![](./figures/output4.svg)
+
+## Exemple de figures: _gradient boosting_
+
+![](./figures/output5.svg)
 
 # Cas d'usage
 
