@@ -76,7 +76,7 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 ## {{< fa circle-question >}} Champ couvert par le document de travail {.smaller}
 
 
-- Principe: [__présenter les méthodes d'interprétabilité__]{.blue2}:
+- Principe: [__présenter quelques méthodes d'interprétabilité__]{.blue2}:
     - Approches globales (PDP, ALE plots);
     - Approches locales (valeurs de Shapley, LIME);
 
