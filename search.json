@@ -67,14 +67,35 @@
     "href": "index.html#imputation-de-valeurs-manquantes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes"
+    "text": "Imputation de valeurs manquantes\n\nPourquoi améliorer la méthode d’imputation actuelle\n\nAméliorer la qualité des données diffusées\nLes variables imputées sont utilisées pour imputer les valeurs d’autres variables (risque d’erreurs “en cascade”)"
+  },
+  {
+    "objectID": "index.html#imputation-de-valeurs-manquantes-1",
+    "href": "index.html#imputation-de-valeurs-manquantes-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Imputation de valeurs manquantes",
+    "text": "Imputation de valeurs manquantes\n\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nSélectionner quelques variables\nComparer les performances prédictives de la méthode d’imputation actuelle, d’un logit et d’un xgboost à partir des mêmes variables"
+  },
+  {
+    "objectID": "index.html#imputation-de-valeurs-manquantes-2",
+    "href": "index.html#imputation-de-valeurs-manquantes-2",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Imputation de valeurs manquantes",
+    "text": "Imputation de valeurs manquantes\n\nAvantage et limites de la méthode xgboost\nConsidérations pratiques pour le déploiement"
   },
   {
     "objectID": "index.html#repondération",
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération"
+    "text": "Repondération\n\nPourquoi améliorer la méthode de prédiction de la non-réponse\n\nAméliorer la qualité des statistiques descriptives diffusées\nLimites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse"
+  },
+  {
+    "objectID": "index.html#repondération-1",
+    "href": "index.html#repondération-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Repondération",
+    "text": "Repondération\n\nApplication proposée\n\nUtiliser les données de gestion de l’enquête patrimoine\nPrédire la non réponse à partir des informations issues de la base de sondage\nMéthode actuelle: méthode des scores\n\non estime la probabilité de réponse de chaque ménage par un modèle logit\non constitue des ensembles de ménages de probabilité de réponse semblable (scores de propension proches)\non multiplie les poids des répondants (poids de sondage) par l’inverse du taux de réponse de l’ensemble\n\nComparer les performances prédictives de la méthode d’imputation actuelle (logit) et d’un xgboost\n\non utilise les mêmes variables\non remplace uniquement la partie prédictive par la méthode xgboost"
   },
   {
     "objectID": "index.html#lissage-spatial",

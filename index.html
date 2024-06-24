@@ -446,9 +446,62 @@
 </section>
 <section id="imputation-de-valeurs-manquantes" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
+<ul>
+<li>Pourquoi améliorer la méthode d’imputation actuelle
+<ul>
+<li>Améliorer la qualité des données diffusées</li>
+<li>Les variables imputées sont utilisées pour imputer les valeurs d’autres variables (risque d’erreurs “en cascade”)</li>
+</ul></li>
+</ul>
+</section>
+<section id="imputation-de-valeurs-manquantes-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation de valeurs manquantes</h2>
+<ul>
+<li>Application proposée
+<ul>
+<li>Utiliser les données publiques du recensement (déjà imputées)</li>
+<li>Sélectionner quelques variables</li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle, d’un logit et d’un xgboost à partir des mêmes variables</li>
+</ul></li>
+</ul>
+</section>
+<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation de valeurs manquantes</h2>
+<ul>
+<li>Avantage et limites de la méthode xgboost</li>
+<li>Considérations pratiques pour le déploiement</li>
+</ul>
 </section>
 <section id="repondération" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repondération</h2>
+<ul>
+<li>Pourquoi améliorer la méthode de prédiction de la non-réponse
+<ul>
+<li>Améliorer la qualité des statistiques descriptives diffusées</li>
+<li>Limites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse</li>
+</ul></li>
+</ul>
+</section>
+<section id="repondération-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repondération</h2>
+<ul>
+<li>Application proposée
+<ul>
+<li>Utiliser les données de gestion de l’enquête patrimoine</li>
+<li>Prédire la non réponse à partir des informations issues de la base de sondage</li>
+<li>Méthode actuelle: méthode des scores
+<ul>
+<li>on estime la probabilité de réponse de chaque ménage par un modèle logit</li>
+<li>on constitue des ensembles de ménages de probabilité de réponse semblable (scores de propension proches)</li>
+<li>on multiplie les poids des répondants (poids de sondage) par l’inverse du taux de réponse de l’ensemble</li>
+</ul></li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle (logit) et d’un xgboost
+<ul>
+<li>on utilise les mêmes variables</li>
+<li>on remplace uniquement la partie prédictive par la méthode xgboost</li>
+</ul></li>
+</ul></li>
+</ul>
 </section>
 <section id="lissage-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial</h2>
