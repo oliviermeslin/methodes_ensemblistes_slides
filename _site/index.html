@@ -352,10 +352,71 @@
 </section>
 <section id="une-belle-intro" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Une belle intro</h2>
+<p>Friedman 2001, Breiman 2001</p>
+<p>XGBoost, LightGBM</p>
+</section>
+<section id="rattraper-le-retard-pris-par-la-statistique-publique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Rattraper le retard pris par la statistique publique</h2>
+<p>Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:</p>
 <ul>
-<li><p>Public;</p></li>
-<li><p>Contenu;</p></li>
-<li><p>Objectif pédagogique;</p></li>
+<li>Omniprésence de <strong><span class="blue2">données tabulaires</span></strong>;</li>
+<li>Multiplicité des <strong><span class="blue2">cas d’usage</span></strong>:
+<ul>
+<li><strong><span class="orange">Classification binaire</span></strong>: correction de la non-réponse dans les enquêtes, repérage d’<em>outliers</em>, modélisation, imputation (ex: emploi/chômage);</li>
+<li><strong><span class="orange">Classification multiclasse</span></strong>: imputation (ex: niveau de diplôme);</li>
+<li><strong><span class="orange">Régression</span></strong>: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<p>Ces méthodes restent pourtant <strong><span class="blue2">peu utilisées par la statistique publique</span></strong>.</p>
+</div>
+</section>
+<section id="rattraper-le-retard-pris-par-la-statistique-publique-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Rattraper le retard pris par la statistique publique</h2>
+<ul>
+<li><strong><span class="orange">Objectif pédagogique</span></strong>: <strong><span class="blue2">faciliter l’appropriation de ces méthodes</span></strong> par la statistique publique <span class="math inline">\(\Rightarrow\)</span> Ce n’est pas un travail de recherche.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong><span class="orange">Public</span></strong>: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du <em>machine learning</em>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique.</li>
+</ul>
+</div>
+</section>
+<section id="champ-couvert-par-le-document-de-travail" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Champ couvert par le document de travail</h2>
+<ul>
+<li>Principe: <span class="blue2"><strong>présenter en détail un nombre réduit d’approches</strong></span>:
+<ul>
+<li>CART;</li>
+<li><em>Bagging</em> et forêts aléatoires;</li>
+<li><em>Gradient boosting</em>.</li>
+</ul></li>
+<li>Méthodes non couvertes:
+<ul>
+<li><em>Stacking</em>;</li>
+<li><em>Boosting</em> adaptatif.</li>
+</ul></li>
+</ul>
+</section>
+<section id="champ-couvert-par-le-document-de-travail-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Champ couvert par le document de travail</h2>
+<ul>
+<li>Principe: <span class="blue2"><strong>présenter quelques méthodes d’interprétabilité</strong></span>:
+<ul>
+<li>Approches globales (PDP, ALE plots);</li>
+<li>Approches locales (valeurs de Shapley, LIME);</li>
+</ul></li>
+<li>Non couvert: mesure de l’incertitude (notamment la prédiction conforme).</li>
+</ul>
+</section>
+<section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Cas d’usage</h2>
+<ul>
 <li><p>Scope du DT.</p></li>
 <li><p>Cas d’usage;</p>
 <ul>
@@ -365,19 +426,44 @@
 </ul></li>
 <li><p>organisation des cas d’usage.</p></li>
 </ul>
-</section></section>
+</section>
+<section id="exemple-de-figures-cart" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple de figures: CART</h2>
+
+<img data-src="./figures/output2.svg" class="r-stretch"></section>
+<section id="exemple-de-figures-forêt-aléatoire" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple de figures: forêt aléatoire</h2>
+
+<img data-src="./figures/output4.svg" class="r-stretch"></section>
+<section id="exemple-de-figures-gradient-boosting" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Exemple de figures: <em>gradient boosting</em></h2>
+
+<img data-src="./figures/output5.svg" class="r-stretch"></section></section>
 <section>
-<section id="cas-dusage" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<section id="cas-dusage-1" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Cas d’usage</h1>
 
 </section>
 <section id="imputation-de-valeurs-manquantes" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
-<li>Pourquoi améliorer la méthode d’imputation actuelle
+<li>Qu’est-ce que l’imputation ?
 <ul>
-<li>Améliorer la qualité des données diffusées</li>
-<li>Les variables imputées sont utilisées pour imputer les valeurs d’autres variables (risque d’erreurs “en cascade”)</li>
+<li>Affecter une valeur “artificielle” à une valeur manquantes</li>
+</ul></li>
+<li>Quand imputer ?
+<ul>
+<li>En présence de non-réponse partielle</li>
+</ul></li>
+<li>Pourquoi imputer ?
+<ul>
+<li>Réduire les biais (de non-réponse) des estimateurs</li>
+</ul></li>
+<li>Quels enjeux ?
+<ul>
+<li>Qualité des données diffusées</li>
+<li>Variables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)</li>
+<li>La qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé</li>
 </ul></li>
 </ul>
 </section>
@@ -390,6 +476,9 @@
 <li>Sélectionner quelques variables</li>
 <li>Comparer les performances prédictives de la méthode d’imputation actuelle, d’un logit et d’un xgboost à partir des mêmes variables</li>
 </ul></li>
+<li>Méthode redressement actuelle: séquentielle et non déterministe (dans un premier temps)</li>
+<li>Exemple: le niveau de diplôme</li>
+<li>Hypothèses: – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité</li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
@@ -478,7 +567,7 @@
 <section id="modalités-pratiques" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Modalités pratiques</h2>
 <ul>
-<li><span class="blue2"><strong>Événement 💯% virtuel sur 2 jours</strong></span>:
+<li><strong><span class="blue2">Événement 💯% virtuel sur 2 jours</span></strong>:
 <ul>
 <li><span class="orange">Premier jour</span>: introduction à <strong>9h30</strong> ;</li>
 <li><span class="orange">Deuxième jour</span>: fin du travail sur les sujets à <strong>16h30</strong>, restitution et conclusion ensuite</li>
@@ -486,12 +575,13 @@
 </ul>
 <div class="fragment">
 <ul>
-<li><span class="blue2"><strong>Assistance sur Tchap et Zoom</strong></span> (liens 👇️):
+<li><strong><span class="blue2">Assistance sur Tchap et Zoom</span></strong> (liens 👇️):
 <ul>
 <li>Assistance garantie: 10h-17h30 (sauf le midi 🍔) ;</li>
 <li>Ne restez pas bloqués, <span class="orange">posez des questions !</span></li>
 </ul></li>
 </ul>
+<p>:burger:</p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -513,7 +603,7 @@
 <section id="les-4-sujets" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Les 4 sujets</h2>
 <ul>
-<li><span class="blue2"><strong>Ressources <i class="fa-brands fa-r-project" aria-hidden="true"></i> et <i class="fa-brands fa-python" aria-hidden="true"></i> sur <em>open data</em> de la DGAC</strong></span> :
+<li><strong><span class="blue2">Ressources <i class="fa-brands fa-r-project" aria-hidden="true"></i> et <i class="fa-brands fa-python" aria-hidden="true"></i> sur <em>open data</em> de la DGAC</span></strong> :
 <ul>
 <li><span class="orange">2 sujets</span> permettent de faire du <i class="fa-brands fa-r-project" aria-hidden="true"></i></li>
 <li><span class="orange">3 sujets</span> permettent de faire du <i class="fa-brands fa-python" aria-hidden="true"></i></li>
@@ -525,7 +615,7 @@
 <li>Tutoriels complets <strong><span class="blue2">avec corrections</span></strong>
 <ul>
 <li>Cherchez avant de regarder la correction, c’est le meilleur apprentissage !</li>
-<li>Objectif secondaire: <span class="blue2"><strong>se former à <code>Git</code> <i class="fa-brands fa-git-alt" aria-hidden="true"></i> et à la reproductibilité</strong></span></li>
+<li>Objectif secondaire: <strong><span class="blue2">se former à <code>Git</code> <i class="fa-brands fa-git-alt" aria-hidden="true"></i> et à la reproductibilité</span></strong></li>
 </ul></li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">

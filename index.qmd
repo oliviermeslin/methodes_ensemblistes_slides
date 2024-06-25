@@ -112,9 +112,21 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 ## Imputation de valeurs manquantes {.smaller}
 
-- Pourquoi améliorer la méthode d'imputation actuelle
-  - Améliorer la qualité des données diffusées
-  - Les variables imputées sont utilisées pour imputer les valeurs d'autres variables (risque d'erreurs "en cascade")
+- Qu'est-ce que l'imputation ?
+  - Affecter une valeur "artificielle" à une valeur manquantes
+
+- Quand imputer ?
+  - En présence de non-réponse partielle
+
+- Pourquoi imputer ?
+  - Réduire les biais (de non-réponse) des estimateurs
+
+- Quels enjeux ?
+  - Qualité des données diffusées 
+  - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade")
+  - La qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé
+
+
 
 
 ## Imputation de valeurs manquantes {.smaller}
@@ -124,6 +136,12 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
   - Sélectionner quelques variables
   - Comparer les performances prédictives de la méthode d'imputation actuelle, d'un logit et d'un xgboost à partir des mêmes variables
   
+- Méthode redressement actuelle: séquentielle et non déterministe (dans un premier temps)
+- Exemple: le niveau de diplôme
+- Hypothèses: 
+  – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
+  – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité
+    
   
 ## Imputation de valeurs manquantes {.smaller}
 
