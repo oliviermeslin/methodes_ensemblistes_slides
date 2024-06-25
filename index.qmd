@@ -135,19 +135,37 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 - Pourquoi imputer ?
   - Réduire les biais (de non-réponse) des estimateurs
+  - Réduire la variance des estimateurs
+  - Eviter d'avoir un jeu de pondération par variable
 
 - Quels enjeux ?
   - Qualité des données diffusées 
   - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade")
 
+
+## Imputation de valeurs manquantes {.smaller}
+
 - Quels déterminants de la qualité d'imputation ?
   - Valeur prédictive des variables auxilaires 
   - Performance du modèle prédictif utilisé
+
+- Quels risques?
+  - Introduction de biais supplémentaires
+  - Distorsion de la distribution des variables d'intérêt
+  - Atténuation des relations entre variables
+  - Sous-estimation de la variance des estimateurs
+
+- Deux grandes familles de méthodes d'imputation
+  - Méthode aléatoire
+  - Méthode déterministe
 
 
 
 ## Imputation de valeurs manquantes {.smaller}
 
+- Quelle valeur ajoutée des méthodes ensemblistes?
+  - 
+  
 - Application proposée
   - Utiliser les données publiques du recensement (déjà imputées)
   - Sélectionner quelques variables
