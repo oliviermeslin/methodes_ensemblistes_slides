@@ -139,8 +139,10 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 - Quels enjeux ?
   - Qualité des données diffusées 
   - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade")
-  - La qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé
 
+- Quels déterminants de la qualité d'imputation ?
+  - Valeur prédictive des variables auxilaires 
+  - Performance du modèle prédictif utilisé
 
 
 

@@ -371,14 +371,14 @@
 <p>Ces méthodes restent pourtant <strong><span class="blue2">peu utilisées par la statistique publique</span></strong>.</p>
 </div>
 </section>
-<section id="rattraper-le-retard-pris-par-la-statistique-publique-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Rattraper le retard pris par la statistique publique</h2>
+<section id="que-voulons-nous-faire" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Que voulons-nous faire?</h2>
 <ul>
 <li><strong><span class="orange">Objectif pédagogique</span></strong>: <strong><span class="blue2">faciliter l’appropriation de ces méthodes</span></strong> par la statistique publique <span class="math inline">\(\Rightarrow\)</span> Ce n’est pas un travail de recherche.</li>
 </ul>
 <div class="fragment">
 <ul>
-<li><strong><span class="orange">Public</span></strong>: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du <em>machine learning</em>.</li>
+<li><strong><span class="orange">Public</span></strong>: les <strong><span class="blue2">agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles</span></strong>, mais sont peu familiers du <em>machine learning</em>.</li>
 </ul>
 </div>
 <div class="fragment">
@@ -387,10 +387,10 @@
 </ul>
 </div>
 </section>
-<section id="champ-couvert-par-le-document-de-travail" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Champ couvert par le document de travail</h2>
+<section id="champ-couvert-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Champ couvert (1)</h2>
 <ul>
-<li>Principe: <span class="blue2"><strong>présenter en détail un nombre réduit d’approches</strong></span>:
+<li>Objectif: <span class="blue2"><strong>présenter en détail un nombre réduit d’approches</strong></span>:
 <ul>
 <li>CART;</li>
 <li><em>Bagging</em> et forêts aléatoires;</li>
@@ -403,10 +403,10 @@
 </ul></li>
 </ul>
 </section>
-<section id="champ-couvert-par-le-document-de-travail-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Champ couvert par le document de travail</h2>
+<section id="champ-couvert-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Champ couvert (2)</h2>
 <ul>
-<li>Principe: <span class="blue2"><strong>présenter quelques méthodes d’interprétabilité</strong></span>:
+<li>Objectif: <span class="blue2"><strong>présenter quelques méthodes d’interprétabilité</strong></span>:
 <ul>
 <li>Approches globales (PDP, ALE plots);</li>
 <li>Approches locales (valeurs de Shapley, LIME);</li>
@@ -414,17 +414,16 @@
 <li>Non couvert: mesure de l’incertitude (notamment la prédiction conforme).</li>
 </ul>
 </section>
-<section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Cas d’usage</h2>
+<section id="approche-pédagogique-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique (1)</h2>
 <ul>
-<li><p>Scope du DT.</p></li>
-<li><p>Cas d’usage;</p>
+<li>Objectif: <span class="blue2"><strong>Couvrir toutes les étapes de l’appropriation de ces méthodes</strong></span>:
 <ul>
-<li>Classification/régression</li>
-<li>Repondération dans les enquêtes;</li>
-<li>Lissage spatial =&gt; Fidélimmo</li>
+<li>Présentation intuitive des méthodes;</li>
+<li>Approche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);</li>
+<li>Présentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;</li>
+<li>Mise en oeuvre pratique.</li>
 </ul></li>
-<li><p>organisation des cas d’usage.</p></li>
 </ul>
 </section>
 <section id="exemple-de-figures-cart" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -438,7 +437,26 @@
 <section id="exemple-de-figures-gradient-boosting" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Exemple de figures: <em>gradient boosting</em></h2>
 
-<img data-src="./figures/output5.svg" class="r-stretch"></section></section>
+<img data-src="./figures/output5.svg" class="r-stretch"></section>
+<section id="approche-pédagogique-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique (2)</h2>
+<ul>
+<li>Objectif: <span class="blue2"><strong>Proposer différents cas d’usage tirés de la statistique publiques</strong></span>n avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
+</ul>
+</section>
+<section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Cas d’usage</h2>
+<ul>
+<li><p>Scope du DT.</p></li>
+<li><p>Cas d’usage;</p>
+<ul>
+<li>Classification/régression</li>
+<li>Repondération dans les enquêtes;</li>
+<li>Lissage spatial =&gt; Fidélimmo</li>
+</ul></li>
+<li><p>organisation des cas d’usage.</p></li>
+</ul>
+</section></section>
 <section>
 <section id="cas-dusage-1" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Cas d’usage</h1>
@@ -463,7 +481,11 @@
 <ul>
 <li>Qualité des données diffusées</li>
 <li>Variables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)</li>
-<li>La qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé</li>
+</ul></li>
+<li>Quels déterminants de la qualité d’imputation ?
+<ul>
+<li>Valeur prédictive des variables auxilaires</li>
+<li>Performance du modèle prédictif utilisé</li>
 </ul></li>
 </ul>
 </section>

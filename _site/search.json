@@ -14,32 +14,32 @@
     "text": "Rattraper le retard pris par la statistique publique\nLes méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
   },
   {
-    "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique-1",
-    "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique-1",
+    "objectID": "index.html#que-voulons-nous-faire",
+    "href": "index.html#que-voulons-nous-faire",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Rattraper le retard pris par la statistique publique",
-    "text": "Rattraper le retard pris par la statistique publique\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique."
+    "section": "Que voulons-nous faire?",
+    "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique."
   },
   {
-    "objectID": "index.html#champ-couvert-par-le-document-de-travail",
-    "href": "index.html#champ-couvert-par-le-document-de-travail",
+    "objectID": "index.html#champ-couvert-1",
+    "href": "index.html#champ-couvert-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": " Champ couvert par le document de travail",
-    "text": "Champ couvert par le document de travail\n\nPrincipe: présenter en détail un nombre réduit d’approches:\n\nCART;\nBagging et forêts aléatoires;\nGradient boosting.\n\nMéthodes non couvertes:\n\nStacking;\nBoosting adaptatif."
+    "section": "Champ couvert (1)",
+    "text": "Champ couvert (1)\n\nObjectif: présenter en détail un nombre réduit d’approches:\n\nCART;\nBagging et forêts aléatoires;\nGradient boosting.\n\nMéthodes non couvertes:\n\nStacking;\nBoosting adaptatif."
   },
   {
-    "objectID": "index.html#champ-couvert-par-le-document-de-travail-1",
-    "href": "index.html#champ-couvert-par-le-document-de-travail-1",
+    "objectID": "index.html#champ-couvert-2",
+    "href": "index.html#champ-couvert-2",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": " Champ couvert par le document de travail",
-    "text": "Champ couvert par le document de travail\n\nPrincipe: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
+    "section": "Champ couvert (2)",
+    "text": "Champ couvert (2)\n\nObjectif: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
   },
   {
-    "objectID": "index.html#cas-dusage",
-    "href": "index.html#cas-dusage",
+    "objectID": "index.html#approche-pédagogique-1",
+    "href": "index.html#approche-pédagogique-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": " Cas d’usage",
-    "text": "Cas d’usage\n\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
+    "section": "Approche pédagogique (1)",
+    "text": "Approche pédagogique (1)\n\nObjectif: Couvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;\nMise en oeuvre pratique."
   },
   {
     "objectID": "index.html#exemple-de-figures-cart",
@@ -63,11 +63,25 @@
     "text": "Exemple de figures: gradient boosting"
   },
   {
+    "objectID": "index.html#approche-pédagogique-2",
+    "href": "index.html#approche-pédagogique-2",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Approche pédagogique (2)",
+    "text": "Approche pédagogique (2)\n\nObjectif: Proposer différents cas d’usage tirés de la statistique publiquesn avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
+  },
+  {
+    "objectID": "index.html#cas-dusage",
+    "href": "index.html#cas-dusage",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Cas d’usage",
+    "text": "Cas d’usage\n\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
+  },
+  {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
     "href": "index.html#imputation-de-valeurs-manquantes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “artificielle” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)\nLa qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé"
+    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “artificielle” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)\n\nQuels déterminants de la qualité d’imputation ?\n\nValeur prédictive des variables auxilaires\nPerformance du modèle prédictif utilisé"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-1",
