@@ -95,7 +95,7 @@
     "href": "index.html#imputation-de-valeurs-manquantes-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode aléatoire\nMéthode déterministe\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure"
+    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode aléatoire\nMéthode déterministe\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure:\n\nNon linéarité\nGestion des valeurs manquantes dans les variables auxiliaires"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-3",
@@ -123,7 +123,7 @@
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nAffecter un poids à chaque individu, corrigé de la non-réponse\n\nQuand repondérer ?\n\nEn présence de non-réponse totale\n\nPourquoi améliorer la méthode de prédiction de la non-réponse\n\nAméliorer la qualité des statistiques descriptives diffusées\nLimites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse"
+    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nAffecter un poids à chaque individu, corrigé de la non-réponse\n\nQuand repondérer ?\n\nEn présence de non-réponse totale\n\nLes principales méthodes actuellement utilisées\n\nLa méthode des groupes de réponse homogène\nLe calage sur marges en une étape\n\nPourquoi améliorer la méthode de prédiction de la non-réponse ?\n\nAméliorer la qualité des statistiques descriptives diffusées\nLimites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse"
   },
   {
     "objectID": "index.html#repondération-1",

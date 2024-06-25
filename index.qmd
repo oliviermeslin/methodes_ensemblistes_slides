@@ -172,7 +172,9 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
   
 - Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
   - Une généralisation du modèle d'estimation par la régression
-  - Avec une performance prédictive supérieure
+  - Avec une performance prédictive supérieure:
+    - Non linéarité
+    - Gestion des valeurs manquantes dans les variables auxiliaires
   
   
   
@@ -225,15 +227,17 @@ Application : l'imputation des valeurs manquantes dans le recensement de la popu
 
 ## Repondération {.smaller}
 
-
 - Qu'est-ce que la repondération ?
   - Affecter un poids à chaque individu, corrigé de la non-réponse
 
 - Quand repondérer ?
   - En présence de non-réponse totale
 
+- Les principales méthodes actuellement utilisées
+  - La méthode des groupes de réponse homogène
+  - Le calage sur marges en une étape
 
-- Pourquoi améliorer la méthode de prédiction de la non-réponse
+- Pourquoi améliorer la méthode de prédiction de la non-réponse ?
   - Améliorer la qualité des statistiques descriptives diffusées
   - Limites de la méthode actuelle: l'efficacité dépend de la qualité du modèle de probabilité de réponse
   
