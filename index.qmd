@@ -49,21 +49,21 @@ Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique pub
 
 Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.blue2}__.
 
-## Rattraper le retard pris par la statistique publique {.smaller}
+## Que voulons-nous faire? {.smaller}
 
 - __[Objectif pédagogique]{.orange}__: __[faciliter l'appropriation de ces méthodes]{.blue2}__ par la statistique publique $\Rightarrow$ Ce n'est pas un travail de recherche.
 
 . . .
 
-- __[Public]{.orange}__: les agents de la statistique publique qui connaissent les cas d'usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du _machine learning_.
+- __[Public]{.orange}__: les __[agents de la statistique publique qui connaissent les cas d'usage et maîtrisent les méthodes économétriques traditionnelles]{.blue2}__, mais sont peu familiers du _machine learning_.
 
 . . .
 
 - __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage montrant leur apport aux travaux de la statistique publique.
 
-## {{< fa circle-question >}} Champ couvert par le document de travail {.smaller}
+## Champ couvert (1) {.smaller}
 
-- Principe: [__présenter en détail un nombre réduit d'approches__]{.blue2}:
+- Objectif: [__présenter en détail un nombre réduit d'approches__]{.blue2}:
     - CART;
     - _Bagging_ et forêts aléatoires;
     - _Gradient boosting_.
@@ -73,27 +73,23 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
     - _Stacking_;
     - _Boosting_ adaptatif.
 
-## {{< fa circle-question >}} Champ couvert par le document de travail {.smaller}
+## Champ couvert (2) {.smaller}
 
 
-- Principe: [__présenter quelques méthodes d'interprétabilité__]{.blue2}:
+- Objectif: [__présenter quelques méthodes d'interprétabilité__]{.blue2}:
     - Approches globales (PDP, ALE plots);
     - Approches locales (valeurs de Shapley, LIME);
 
 - Non couvert: mesure de l'incertitude (notamment la prédiction conforme).
 
+## Approche pédagogique (1) {.smaller}
 
-## {{< fa circle-question >}} Cas d'usage
 
-
-- Scope du DT.
-
-- Cas d'usage;
-    - Classification/régression
-    - Repondération dans les enquêtes;
-    - Lissage spatial => Fidélimmo
-
-- organisation des cas d'usage.
+- Objectif: [__Couvrir toutes les étapes de l'appropriation de ces méthodes__]{.blue2}:
+    - Présentation intuitive des méthodes;
+    - Approche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);
+    - Présentation des principaux hyper-paramètres et de leur lien avec les cas d'usage;
+    - Mise en oeuvre pratique.
 
 
 ## Exemple de figures: CART
@@ -107,6 +103,25 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 ## Exemple de figures: _gradient boosting_
 
 ![](./figures/output5.svg)
+
+## Approche pédagogique (2) {.smaller}
+
+- Objectif: [__Proposer différents cas d'usage tirés de la statistique publiques__]{.blue2}n avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).
+    
+
+## Cas d'usage
+
+
+- Scope du DT.
+
+- Cas d'usage;
+    - Classification/régression
+    - Repondération dans les enquêtes;
+    - Lissage spatial => Fidélimmo
+
+- organisation des cas d'usage.
+
+
 
 # Cas d'usage
 
