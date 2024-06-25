@@ -128,14 +128,14 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 ## Imputation de valeurs manquantes {.smaller}
 
 - Qu'est-ce que l'imputation ?
-  - Affecter une valeur "artificielle" à une valeur manquantes
+  - Affecter une valeur "plausible" à une valeur manquantes
 
 - Quand imputer ?
   - En présence de non-réponse partielle
 
 - Pourquoi imputer ?
   - Réduire les biais (de non-réponse) des estimateurs
-  - Réduire la variance des estimateurs
+  - (Réduire la variance des estimateurs)
   - Eviter d'avoir un jeu de pondération par variable
 
 - Quels enjeux ?
@@ -144,6 +144,10 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 
 ## Imputation de valeurs manquantes {.smaller}
+
+- Hypothèses fondamentales:
+  - Il existe un modèle reliant les variables à imputer à des variables auxiliaires
+  - Les paramètres de ce modèle peuvent êtres estimés sur la population des répondants
 
 - Quels déterminants de la qualité d'imputation ?
   - Valeur prédictive des variables auxilaires 
@@ -155,17 +159,50 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
   - Atténuation des relations entre variables
   - Sous-estimation de la variance des estimateurs
 
+
+## Imputation de valeurs manquantes {.smaller}
+
 - Deux grandes familles de méthodes d'imputation
   - Méthode aléatoire
   - Méthode déterministe
 
+- Pour une mutlitude d'approches!
+  - colddeck, moyenne, régression, ratio, plus proche voisin ...
+  - hotdeck, ratio/régression avec résidus ...
+  
+- Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
+  - Une généralisation du modèle d'estimation par la régression
+  - Avec une performance prédictive supérieure
+  
+  
+  
+## Imputation de valeurs manquantes {.smaller}
+
+Application : l'imputation des valeurs manquantes dans le recensement de la population
+
+- La méthode actuelle: 
+  - imputation aléatoire séquentielle par "hot deck"
+  - Traitement "lots par lots"
+
+- Principe:
+  - les logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi
+  - Les variables imputées peuvent être utilisées pour imputer d'autres variables
+  - Les individus donneurs peuvent être choisis sur la base de valeurs imputées
+  
+- En pratique:
+  - Individus triés selon une clé primaire qui reflète leur proximité géographique
+  - Imputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie
+  - Imputation déterministe en cas d'absence de donneur ou d'incohérence
+  
+- Avantages:
+  -
+  
+- Limites:
+  -
 
 
 ## Imputation de valeurs manquantes {.smaller}
 
-- Quelle valeur ajoutée des méthodes ensemblistes?
-  - 
-  
 - Application proposée
   - Utiliser les données publiques du recensement (déjà imputées)
   - Sélectionner quelques variables
@@ -187,6 +224,14 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 
 ## Repondération {.smaller}
+
+
+- Qu'est-ce que la repondération ?
+  - Affecter un poids à chaque individu, corrigé de la non-réponse
+
+- Quand repondérer ?
+  - En présence de non-réponse totale
+
 
 - Pourquoi améliorer la méthode de prédiction de la non-réponse
   - Améliorer la qualité des statistiques descriptives diffusées

@@ -81,25 +81,39 @@
     "href": "index.html#imputation-de-valeurs-manquantes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “artificielle” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\nRéduire la variance des estimateurs\nEviter d’avoir un jeu de pondération par variable\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)"
+    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “plausible” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n(Réduire la variance des estimateurs)\nEviter d’avoir un jeu de pondération par variable\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-1",
     "href": "index.html#imputation-de-valeurs-manquantes-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQuels déterminants de la qualité d’imputation ?\n\nValeur prédictive des variables auxilaires\nPerformance du modèle prédictif utilisé\n\nQuels risques?\n\nIntroduction de biais supplémentaires\nDistorsion de la distribution des variables d’intérêt\nAtténuation des relations entre variables\nSous-estimation de la variance des estimateurs\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode aléatoire\nMéthode déterministe"
+    "text": "Imputation de valeurs manquantes\n\nHypothèses fondamentales:\n\nIl existe un modèle reliant les variables à imputer à des variables auxiliaires\nLes paramètres de ce modèle peuvent êtres estimés sur la population des répondants\n\nQuels déterminants de la qualité d’imputation ?\n\nValeur prédictive des variables auxilaires\nPerformance du modèle prédictif utilisé\n\nQuels risques?\n\nIntroduction de biais supplémentaires\nDistorsion de la distribution des variables d’intérêt\nAtténuation des relations entre variables\nSous-estimation de la variance des estimateurs"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-2",
     "href": "index.html#imputation-de-valeurs-manquantes-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQuelle valeur ajoutée des méthodes ensemblistes?\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nSélectionner quelques variables\nComparer les performances prédictives de la méthode d’imputation actuelle, d’un logit et d’un xgboost à partir des mêmes variables\n\nMéthode redressement actuelle: séquentielle et non déterministe (dans un premier temps)\nExemple: le niveau de diplôme\nHypothèses: – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité"
+    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode aléatoire\nMéthode déterministe\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-3",
     "href": "index.html#imputation-de-valeurs-manquantes-3",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Imputation de valeurs manquantes",
+    "text": "Imputation de valeurs manquantes\nApplication : l’imputation des valeurs manquantes dans le recensement de la population\n\nLa méthode actuelle:\n\nimputation aléatoire séquentielle par “hot deck”\nTraitement “lots par lots”\n\nPrincipe:\n\nles logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi\nLes variables imputées peuvent être utilisées pour imputer d’autres variables\nLes individus donneurs peuvent être choisis sur la base de valeurs imputées\n\nEn pratique:\n\nIndividus triés selon une clé primaire qui reflète leur proximité géographique\nImputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie\nImputation déterministe en cas d’absence de donneur ou d’incohérence\n\nAvantages:\nLimites:"
+  },
+  {
+    "objectID": "index.html#imputation-de-valeurs-manquantes-4",
+    "href": "index.html#imputation-de-valeurs-manquantes-4",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Imputation de valeurs manquantes",
+    "text": "Imputation de valeurs manquantes\n\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nSélectionner quelques variables\nComparer les performances prédictives de la méthode d’imputation actuelle, d’un logit et d’un xgboost à partir des mêmes variables\n\nMéthode redressement actuelle: séquentielle et non déterministe (dans un premier temps)\nExemple: le niveau de diplôme\nHypothèses: – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité"
+  },
+  {
+    "objectID": "index.html#imputation-de-valeurs-manquantes-5",
+    "href": "index.html#imputation-de-valeurs-manquantes-5",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
     "text": "Imputation de valeurs manquantes\n\nAvantage et limites de la méthode xgboost\nConsidérations pratiques pour le déploiement"
@@ -109,7 +123,7 @@
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nPourquoi améliorer la méthode de prédiction de la non-réponse\n\nAméliorer la qualité des statistiques descriptives diffusées\nLimites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse"
+    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nAffecter un poids à chaque individu, corrigé de la non-réponse\n\nQuand repondérer ?\n\nEn présence de non-réponse totale\n\nPourquoi améliorer la méthode de prédiction de la non-réponse\n\nAméliorer la qualité des statistiques descriptives diffusées\nLimites de la méthode actuelle: l’efficacité dépend de la qualité du modèle de probabilité de réponse"
   },
   {
     "objectID": "index.html#repondération-1",
