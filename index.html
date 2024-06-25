@@ -476,22 +476,42 @@
 <li>Pourquoi imputer ?
 <ul>
 <li>Réduire les biais (de non-réponse) des estimateurs</li>
+<li>Réduire la variance des estimateurs</li>
+<li>Eviter d’avoir un jeu de pondération par variable</li>
 </ul></li>
 <li>Quels enjeux ?
 <ul>
 <li>Qualité des données diffusées</li>
 <li>Variables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)</li>
 </ul></li>
-<li>Quels déterminants de la qualité d’imputation ?
-<ul>
-<li>Valeur prédictive des variables auxilaires</li>
-<li>Performance du modèle prédictif utilisé</li>
-</ul></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
+<li>Quels déterminants de la qualité d’imputation ?
+<ul>
+<li>Valeur prédictive des variables auxilaires</li>
+<li>Performance du modèle prédictif utilisé</li>
+</ul></li>
+<li>Quels risques?
+<ul>
+<li>Introduction de biais supplémentaires</li>
+<li>Distorsion de la distribution des variables d’intérêt</li>
+<li>Atténuation des relations entre variables</li>
+<li>Sous-estimation de la variance des estimateurs</li>
+</ul></li>
+<li>Deux grandes familles de méthodes d’imputation
+<ul>
+<li>Méthode aléatoire</li>
+<li>Méthode déterministe</li>
+</ul></li>
+</ul>
+</section>
+<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation de valeurs manquantes</h2>
+<ul>
+<li><h2 id="quelle-valeur-ajoutée-des-méthodes-ensemblistes" data-background-image="background.svg" data-background-size="contain">Quelle valeur ajoutée des méthodes ensemblistes?</h2></li>
 <li>Application proposée
 <ul>
 <li>Utiliser les données publiques du recensement (déjà imputées)</li>
@@ -503,7 +523,7 @@
 <li>Hypothèses: – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité</li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
 <li>Avantage et limites de la méthode xgboost</li>
