@@ -81,7 +81,7 @@
     "href": "index.html#imputation-de-valeurs-manquantes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “artificielle” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)\nLa qualité des imputations dépends de la valeur prédictive des variables auxilaires et de la performance du modèle prédictif utilisé"
+    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “artificielle” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)\n\nQuels déterminants de la qualité d’imputation ?\n\nValeur prédictive des variables auxilaires\nPerformance du modèle prédictif utilisé"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-1",
