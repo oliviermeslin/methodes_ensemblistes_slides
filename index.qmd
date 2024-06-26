@@ -206,29 +206,28 @@ Questions:
   - Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;
   - La repondération vise à modifier les poids des unités enquêtées pour que l'échantillon final soit représentatif de la population d'intérêt.
 
-- Les principales méthodes actuellement utilisées
-  - Les méthodes des groupes de réponse homogène
-    - Les arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)
-    - Les méthodes de score (logit puis partitionnement)
-  - Le calage sur marges en une étape
+. . .
 
+- Méthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:
+  - Modélisation de la probabilité de réponse par un modèle logit (prédiction);
+  - Construction de groupes ayant une probabilité de réponse proche (classification);
+  - Au sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération).
 
 
 ## Repondération {.smaller}
 
-- Application: la repondération de l'enquête patrimoine
-  - Méthode actuelle proche conceptuellement (logit)
-  - Possibilité d'utiliser une source externe (Fidélimmo) pour comparer les performances
+- Cas d'usage: repondération d'une enquête.
+  - Remplacer la partie prédictive (logit) par une méthode de bagging ou de boosting.
 
-- Méthode actuelle: méthode des scores 
-  - Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)
-  - Construction des groupes de ménages avec une probabilité de réponse proche (classification)
-  - Au sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe
   
-- Proposition:
-  - Utiliser les mêmes variables
-  - Remplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting
-  
+Questions:
+
+- Les échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?
+- Les données nécessaires à ce cas d'usage sont difficilement accessibles (données de production non publiques). Trop complexe?
+
+
+## Data editing
+
 
 
 ## Lissage spatial {.smaller}
