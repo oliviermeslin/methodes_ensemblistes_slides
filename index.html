@@ -348,14 +348,11 @@
 <h1>Intro</h1>
 
 </section>
-<section id="une-belle-intro" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Une belle intro</h2>
-<p>Développées à la fin des années 1990 (Friedman 2001, Breiman 1999 et 2001), les approches ensemblistes à base d’arbres de décision se sont imposées dans les années 2010 comme</p>
-<p>(XGBoost 2016, LightGBM 2016)</p>
-</section>
 <section id="rattraper-le-retard-pris-par-la-statistique-publique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Rattraper le retard pris par la statistique publique</h2>
-<p>Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:</p>
+<p>Les approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.</p>
+<div class="fragment">
+<p>Ces méthodes sont donc bien adaptées aux travaux de la statistique publique:</p>
 <ul>
 <li>Omniprésence de <strong><span class="blue2">données tabulaires</span></strong>;</li>
 <li>Multiplicité des <strong><span class="blue2">cas d’usage</span></strong>:
@@ -365,6 +362,7 @@
 <li><strong><span class="orange">Régression</span></strong>: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…</li>
 </ul></li>
 </ul>
+</div>
 <div class="fragment">
 <p>Ces méthodes restent pourtant <strong><span class="blue2">peu utilisées par la statistique publique</span></strong>.</p>
 </div>
@@ -381,7 +379,7 @@
 </div>
 <div class="fragment">
 <ul>
-<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique.</li>
+<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique <span class="math inline">\(\Rightarrow\)</span> Il s’agit d’enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes.</li>
 </ul>
 </div>
 </section>
@@ -412,16 +410,17 @@
 <li>Non couvert: mesure de l’incertitude (notamment la prédiction conforme).</li>
 </ul>
 </section>
-<section id="approche-pédagogique-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Approche pédagogique (1)</h2>
+<section id="approche-pédagogique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique</h2>
 <ul>
-<li>Objectif: <span class="blue2"><strong>Couvrir toutes les étapes de l’appropriation de ces méthodes</strong></span>:
+<li><span class="blue2"><strong>Couvrir toutes les étapes de l’appropriation de ces méthodes</strong></span>:
 <ul>
 <li>Présentation intuitive des méthodes;</li>
 <li>Approche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);</li>
-<li>Présentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;</li>
+<li>Présentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;</li>
 <li>Mise en oeuvre pratique.</li>
 </ul></li>
+<li><span class="blue2"><strong>Proposer différents cas d’usage adaptés à la statistique publiques</strong></span>, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
 </ul>
 </section>
 <section id="exemple-de-figures-cart" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -435,26 +434,7 @@
 <section id="exemple-de-figures-gradient-boosting" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Exemple de figures: <em>gradient boosting</em></h2>
 
-<img data-src="./figures/output5.svg" class="r-stretch"></section>
-<section id="approche-pédagogique-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Approche pédagogique (2)</h2>
-<ul>
-<li>Objectif: <span class="blue2"><strong>Proposer différents cas d’usage tirés de la statistique publiques</strong></span>, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
-</ul>
-</section>
-<section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Cas d’usage</h2>
-<ul>
-<li><p>Scope du DT.</p></li>
-<li><p>Cas d’usage;</p>
-<ul>
-<li>Classification/régression</li>
-<li>Repondération dans les enquêtes;</li>
-<li>Lissage spatial =&gt; Fidélimmo</li>
-</ul></li>
-<li><p>organisation des cas d’usage.</p></li>
-</ul>
-</section></section>
+<img data-src="./figures/output5.svg" class="r-stretch"></section></section>
 <section>
 <section id="cas-dusage-envisagés" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
 <h1>Cas d’usage envisagés</h1>

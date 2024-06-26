@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "index.html#une-belle-intro",
-    "href": "index.html#une-belle-intro",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Une belle intro",
-    "text": "Une belle intro\nDéveloppées à la fin des années 1990 (Friedman 2001, Breiman 1999 et 2001), les approches ensemblistes à base d’arbres de décision se sont imposées dans les années 2010 comme\n(XGBoost 2016, LightGBM 2016)"
-  },
-  {
     "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
     "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Rattraper le retard pris par la statistique publique",
-    "text": "Rattraper le retard pris par la statistique publique\nLes méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
+    "text": "Rattraper le retard pris par la statistique publique\nLes approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.\n\nCes méthodes sont donc bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
   },
   {
     "objectID": "index.html#que-voulons-nous-faire",
     "href": "index.html#que-voulons-nous-faire",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Que voulons-nous faire?",
-    "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique."
+    "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique \\(\\Rightarrow\\) Il s’agit d’enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes."
   },
   {
     "objectID": "index.html#champ-couvert-1",
@@ -35,11 +28,11 @@
     "text": "Champ couvert (2)\n\nObjectif: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
   },
   {
-    "objectID": "index.html#approche-pédagogique-1",
-    "href": "index.html#approche-pédagogique-1",
+    "objectID": "index.html#approche-pédagogique",
+    "href": "index.html#approche-pédagogique",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Approche pédagogique (1)",
-    "text": "Approche pédagogique (1)\n\nObjectif: Couvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;\nMise en oeuvre pratique."
+    "section": "Approche pédagogique",
+    "text": "Approche pédagogique\n\nCouvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;\nMise en oeuvre pratique.\n\nProposer différents cas d’usage adaptés à la statistique publiques, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
   },
   {
     "objectID": "index.html#exemple-de-figures-cart",
@@ -61,20 +54,6 @@
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple de figures: gradient boosting",
     "text": "Exemple de figures: gradient boosting"
-  },
-  {
-    "objectID": "index.html#approche-pédagogique-2",
-    "href": "index.html#approche-pédagogique-2",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Approche pédagogique (2)",
-    "text": "Approche pédagogique (2)\n\nObjectif: Proposer différents cas d’usage tirés de la statistique publiques, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
-  },
-  {
-    "objectID": "index.html#cas-dusage",
-    "href": "index.html#cas-dusage",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Cas d’usage",
-    "text": "Cas d’usage\n\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
   },
   {
     "objectID": "index.html#cas-dusage-envisagés-1",
