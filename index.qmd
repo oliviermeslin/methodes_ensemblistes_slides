@@ -30,10 +30,10 @@ from: markdown+emoji
 
 ## Une belle intro {.smaller}
 
+Développées à la fin des années 1990 (Friedman 2001, Breiman 1999 et 2001), les approches ensemblistes à base d'arbres de décision se sont imposées dans les années 2010 comme 
 
-Friedman 2001, Breiman 2001
 
-XGBoost, LightGBM
+(XGBoost 2016, LightGBM 2016)
 
 ## Rattraper le retard pris par la statistique publique {.smaller}
 
@@ -59,7 +59,7 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 . . .
 
-- __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage montrant leur apport aux travaux de la statistique publique.
+- __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique.
 
 ## Champ couvert (1) {.smaller}
 
@@ -106,7 +106,7 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 ## Approche pédagogique (2) {.smaller}
 
-- Objectif: [__Proposer différents cas d'usage tirés de la statistique publiques__]{.blue2}n avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).
+- Objectif: [__Proposer différents cas d'usage tirés de la statistique publiques__]{.blue2}, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).
     
 
 ## Cas d'usage
@@ -125,60 +125,51 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 # Cas d'usage
 
+## LISTE
+
+FAIRE LA LISTE
+
+- Imputation
+- Data editing
+- repondération
+- Lissage spatial
+
+Questions:
+
+- On souhaite illustrer l'usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu'elles sont systématiquement préférables.
+
+- Format: notebooks sur des données ouvertes si possible;
+
+
+
 ## Imputation de valeurs manquantes {.smaller}
 
 - Qu'est-ce que l'imputation ?
-  - Affecter une valeur "plausible" à une valeur manquantes
-
-- Quand imputer ?
-  - En présence de non-réponse partielle
-
+  - Affecter une valeur "plausible" à une variable dont la valeur est manquante;
+  - Situation fréquente dans les enquêtes et dans les données administratives.
+  
 - Pourquoi imputer ?
-  - Réduire les biais (de non-réponse) des estimateurs
-  - (Réduire la variance des estimateurs)
-  - Eviter d'avoir un jeu de pondération par variable
+  - Réduire les biais et la variance des estimateurs;
+  - Qualité des données diffusées.
 
-- Quels enjeux ?
-  - Qualité des données diffusées 
-  - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade")
+- Hypothèse fondamentale:
+  - Il existe un modèle reliant les variables à imputer à des variables auxiliaires;
+  - Les paramètres de ce modèle peuvent être estimés sur la population des répondants.
 
-
-
-## Imputation de valeurs manquantes {.smaller}
-
-- Hypothèses fondamentales:
-  - Il existe un modèle reliant les variables à imputer à des variables auxiliaires
-  - Les paramètres de ce modèle peuvent êtres estimés sur la population des répondants
-
-- Quels déterminants de la qualité d'imputation ?
-  - Valeur prédictive des variables auxilaires 
-  - Performance du modèle prédictif utilisé
-
-- Quels risques?
-  - Introduction de biais supplémentaires
-  - Distorsion de la distribution des variables d'intérêt
-  - Atténuation des relations entre variables
-  - Sous-estimation de la variance des estimateurs
-
+  <!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") -->
 
 ## Imputation de valeurs manquantes {.smaller}
 
-- Deux grandes familles de méthodes d'imputation
-  - Méthode aléatoire
-  - Méthode déterministe
-
-- Pour une mutlitude d'approches!
-  - colddeck, moyenne, régression, ratio, plus proche voisin ...
-  - hotdeck, ratio/régression avec résidus ...
+- Il existe une multitude d'approches:
+  - Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin ...
+  - Méthodes aléatoires: hotdeck, ratio/régression avec résidus ...
   
 - Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
   - Une généralisation du modèle d'estimation par la régression
-  - Avec une performance prédictive supérieure:
-    - Non linéarité
-    - Gestion des valeurs manquantes dans les variables auxiliaires
-  
-  
-  
+  - Avec une performance prédictive potentiellement supérieure:
+  - Gestion des valeurs manquantes dans les variables auxiliaires.
+    
+
 ## Imputation de valeurs manquantes {.smaller}
 
 Application : l'imputation des valeurs manquantes dans le recensement de la population
