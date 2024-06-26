@@ -558,37 +558,34 @@
 <li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;</li>
 <li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.</li>
 </ul></li>
-<li>Les principales méthodes actuellement utilisées
+</ul>
+<div class="fragment">
 <ul>
-<li>Les méthodes des groupes de réponse homogène
+<li>Méthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:
 <ul>
-<li>Les arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)</li>
-<li>Les méthodes de score (logit puis partitionnement)</li>
-</ul></li>
-<li>Le calage sur marges en une étape</li>
+<li>Modélisation de la probabilité de réponse par un modèle logit (prédiction);</li>
+<li>Construction de groupes ayant une probabilité de réponse proche (classification);</li>
+<li>Au sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération).</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="repondération-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repondération</h2>
 <ul>
-<li>Application: la repondération de l’enquête patrimoine
+<li>Cas d’usage: repondération d’une enquête.
 <ul>
-<li>Méthode actuelle proche conceptuellement (logit)</li>
-<li>Possibilité d’utiliser une source externe (Fidélimmo) pour comparer les performances</li>
-</ul></li>
-<li>Méthode actuelle: méthode des scores
-<ul>
-<li>Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)</li>
-<li>Construction des groupes de ménages avec une probabilité de réponse proche (classification)</li>
-<li>Au sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe</li>
-</ul></li>
-<li>Proposition:
-<ul>
-<li>Utiliser les mêmes variables</li>
-<li>Remplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting</li>
+<li>Remplacer la partie prédictive (logit) par une méthode de bagging ou de boosting.</li>
 </ul></li>
 </ul>
+<p>Questions:</p>
+<ul>
+<li>Les échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?</li>
+<li>Les données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?</li>
+</ul>
+</section>
+<section id="data-editing" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Data editing</h2>
 </section>
 <section id="lissage-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial</h2>
