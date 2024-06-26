@@ -95,7 +95,7 @@
     "href": "index.html#imputation-de-valeurs-manquantes-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode aléatoire\nMéthode déterministe\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure:\n\nNon linéarité\nGestion des valeurs manquantes dans les variables auxiliaires"
+    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode déterministe\nMéthode aléatoire\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure:\n\nNon linéarité\nGestion des valeurs manquantes dans les variables auxiliaires"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-3",
@@ -116,7 +116,7 @@
     "href": "index.html#imputation-de-valeurs-manquantes-5",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nComparer les performances prédictives de la méthode d’imputation actuelle (hotdesc séquentiel), d’un logit et d’un xgboost à partir des mêmes variables\n\nExemple: le niveau de diplôme\n\nHypothèses actuelles: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe"
+    "text": "Imputation de valeurs manquantes\n\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nComparer les performances prédictives de la méthode d’imputation actuelle (hotdesc séquentiel), d’un logit et d’un xgboost à partir des mêmes variables\n\nExemple: le niveau de diplôme\n\nHypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe\nHypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires (issues base de sondage ou collectées par le RP)"
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-6",
@@ -137,7 +137,7 @@
     "href": "index.html#repondération-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nApplication: la repondération de l’enquête patrimoine\nMéthode actuelle: méthode des scores\n\nProbabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)\nConstruction des groupes de ménages avec une probabilité de réponse proche (classification)\nAu sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe\n\nProposition:\n\nUtiliser les mêmes variables\nRemplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting"
+    "text": "Repondération\n\nApplication: la repondération de l’enquête patrimoine\n\nMéthode actuelle proche conceptuellement (logit)\nPossibilité d’utiliser une source externe (Fidélimmo) pour comparer les performances\n\nMéthode actuelle: méthode des scores\n\nProbabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)\nConstruction des groupes de ménages avec une probabilité de réponse proche (classification)\nAu sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe\n\nProposition:\n\nUtiliser les mêmes variables\nRemplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting"
   },
   {
     "objectID": "index.html#lissage-spatial",

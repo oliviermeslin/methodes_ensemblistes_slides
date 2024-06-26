@@ -513,8 +513,8 @@
 <ul>
 <li>Deux grandes familles de méthodes d’imputation
 <ul>
-<li>Méthode aléatoire</li>
 <li>Méthode déterministe</li>
+<li>Méthode aléatoire</li>
 </ul></li>
 <li>Pour une mutlitude d’approches!
 <ul>
@@ -580,7 +580,8 @@
 </ul></li>
 <li>Exemple: le niveau de diplôme
 <ul>
-<li>Hypothèses actuelles: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
+<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
+<li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires (issues base de sondage ou collectées par le RP)</li>
 </ul></li>
 </ul>
 </section>
@@ -632,14 +633,18 @@
 <section id="repondération-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repondération</h2>
 <ul>
-<li><p>Application: la repondération de l’enquête patrimoine</p></li>
-<li><p>Méthode actuelle: méthode des scores</p>
+<li>Application: la repondération de l’enquête patrimoine
+<ul>
+<li>Méthode actuelle proche conceptuellement (logit)</li>
+<li>Possibilité d’utiliser une source externe (Fidélimmo) pour comparer les performances</li>
+</ul></li>
+<li>Méthode actuelle: méthode des scores
 <ul>
 <li>Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)</li>
 <li>Construction des groupes de ménages avec une probabilité de réponse proche (classification)</li>
 <li>Au sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe</li>
 </ul></li>
-<li><p>Proposition:</p>
+<li>Proposition:
 <ul>
 <li>Utiliser les mêmes variables</li>
 <li>Remplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting</li>

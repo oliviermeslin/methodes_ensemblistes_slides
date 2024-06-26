@@ -164,8 +164,8 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 ## Imputation de valeurs manquantes {.smaller}
 
 - Deux grandes familles de méthodes d'imputation
-  - Méthode aléatoire
   - Méthode déterministe
+  - Méthode aléatoire
 
 - Pour une mutlitude d'approches!
   - colddeck, moyenne, régression, ratio, plus proche voisin ...
@@ -218,8 +218,8 @@ Application : l'imputation des valeurs manquantes dans le recensement de la popu
   - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdesc séquentiel), d'un logit et d'un xgboost à partir des mêmes variables
   
 - Exemple: le niveau de diplôme
-  - Hypothèses actuelles: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
-
+  - Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
+  - Hypothèse nouvelle: le diplôme peut dépendre d'autres variables auxiliaires (issues base de sondage ou collectées par le RP)
   
 ## Imputation de valeurs manquantes {.smaller}
 
@@ -260,7 +260,9 @@ Application : l'imputation des valeurs manquantes dans le recensement de la popu
 ## Repondération {.smaller}
 
 - Application: la repondération de l'enquête patrimoine
-  
+  - Méthode actuelle proche conceptuellement (logit)
+  - Possibilité d'utiliser une source externe (Fidélimmo) pour comparer les performances
+
 - Méthode actuelle: méthode des scores 
   - Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)
   - Construction des groupes de ménages avec une probabilité de réponse proche (classification)
