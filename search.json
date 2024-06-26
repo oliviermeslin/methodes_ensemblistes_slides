@@ -77,11 +77,11 @@
     "text": "Cas d’usage\n\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
   },
   {
-    "objectID": "index.html#liste",
-    "href": "index.html#liste",
+    "objectID": "index.html#cas-dusage-envisagés-1",
+    "href": "index.html#cas-dusage-envisagés-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "LISTE",
-    "text": "LISTE\nFAIRE LA LISTE\n\nImputation\nData editing\nrepondération\nLissage spatial\n\nQuestions:\n\nOn souhaite illustrer l’usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables.\nFormat: notebooks sur des données ouvertes si possible;"
+    "section": "Cas d’usage envisagés",
+    "text": "Cas d’usage envisagés\n\nOn souhaite illustrer l’usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables.\n\n\n\nlivrables: notebooks sur des données ouvertes (autant que possible);\n\n\n\n\nQuatre cas d’usage possible:\n\nImputation;\nData editing;\nRepondération des enquêtes;\nModélisation spatiale."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
@@ -116,7 +116,7 @@
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nAffecter un poids à chaque individu afin de corriger les biais de non-réponse\n\nQuand repondérer ?\n\nEn présence de non-réponse totale\n\nLes principales méthodes actuellement utilisées\n\nLes méthodes des groupes de réponse homogène\n\nLes arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)\nLes méthodes de score (logit puis partitionnement)\n\nLe calage sur marges en une étape"
+    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nDans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;\nLa repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.\n\nLes principales méthodes actuellement utilisées\n\nLes méthodes des groupes de réponse homogène\n\nLes arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)\nLes méthodes de score (logit puis partitionnement)\n\nLe calage sur marges en une étape"
   },
   {
     "objectID": "index.html#repondération-1",
