@@ -165,71 +165,37 @@ Questions:
   - Méthodes aléatoires: hotdeck, ratio/régression avec résidus ...
 
 - Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
-  - Une généralisation du modèle d'estimation par la régression
-  - Avec une performance prédictive potentiellement supérieure:
+  - Une performance prédictive potentiellement supérieure
   - Gestion des valeurs manquantes dans les variables auxiliaires.
     
 
 ## Imputation de valeurs manquantes {.smaller}
 
-Application : l'imputation des valeurs manquantes dans le recensement de la population
+- Cas d'usage : imputation des valeurs manquantes dans le recensement de la population.
 
-- La méthode actuelle: 
-  - imputation aléatoire séquentielle par "hot deck"
-  - Traitement "lots par lots"
+<!-- - La méthode actuelle:  -->
+<!--   - imputation aléatoire séquentielle par "hot deck"; -->
+<!--   - Traitement "lots par lots" (au fil de l'eau); -->
+<!--   - Importance de l'ordre d'imputation des différentes variables. -->
 
-- Principe:
-  - les logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi
-  - Les variables imputées peuvent être utilisées pour imputer d'autres variables
-  - Les individus donneurs peuvent être choisis sur la base de valeurs imputées
-  
+- Ce que nous pourrions faire:
+  - Utiliser les données publiques du recensement;
+  - Générer des valeurs manquantes sur une variable;
+  - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdeck séquentiel), d'une régression linéraire/logistique et d'un xgboost à partir des mêmes variables.
 
-
-## Imputation de valeurs manquantes {.smaller}
-
-Application : l'imputation des valeurs manquantes dans le recensement de la population
-
-- En pratique:
-  - Individus triés selon une clé primaire qui reflète leur proximité géographique
-  - Imputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie
-  - Imputation déterministe en cas d'absence de donneur ou d'incohérence
-  
-- Avantages:
-  - Simplicité, rapidité
-  
-- Limites:
-  - Peu de variables auxillaires utilisées
-  - Pouvoir prédictif améliorable (nombre et partionnement des variables auxiliaires)
-
-
-## Imputation de valeurs manquantes {.smaller}
-
-- Application proposée
-  - Utiliser les données publiques du recensement (déjà imputées)
-  - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdesc séquentiel), d'un logit et d'un xgboost à partir des mêmes variables
-  
-- Exemple: le niveau de diplôme
+- Exemple: le niveau de diplôme:
   - Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
-  - Hypothèse nouvelle: le diplôme peut dépendre d'autres variables auxiliaires (issues base de sondage ou collectées par le RP)
-  
+  - Hypothèse nouvelle: le diplôme peut dépendre d'autres variables auxiliaires disponibles dans le RP.
+
 ## Imputation de valeurs manquantes {.smaller}
 
-- Pourquoi une meilleure prédiction avec la méthode xgboost ?
-  - Utiliser des variables auxilaires non imputées
-  - Mieux partitionner (sélection de variables, croisements, et regroupements de modalités)
-  
-- Avantages attendus  
-  - Mieux préserver les relations entre variables?
-  - Réduire la variance des résidus et améliorer la précision des estimateurs ?
+Questions:
 
-- Limites de la méthode xgboost
-  - Temps de calcul?
-  
-- Questions en suspens
-  - Le pouvoir prédictif est-il le principal critère ? (vs simplicité, rapidité)
-  
-  
+- Couvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?
 
+- Se comparer à l'existant ou pas?
+
+- Générer des valeurs manquantes à probabilités égales ou pas?
 
 
 ## Repondération {.smaller}
