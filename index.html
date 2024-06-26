@@ -508,86 +508,41 @@
 </ul></li>
 <li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
 <ul>
-<li>Une généralisation du modèle d’estimation par la régression</li>
-<li>Avec une performance prédictive potentiellement supérieure:</li>
+<li>Une performance prédictive potentiellement supérieure</li>
 <li>Gestion des valeurs manquantes dans les variables auxiliaires.</li>
 </ul></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
-<p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
 <ul>
-<li>La méthode actuelle:
+<li>Cas d’usage : imputation des valeurs manquantes dans le recensement de la population.</li>
+</ul>
+<!-- - La méthode actuelle:  -->
+<!--   - imputation aléatoire séquentielle par "hot deck"; -->
+<!--   - Traitement "lots par lots" (au fil de l'eau); -->
+<!--   - Importance de l'ordre d'imputation des différentes variables. -->
 <ul>
-<li>imputation aléatoire séquentielle par “hot deck”</li>
-<li>Traitement “lots par lots”</li>
+<li>Ce que nous pourrions faire:
+<ul>
+<li>Utiliser les données publiques du recensement;</li>
+<li>Générer des valeurs manquantes sur une variable;</li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’un xgboost à partir des mêmes variables.</li>
 </ul></li>
-<li>Principe:
+<li>Exemple: le niveau de diplôme:
 <ul>
-<li>les logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi</li>
-<li>Les variables imputées peuvent être utilisées pour imputer d’autres variables</li>
-<li>Les individus donneurs peuvent être choisis sur la base de valeurs imputées</li>
+<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
+<li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP.</li>
 </ul></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
-<p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
+<p>Questions:</p>
 <ul>
-<li>En pratique:
-<ul>
-<li>Individus triés selon une clé primaire qui reflète leur proximité géographique</li>
-<li>Imputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie</li>
-<li>Imputation déterministe en cas d’absence de donneur ou d’incohérence</li>
-</ul></li>
-<li>Avantages:
-<ul>
-<li>Simplicité, rapidité</li>
-</ul></li>
-<li>Limites:
-<ul>
-<li>Peu de variables auxillaires utilisées</li>
-<li>Pouvoir prédictif améliorable (nombre et partionnement des variables auxiliaires)</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-4" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<ul>
-<li>Application proposée
-<ul>
-<li>Utiliser les données publiques du recensement (déjà imputées)</li>
-<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdesc séquentiel), d’un logit et d’un xgboost à partir des mêmes variables</li>
-</ul></li>
-<li>Exemple: le niveau de diplôme
-<ul>
-<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
-<li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires (issues base de sondage ou collectées par le RP)</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<ul>
-<li>Pourquoi une meilleure prédiction avec la méthode xgboost ?
-<ul>
-<li>Utiliser des variables auxilaires non imputées</li>
-<li>Mieux partitionner (sélection de variables, croisements, et regroupements de modalités)</li>
-</ul></li>
-<li>Avantages attendus
-<ul>
-<li>Mieux préserver les relations entre variables?</li>
-<li>Réduire la variance des résidus et améliorer la précision des estimateurs ?</li>
-</ul></li>
-<li>Limites de la méthode xgboost
-<ul>
-<li>Temps de calcul?</li>
-</ul></li>
-<li>Questions en suspens
-<ul>
-<li>Le pouvoir prédictif est-il le principal critère ? (vs simplicité, rapidité)</li>
-</ul></li>
+<li><p>Couvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?</p></li>
+<li><p>Se comparer à l’existant ou pas?</p></li>
+<li><p>Générer des valeurs manquantes à probabilités égales ou pas?</p></li>
 </ul>
 </section>
 <section id="repondération" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
