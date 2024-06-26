@@ -143,6 +143,7 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
   - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade")
 
 
+
 ## Imputation de valeurs manquantes {.smaller}
 
 - Hypothèses fondamentales:
@@ -191,36 +192,51 @@ Application : l'imputation des valeurs manquantes dans le recensement de la popu
   - Les variables imputées peuvent être utilisées pour imputer d'autres variables
   - Les individus donneurs peuvent être choisis sur la base de valeurs imputées
   
+
+
+## Imputation de valeurs manquantes {.smaller}
+
+Application : l'imputation des valeurs manquantes dans le recensement de la population
+
 - En pratique:
   - Individus triés selon une clé primaire qui reflète leur proximité géographique
   - Imputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie
   - Imputation déterministe en cas d'absence de donneur ou d'incohérence
   
 - Avantages:
-  -
+  - Simplicité, rapidité
   
 - Limites:
-  -
+  - Peu de variables auxillaires utilisées
+  - Pouvoir prédictif améliorable (nombre et partionnement des variables auxiliaires)
 
 
 ## Imputation de valeurs manquantes {.smaller}
 
 - Application proposée
   - Utiliser les données publiques du recensement (déjà imputées)
-  - Sélectionner quelques variables
-  - Comparer les performances prédictives de la méthode d'imputation actuelle, d'un logit et d'un xgboost à partir des mêmes variables
+  - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdesc séquentiel), d'un logit et d'un xgboost à partir des mêmes variables
   
-- Méthode redressement actuelle: séquentielle et non déterministe (dans un premier temps)
 - Exemple: le niveau de diplôme
-- Hypothèses: 
-  – Le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
-  – Sans déclaration, le diplôme d’un individu se déduit probablement de son âge et de sa nationalité
-    
+  - Hypothèses actuelles: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
+
   
 ## Imputation de valeurs manquantes {.smaller}
 
-- Avantage et limites de la méthode xgboost
-- Considérations pratiques pour le déploiement 
+- Pourquoi une meilleure prédiction avec la méthode xgboost ?
+  - Utiliser des variables auxilaires non imputées
+  - Mieux partitionner (sélection de variables, croisements, et regroupements de modalités)
+  
+- Avantages attendus  
+  - Mieux préserver les relations entre variables?
+  - Réduire la variance des résidus et améliorer la précision des estimateurs ?
+
+- Limites de la méthode xgboost
+  - Temps de calcul?
+  
+- Questions en suspens
+  - Le pouvoir prédictif est-il le principal critère ? (vs simplicité, rapidité)
+  
   
 
 
@@ -228,36 +244,32 @@ Application : l'imputation des valeurs manquantes dans le recensement de la popu
 ## Repondération {.smaller}
 
 - Qu'est-ce que la repondération ?
-  - Affecter un poids à chaque individu, corrigé de la non-réponse
+  - Affecter un poids à chaque individu afin de corriger les biais de non-réponse
 
 - Quand repondérer ?
   - En présence de non-réponse totale
 
 - Les principales méthodes actuellement utilisées
-  - La méthode des groupes de réponse homogène
+  - Les méthodes des groupes de réponse homogène
+    - Les arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)
+    - Les méthodes de score (logit puis partitionnement)
   - Le calage sur marges en une étape
-
-- Pourquoi améliorer la méthode de prédiction de la non-réponse ?
-  - Améliorer la qualité des statistiques descriptives diffusées
-  - Limites de la méthode actuelle: l'efficacité dépend de la qualité du modèle de probabilité de réponse
-  
 
 
 
 ## Repondération {.smaller}
 
-- Application proposée
-  - Utiliser les données de gestion de l'enquête patrimoine
-  - Prédire la non réponse à partir des informations issues de la base de sondage
-  - Méthode actuelle: méthode des scores 
-    - on estime la probabilité de réponse de chaque ménage par un modèle logit
-    - on constitue des ensembles de ménages de probabilité de réponse semblable (scores de propension proches)
-    - on multiplie les poids des répondants (poids de sondage) par l’inverse du taux de réponse de l’ensemble
-  - Comparer les performances prédictives de la méthode d'imputation actuelle (logit) et d'un xgboost 
-    - on utilise les mêmes variables
-    - on remplace uniquement la partie prédictive par la méthode xgboost
+- Application: la repondération de l'enquête patrimoine
   
-
+- Méthode actuelle: méthode des scores 
+  - Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)
+  - Construction des groupes de ménages avec une probabilité de réponse proche (classification)
+  - Au sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe
+  
+- Proposition:
+  - Utiliser les mêmes variables
+  - Remplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting
+  
 
 
 ## Lissage spatial {.smaller}
