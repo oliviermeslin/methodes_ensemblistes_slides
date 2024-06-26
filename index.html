@@ -352,8 +352,8 @@
 </section>
 <section id="une-belle-intro" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Une belle intro</h2>
-<p>Friedman 2001, Breiman 2001</p>
-<p>XGBoost, LightGBM</p>
+<p>Développées à la fin des années 1990 (Friedman 2001, Breiman 1999 et 2001), les approches ensemblistes à base d’arbres de décision se sont imposées dans les années 2010 comme</p>
+<p>(XGBoost 2016, LightGBM 2016)</p>
 </section>
 <section id="rattraper-le-retard-pris-par-la-statistique-publique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Rattraper le retard pris par la statistique publique</h2>
@@ -383,7 +383,7 @@
 </div>
 <div class="fragment">
 <ul>
-<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique.</li>
+<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique.</li>
 </ul>
 </div>
 </section>
@@ -441,7 +441,7 @@
 <section id="approche-pédagogique-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Approche pédagogique (2)</h2>
 <ul>
-<li>Objectif: <span class="blue2"><strong>Proposer différents cas d’usage tirés de la statistique publiques</strong></span>n avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
+<li>Objectif: <span class="blue2"><strong>Proposer différents cas d’usage tirés de la statistique publiques</strong></span>, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
 </ul>
 </section>
 <section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -462,77 +462,59 @@
 <h1>Cas d’usage</h1>
 
 </section>
+<section id="liste" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>LISTE</h2>
+<p>FAIRE LA LISTE</p>
+<ul>
+<li>Imputation</li>
+<li>Data editing</li>
+<li>repondération</li>
+<li>Lissage spatial</li>
+</ul>
+<p>Questions:</p>
+<ul>
+<li><p>On souhaite illustrer l’usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables.</p></li>
+<li><p>Format: notebooks sur des données ouvertes si possible;</p></li>
+</ul>
+</section>
 <section id="imputation-de-valeurs-manquantes" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
 <li>Qu’est-ce que l’imputation ?
 <ul>
-<li>Affecter une valeur “plausible” à une valeur manquantes</li>
-</ul></li>
-<li>Quand imputer ?
-<ul>
-<li>En présence de non-réponse partielle</li>
+<li>Affecter une valeur “plausible” à une variable dont la valeur est manquante;</li>
+<li>Situation fréquente dans les enquêtes et dans les données administratives.</li>
 </ul></li>
 <li>Pourquoi imputer ?
 <ul>
-<li>Réduire les biais (de non-réponse) des estimateurs</li>
-<li>(Réduire la variance des estimateurs)</li>
-<li>Eviter d’avoir un jeu de pondération par variable</li>
+<li>Réduire les biais et la variance des estimateurs;</li>
+<li>Qualité des données diffusées.</li>
 </ul></li>
-<li>Quels enjeux ?
+<li>Hypothèse fondamentale:
 <ul>
-<li>Qualité des données diffusées</li>
-<li>Variables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)</li>
-</ul></li>
+<li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires;</li>
+<li>Les paramètres de ce modèle peuvent être estimés sur la population des répondants.</li>
+</ul>
+<!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") --></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
-<li>Hypothèses fondamentales:
+<li>Il existe une multitude d’approches:
 <ul>
-<li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires</li>
-<li>Les paramètres de ce modèle peuvent êtres estimés sur la population des répondants</li>
-</ul></li>
-<li>Quels déterminants de la qualité d’imputation ?
-<ul>
-<li>Valeur prédictive des variables auxilaires</li>
-<li>Performance du modèle prédictif utilisé</li>
-</ul></li>
-<li>Quels risques?
-<ul>
-<li>Introduction de biais supplémentaires</li>
-<li>Distorsion de la distribution des variables d’intérêt</li>
-<li>Atténuation des relations entre variables</li>
-<li>Sous-estimation de la variance des estimateurs</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<ul>
-<li>Deux grandes familles de méthodes d’imputation
-<ul>
-<li>Méthode déterministe</li>
-<li>Méthode aléatoire</li>
-</ul></li>
-<li>Pour une mutlitude d’approches!
-<ul>
-<li>colddeck, moyenne, régression, ratio, plus proche voisin …</li>
-<li>hotdeck, ratio/régression avec résidus …</li>
+<li>Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin …</li>
+<li>Méthodes aléatoires: hotdeck, ratio/régression avec résidus …</li>
 </ul></li>
 <li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
 <ul>
 <li>Une généralisation du modèle d’estimation par la régression</li>
-<li>Avec une performance prédictive supérieure:
-<ul>
-<li>Non linéarité</li>
-<li>Gestion des valeurs manquantes dans les variables auxiliaires</li>
-</ul></li>
+<li>Avec une performance prédictive potentiellement supérieure:</li>
+<li>Gestion des valeurs manquantes dans les variables auxiliaires.</li>
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
 <ul>
@@ -549,7 +531,7 @@
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-4" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
 <ul>
@@ -570,7 +552,7 @@
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="imputation-de-valeurs-manquantes-4" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
 <li>Application proposée
@@ -585,7 +567,7 @@
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-6" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="imputation-de-valeurs-manquantes-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
 <li>Pourquoi une meilleure prédiction avec la méthode xgboost ?
