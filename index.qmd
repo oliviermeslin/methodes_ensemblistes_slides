@@ -28,16 +28,13 @@ from: markdown+emoji
 
 # Intro
 
-## Une belle intro {.smaller}
-
-Développées à la fin des années 1990 (Friedman 2001, Breiman 1999 et 2001), les approches ensemblistes à base d'arbres de décision se sont imposées dans les années 2010 comme 
-
-
-(XGBoost 2016, LightGBM 2016)
-
 ## Rattraper le retard pris par la statistique publique {.smaller}
 
-Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:
+Les approches ensemblistes à base d'arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.
+
+. . .
+
+Ces méthodes sont donc bien adaptées aux travaux de la statistique publique:
 
 - Omniprésence de __[données tabulaires]{.blue2}__;
 - Multiplicité des __[cas d'usage]{.blue2}__:
@@ -59,7 +56,7 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 . . .
 
-- __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique.
+- __[Démarche]{.orange}__: faire une __[présentation détaillée des méthodes ensemblistes]{.blue2}__, assortie de cas d'usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique $\Rightarrow$ Il s'agit d'enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes.
 
 ## Champ couvert (1) {.smaller}
 
@@ -82,14 +79,16 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 - Non couvert: mesure de l'incertitude (notamment la prédiction conforme).
 
-## Approche pédagogique (1) {.smaller}
+## Approche pédagogique {.smaller}
 
 
-- Objectif: [__Couvrir toutes les étapes de l'appropriation de ces méthodes__]{.blue2}:
+- [__Couvrir toutes les étapes de l'appropriation de ces méthodes__]{.blue2}:
     - Présentation intuitive des méthodes;
     - Approche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);
-    - Présentation des principaux hyper-paramètres et de leur lien avec les cas d'usage;
+    - Présentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;
     - Mise en oeuvre pratique.
+
+- [__Proposer différents cas d'usage adaptés à la statistique publiques__]{.blue2}, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).
 
 
 ## Exemple de figures: CART
@@ -103,24 +102,6 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 ## Exemple de figures: _gradient boosting_
 
 ![](./figures/output5.svg)
-
-## Approche pédagogique (2) {.smaller}
-
-- Objectif: [__Proposer différents cas d'usage tirés de la statistique publiques__]{.blue2}, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).
-    
-
-## Cas d'usage
-
-
-- Scope du DT.
-
-- Cas d'usage;
-    - Classification/régression
-    - Repondération dans les enquêtes;
-    - Lissage spatial => Fidélimmo
-
-- organisation des cas d'usage.
-
 
 
 # Cas d'usage envisagés
