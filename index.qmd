@@ -123,23 +123,25 @@ Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.b
 
 
 
-# Cas d'usage
+# Cas d'usage envisagés
 
-## LISTE
-
-FAIRE LA LISTE
-
-- Imputation
-- Data editing
-- repondération
-- Lissage spatial
-
-Questions:
+## Cas d'usage envisagés {.smaller}
 
 - On souhaite illustrer l'usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu'elles sont systématiquement préférables.
 
-- Format: notebooks sur des données ouvertes si possible;
+. . .
 
+- livrables: notebooks sur des données ouvertes (autant que possible);
+
+
+. . .
+
+- Quatre cas d'usage possible:
+
+  - Imputation;
+  - Data editing;
+  - Repondération des enquêtes;
+  - Modélisation spatiale.
 
 
 ## Imputation de valeurs manquantes {.smaller}
@@ -201,10 +203,8 @@ Questions:
 ## Repondération {.smaller}
 
 - Qu'est-ce que la repondération ?
-  - Affecter un poids à chaque individu afin de corriger les biais de non-réponse
-
-- Quand repondérer ?
-  - En présence de non-réponse totale
+  - Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;
+  - La repondération vise à modifier les poids des unités enquêtées pour que l'échantillon final soit représentatif de la population d'intérêt.
 
 - Les principales méthodes actuellement utilisées
   - Les méthodes des groupes de réponse homogène
