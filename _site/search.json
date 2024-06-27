@@ -1,24 +1,17 @@
 [
   {
-    "objectID": "index.html#une-belle-intro",
-    "href": "index.html#une-belle-intro",
+    "objectID": "index.html#faire-connaître-des-méthodes-devenues-standard",
+    "href": "index.html#faire-connaître-des-méthodes-devenues-standard",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Une belle intro",
-    "text": "Une belle intro\nFriedman 2001, Breiman 2001\nXGBoost, LightGBM"
-  },
-  {
-    "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
-    "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Rattraper le retard pris par la statistique publique",
-    "text": "Rattraper le retard pris par la statistique publique\nLes méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
+    "section": "Faire connaître des méthodes devenues standard",
+    "text": "Faire connaître des méthodes devenues standard\nLes approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.\n\nCes méthodes sont donc bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\n\nCes méthodes restent pourtant peu connues par la statistique publique."
   },
   {
     "objectID": "index.html#que-voulons-nous-faire",
     "href": "index.html#que-voulons-nous-faire",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Que voulons-nous faire?",
-    "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique."
+    "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique \\(\\Rightarrow\\) Il s’agit d’enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes."
   },
   {
     "objectID": "index.html#champ-couvert-1",
@@ -35,11 +28,11 @@
     "text": "Champ couvert (2)\n\nObjectif: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
   },
   {
-    "objectID": "index.html#approche-pédagogique-1",
-    "href": "index.html#approche-pédagogique-1",
+    "objectID": "index.html#approche-pédagogique",
+    "href": "index.html#approche-pédagogique",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Approche pédagogique (1)",
-    "text": "Approche pédagogique (1)\n\nObjectif: Couvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;\nMise en oeuvre pratique."
+    "section": "Approche pédagogique",
+    "text": "Approche pédagogique\n\nCouvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;\nMise en oeuvre pratique.\n\nProposer différents cas d’usage adaptés à la statistique publiques, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
   },
   {
     "objectID": "index.html#exemple-de-figures-cart",
@@ -63,129 +56,73 @@
     "text": "Exemple de figures: gradient boosting"
   },
   {
-    "objectID": "index.html#approche-pédagogique-2",
-    "href": "index.html#approche-pédagogique-2",
+    "objectID": "index.html#cas-dusage-envisagés-1",
+    "href": "index.html#cas-dusage-envisagés-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Approche pédagogique (2)",
-    "text": "Approche pédagogique (2)\n\nObjectif: Proposer différents cas d’usage tirés de la statistique publiquesn avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
-  },
-  {
-    "objectID": "index.html#cas-dusage",
-    "href": "index.html#cas-dusage",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Cas d’usage",
-    "text": "Cas d’usage\n\nScope du DT.\nCas d’usage;\n\nClassification/régression\nRepondération dans les enquêtes;\nLissage spatial =&gt; Fidélimmo\n\norganisation des cas d’usage."
+    "section": "Cas d’usage envisagés",
+    "text": "Cas d’usage envisagés\nObjectifs:\n\nIllustrer l’usage des ME pour des cas fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables aux méthodes actuelles\n\n\n\nFaciliter l’appropriation de ces méthodes via des tutoriels\n\n\n\n\nLivrables: document méthodologique, notebooks sur données ouvertes (autant que possible);\n\n\n\n\nQuatre cas d’usage possible:\n\nImputation;\nData editing;\nRepondération des enquêtes;\nModélisation spatiale."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
     "href": "index.html#imputation-de-valeurs-manquantes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “plausible” à une valeur manquantes\n\nQuand imputer ?\n\nEn présence de non-réponse partielle\n\nPourquoi imputer ?\n\nRéduire les biais (de non-réponse) des estimateurs\n(Réduire la variance des estimateurs)\nEviter d’avoir un jeu de pondération par variable\n\nQuels enjeux ?\n\nQualité des données diffusées\nVariables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)"
+    "text": "Imputation de valeurs manquantes\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “plausible” à une variable dont la valeur est manquante;\nSituation fréquente dans les enquêtes et dans les données administratives.\n\nPourquoi imputer ?\n\nRéduire les biais et la variance des estimateurs;\nQualité des données diffusées.\n\nHypothèse fondamentale:\n\nIl existe un modèle reliant les variables à imputer à des variables auxiliaires;\nLes paramètres de ce modèle peuvent être estimés sur la population des répondants."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-1",
     "href": "index.html#imputation-de-valeurs-manquantes-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nHypothèses fondamentales:\n\nIl existe un modèle reliant les variables à imputer à des variables auxiliaires\nLes paramètres de ce modèle peuvent êtres estimés sur la population des répondants\n\nQuels déterminants de la qualité d’imputation ?\n\nValeur prédictive des variables auxilaires\nPerformance du modèle prédictif utilisé\n\nQuels risques?\n\nIntroduction de biais supplémentaires\nDistorsion de la distribution des variables d’intérêt\nAtténuation des relations entre variables\nSous-estimation de la variance des estimateurs"
+    "text": "Imputation de valeurs manquantes\n\nIl existe une multitude d’approches:\n\nMéthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin …\nMéthodes aléatoires: hotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne performance prédictive potentiellement supérieure\nGestion des valeurs manquantes dans les variables auxiliaires."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-2",
     "href": "index.html#imputation-de-valeurs-manquantes-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nDeux grandes familles de méthodes d’imputation\n\nMéthode déterministe\nMéthode aléatoire\n\nPour une mutlitude d’approches!\n\ncolddeck, moyenne, régression, ratio, plus proche voisin …\nhotdeck, ratio/régression avec résidus …\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne généralisation du modèle d’estimation par la régression\nAvec une performance prédictive supérieure:\n\nNon linéarité\nGestion des valeurs manquantes dans les variables auxiliaires"
+    "text": "Imputation de valeurs manquantes\n\nCas d’usage : imputation des valeurs manquantes dans le recensement de la population.\n\n\n\n\n\n\nCe que nous pourrions faire:\n\nUtiliser les données publiques du recensement;\nGénérer des valeurs manquantes sur une variable;\nComparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’un xgboost à partir des mêmes variables.\n\nExemple: le niveau de diplôme:\n\nHypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe\nHypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes-3",
     "href": "index.html#imputation-de-valeurs-manquantes-3",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\nApplication : l’imputation des valeurs manquantes dans le recensement de la population\n\nLa méthode actuelle:\n\nimputation aléatoire séquentielle par “hot deck”\nTraitement “lots par lots”\n\nPrincipe:\n\nles logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi\nLes variables imputées peuvent être utilisées pour imputer d’autres variables\nLes individus donneurs peuvent être choisis sur la base de valeurs imputées"
-  },
-  {
-    "objectID": "index.html#imputation-de-valeurs-manquantes-4",
-    "href": "index.html#imputation-de-valeurs-manquantes-4",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\nApplication : l’imputation des valeurs manquantes dans le recensement de la population\n\nEn pratique:\n\nIndividus triés selon une clé primaire qui reflète leur proximité géographique\nImputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie\nImputation déterministe en cas d’absence de donneur ou d’incohérence\n\nAvantages:\n\nSimplicité, rapidité\n\nLimites:\n\nPeu de variables auxillaires utilisées\nPouvoir prédictif améliorable (nombre et partionnement des variables auxiliaires)"
-  },
-  {
-    "objectID": "index.html#imputation-de-valeurs-manquantes-5",
-    "href": "index.html#imputation-de-valeurs-manquantes-5",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nApplication proposée\n\nUtiliser les données publiques du recensement (déjà imputées)\nComparer les performances prédictives de la méthode d’imputation actuelle (hotdesc séquentiel), d’un logit et d’un xgboost à partir des mêmes variables\n\nExemple: le niveau de diplôme\n\nHypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe\nHypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires (issues base de sondage ou collectées par le RP)"
-  },
-  {
-    "objectID": "index.html#imputation-de-valeurs-manquantes-6",
-    "href": "index.html#imputation-de-valeurs-manquantes-6",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Imputation de valeurs manquantes",
-    "text": "Imputation de valeurs manquantes\n\nPourquoi une meilleure prédiction avec la méthode xgboost ?\n\nUtiliser des variables auxilaires non imputées\nMieux partitionner (sélection de variables, croisements, et regroupements de modalités)\n\nAvantages attendus\n\nMieux préserver les relations entre variables?\nRéduire la variance des résidus et améliorer la précision des estimateurs ?\n\nLimites de la méthode xgboost\n\nTemps de calcul?\n\nQuestions en suspens\n\nLe pouvoir prédictif est-il le principal critère ? (vs simplicité, rapidité)"
+    "text": "Imputation de valeurs manquantes\nQuestions:\n\nCouvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?\nSe comparer à l’existant ou pas?\nGénérer des valeurs manquantes à probabilités égales ou pas?"
   },
   {
     "objectID": "index.html#repondération",
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nAffecter un poids à chaque individu afin de corriger les biais de non-réponse\n\nQuand repondérer ?\n\nEn présence de non-réponse totale\n\nLes principales méthodes actuellement utilisées\n\nLes méthodes des groupes de réponse homogène\n\nLes arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)\nLes méthodes de score (logit puis partitionnement)\n\nLe calage sur marges en une étape"
+    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nDans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;\nLa repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt\nLa repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l’échantillon final repondéré soient sans biais pour la population d’intérêt\n\n\n\n\nMéthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:\n\nModélisation de la probabilité de réponse par un modèle logit (prédiction);\nConstruction de groupes ayant une probabilité de réponse proche (classification);\nAu sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération)."
   },
   {
     "objectID": "index.html#repondération-1",
     "href": "index.html#repondération-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nApplication: la repondération de l’enquête patrimoine\n\nMéthode actuelle proche conceptuellement (logit)\nPossibilité d’utiliser une source externe (Fidélimmo) pour comparer les performances\n\nMéthode actuelle: méthode des scores\n\nProbabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)\nConstruction des groupes de ménages avec une probabilité de réponse proche (classification)\nAu sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe\n\nProposition:\n\nUtiliser les mêmes variables\nRemplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting"
+    "text": "Repondération\n\nCas d’usage: repondération d’une enquête.\n\nRemplacer la partie prédictive (logit) par une méthode de bagging ou de boosting.\n\n\nQuestions:\n\nLes échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?\nLes données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?"
   },
   {
-    "objectID": "index.html#lissage-spatial",
-    "href": "index.html#lissage-spatial",
+    "objectID": "index.html#data-editing",
+    "href": "index.html#data-editing",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Lissage spatial",
-    "text": "Lissage spatial"
+    "section": "Data editing",
+    "text": "Data editing\nDétecter des anomalies dans une source, par exemple:\n\nRepérage d’incohérences\nRepérage de doublons"
   },
   {
-    "objectID": "index.html#principe",
-    "href": "index.html#principe",
+    "objectID": "index.html#data-editing-1",
+    "href": "index.html#data-editing-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Principe",
-    "text": "Principe\n\n\n\n\n4 sujets pour découvrir différents champs de la data science\n\nPas une compétition mais des tutoriels pas à pas\nMais n’hésitez pas à tester des choses nouvelles 😍 \n\n“Décollage imminent pour la data science”\n\nThématique : statistiques sur l’aviation civile\nOrganisation: équipes innovation de l’Insee & DGAC \n\nPoint d’entrée : inseefrlab.github.io/funathon2024/\n\n\n\n\n\n\n\n\n\n\n\n\nRessources de l’an dernier\n\n\nL’ensemble des ressources de l’an dernier (“Du champ à l’assiette”) peut être retrouvée sur inseefrlab.github.io/funathon2023/"
+    "section": "Data editing",
+    "text": "Data editing\nRepérer des incohérences\n\nApprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)\nApprentissage non supervisé en l’absence d’incohérences déjà labellisées\n\n-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé"
   },
   {
-    "objectID": "index.html#modalités-pratiques",
-    "href": "index.html#modalités-pratiques",
+    "objectID": "index.html#lissage-ou-clustering-spatial",
+    "href": "index.html#lissage-ou-clustering-spatial",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Modalités pratiques",
-    "text": "Modalités pratiques\n\nÉvénement 💯% virtuel sur 2 jours:\n\nPremier jour: introduction à 9h30 ;\nDeuxième jour: fin du travail sur les sujets à 16h30, restitution et conclusion ensuite\n\n\n\n\nAssistance sur Tchap et Zoom (liens 👇️):\n\nAssistance garantie: 10h-17h30 (sauf le midi 🍔) ;\nNe restez pas bloqués, posez des questions !\n\n\n:burger:\n\n\n\n\n\n\nLiens utiles\n\n\n\nCanal Tchap Funathon 2024\nCanal Zoom sur les deux jours"
-  },
-  {
-    "objectID": "index.html#les-4-sujets",
-    "href": "index.html#les-4-sujets",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Les 4 sujets",
-    "text": "Les 4 sujets\n\nRessources  et  sur open data de la DGAC :\n\n2 sujets permettent de faire du \n3 sujets permettent de faire du \nNiveaux techniques indiqués sur les sujets\n\n\n\n\nTutoriels complets avec corrections\n\nCherchez avant de regarder la correction, c’est le meilleur apprentissage !\nObjectif secondaire: se former à Git  et à la reproductibilité\n\n\n\n\n\n\n\n\nPlus de fun en équipe 😺\n\n\nN’hésitez pas à traiter les sujets en équipe"
-  },
-  {
-    "objectID": "index.html#les-4-sujets-1",
-    "href": "index.html#les-4-sujets-1",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Les 4 sujets",
-    "text": "Les 4 sujets\nPrésentation des 4 sujets\n\nRetrouver les sujets sur inseefrlab.github.io/funathon2024/"
-  },
-  {
-    "objectID": "index.html#un-environnement-idéal-pour-la-formation",
-    "href": "index.html#un-environnement-idéal-pour-la-formation",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Un environnement idéal pour la formation",
-    "text": "Un environnement idéal pour la formation\n\nPlateforme disponible depuis https://datalab.sspcloud.fr/\n\nPour découvrir et expérimenter…\n… Seulement avec des données en open data\n\n\n\n\nUne plateforme pour l’administration :\n\nOuverte aux agents de l’Etat et à des formations en data science (ENSAE…)\nDes serveurs hébergés à l’Insee\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\nPlateforme recommandée pour cet événement\n\nSignalez-nous si vous ne pouvez créer de compte !"
-  },
-  {
-    "objectID": "index.html#questions",
-    "href": "index.html#questions",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Questions",
-    "text": "Questions\n\n\n\nMéthodes ensemblistes"
+    "section": "Lissage ou clustering spatial",
+    "text": "Lissage ou clustering spatial\n\n\n\nMéthodes ensemblistes"
   }
 ]

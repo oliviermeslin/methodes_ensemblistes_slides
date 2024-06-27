@@ -7,9 +7,7 @@
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Mélina Hillion Olivier Meslin">
@@ -350,14 +348,11 @@
 <h1>Intro</h1>
 
 </section>
-<section id="une-belle-intro" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Une belle intro</h2>
-<p>Friedman 2001, Breiman 2001</p>
-<p>XGBoost, LightGBM</p>
-</section>
-<section id="rattraper-le-retard-pris-par-la-statistique-publique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Rattraper le retard pris par la statistique publique</h2>
-<p>Les méthodes ensemblistes sont bien adaptées aux travaux de la statistique publique:</p>
+<section id="faire-connaître-des-méthodes-devenues-standard" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Faire connaître des méthodes devenues standard</h2>
+<p>Les approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.</p>
+<div class="fragment">
+<p>Ces méthodes sont donc bien adaptées aux travaux de la statistique publique:</p>
 <ul>
 <li>Omniprésence de <strong><span class="blue2">données tabulaires</span></strong>;</li>
 <li>Multiplicité des <strong><span class="blue2">cas d’usage</span></strong>:
@@ -367,8 +362,9 @@
 <li><strong><span class="orange">Régression</span></strong>: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…</li>
 </ul></li>
 </ul>
+</div>
 <div class="fragment">
-<p>Ces méthodes restent pourtant <strong><span class="blue2">peu utilisées par la statistique publique</span></strong>.</p>
+<p>Ces méthodes restent pourtant <strong><span class="blue2">peu connues par la statistique publique</span></strong>.</p>
 </div>
 </section>
 <section id="que-voulons-nous-faire" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
@@ -383,7 +379,7 @@
 </div>
 <div class="fragment">
 <ul>
-<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage montrant leur apport aux travaux de la statistique publique.</li>
+<li><strong><span class="orange">Démarche</span></strong>: faire une <strong><span class="blue2">présentation détaillée des méthodes ensemblistes</span></strong>, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique <span class="math inline">\(\Rightarrow\)</span> Il s’agit d’enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes.</li>
 </ul>
 </div>
 </section>
@@ -414,16 +410,17 @@
 <li>Non couvert: mesure de l’incertitude (notamment la prédiction conforme).</li>
 </ul>
 </section>
-<section id="approche-pédagogique-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Approche pédagogique (1)</h2>
+<section id="approche-pédagogique" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Approche pédagogique</h2>
 <ul>
-<li>Objectif: <span class="blue2"><strong>Couvrir toutes les étapes de l’appropriation de ces méthodes</strong></span>:
+<li><span class="blue2"><strong>Couvrir toutes les étapes de l’appropriation de ces méthodes</strong></span>:
 <ul>
 <li>Présentation intuitive des méthodes;</li>
 <li>Approche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);</li>
-<li>Présentation des principaux hyper-paramètres et de leur lien avec les cas d’usage;</li>
+<li>Présentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;</li>
 <li>Mise en oeuvre pratique.</li>
 </ul></li>
+<li><span class="blue2"><strong>Proposer différents cas d’usage adaptés à la statistique publiques</strong></span>, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
 </ul>
 </section>
 <section id="exemple-de-figures-cart" class="slide level2" data-background-image="background.svg" data-background-size="contain">
@@ -437,175 +434,106 @@
 <section id="exemple-de-figures-gradient-boosting" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Exemple de figures: <em>gradient boosting</em></h2>
 
-<img data-src="./figures/output5.svg" class="r-stretch"></section>
-<section id="approche-pédagogique-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Approche pédagogique (2)</h2>
-<ul>
-<li>Objectif: <span class="blue2"><strong>Proposer différents cas d’usage tirés de la statistique publiques</strong></span>n avec des exemples reproductibles reposant sur des données ouvertes (autant que possible).</li>
-</ul>
-</section>
-<section id="cas-dusage" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Cas d’usage</h2>
-<ul>
-<li><p>Scope du DT.</p></li>
-<li><p>Cas d’usage;</p>
-<ul>
-<li>Classification/régression</li>
-<li>Repondération dans les enquêtes;</li>
-<li>Lissage spatial =&gt; Fidélimmo</li>
-</ul></li>
-<li><p>organisation des cas d’usage.</p></li>
-</ul>
-</section></section>
+<img data-src="./figures/output5.svg" class="r-stretch"></section></section>
 <section>
-<section id="cas-dusage-1" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Cas d’usage</h1>
+<section id="cas-dusage-envisagés" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
+<h1>Cas d’usage envisagés</h1>
 
+</section>
+<section id="cas-dusage-envisagés-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Cas d’usage envisagés</h2>
+<p>Objectifs:</p>
+<ul>
+<li>Illustrer l’usage des ME pour des cas fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables aux méthodes actuelles</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Faciliter l’appropriation de ces méthodes via des tutoriels</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Livrables: document méthodologique, notebooks sur données ouvertes (autant que possible);</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>Quatre cas d’usage possible:</p>
+<ul>
+<li>Imputation;</li>
+<li>Data editing;</li>
+<li>Repondération des enquêtes;</li>
+<li>Modélisation spatiale.</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="imputation-de-valeurs-manquantes" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
 <li>Qu’est-ce que l’imputation ?
 <ul>
-<li>Affecter une valeur “plausible” à une valeur manquantes</li>
-</ul></li>
-<li>Quand imputer ?
-<ul>
-<li>En présence de non-réponse partielle</li>
+<li>Affecter une valeur “plausible” à une variable dont la valeur est manquante;</li>
+<li>Situation fréquente dans les enquêtes et dans les données administratives.</li>
 </ul></li>
 <li>Pourquoi imputer ?
 <ul>
-<li>Réduire les biais (de non-réponse) des estimateurs</li>
-<li>(Réduire la variance des estimateurs)</li>
-<li>Eviter d’avoir un jeu de pondération par variable</li>
+<li>Réduire les biais et la variance des estimateurs;</li>
+<li>Qualité des données diffusées.</li>
 </ul></li>
-<li>Quels enjeux ?
+<li>Hypothèse fondamentale:
 <ul>
-<li>Qualité des données diffusées</li>
-<li>Variables imputées parfois utilisées pour imputer les valeurs manquantes d’autres variables (risque d’erreurs “en cascade”)</li>
-</ul></li>
+<li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires;</li>
+<li>Les paramètres de ce modèle peuvent être estimés sur la population des répondants.</li>
+</ul>
+<!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") --></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
-<li>Hypothèses fondamentales:
+<li>Il existe une multitude d’approches:
 <ul>
-<li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires</li>
-<li>Les paramètres de ce modèle peuvent êtres estimés sur la population des répondants</li>
+<li>Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin …</li>
+<li>Méthodes aléatoires: hotdeck, ratio/régression avec résidus …</li>
 </ul></li>
-<li>Quels déterminants de la qualité d’imputation ?
+<li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
 <ul>
-<li>Valeur prédictive des variables auxilaires</li>
-<li>Performance du modèle prédictif utilisé</li>
-</ul></li>
-<li>Quels risques?
-<ul>
-<li>Introduction de biais supplémentaires</li>
-<li>Distorsion de la distribution des variables d’intérêt</li>
-<li>Atténuation des relations entre variables</li>
-<li>Sous-estimation de la variance des estimateurs</li>
+<li>Une performance prédictive potentiellement supérieure</li>
+<li>Gestion des valeurs manquantes dans les variables auxiliaires.</li>
 </ul></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
 <ul>
-<li>Deux grandes familles de méthodes d’imputation
+<li>Cas d’usage : imputation des valeurs manquantes dans le recensement de la population.</li>
+</ul>
+<!-- - La méthode actuelle:  -->
+<!--   - imputation aléatoire séquentielle par "hot deck"; -->
+<!--   - Traitement "lots par lots" (au fil de l'eau); -->
+<!--   - Importance de l'ordre d'imputation des différentes variables. -->
 <ul>
-<li>Méthode déterministe</li>
-<li>Méthode aléatoire</li>
+<li>Ce que nous pourrions faire:
+<ul>
+<li>Utiliser les données publiques du recensement;</li>
+<li>Générer des valeurs manquantes sur une variable;</li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’un xgboost à partir des mêmes variables.</li>
 </ul></li>
-<li>Pour une mutlitude d’approches!
+<li>Exemple: le niveau de diplôme:
 <ul>
-<li>colddeck, moyenne, régression, ratio, plus proche voisin …</li>
-<li>hotdeck, ratio/régression avec résidus …</li>
-</ul></li>
-<li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
-<ul>
-<li>Une généralisation du modèle d’estimation par la régression</li>
-<li>Avec une performance prédictive supérieure:
-<ul>
-<li>Non linéarité</li>
-<li>Gestion des valeurs manquantes dans les variables auxiliaires</li>
-</ul></li>
+<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
+<li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP.</li>
 </ul></li>
 </ul>
 </section>
 <section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation de valeurs manquantes</h2>
-<p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
+<p>Questions:</p>
 <ul>
-<li>La méthode actuelle:
-<ul>
-<li>imputation aléatoire séquentielle par “hot deck”</li>
-<li>Traitement “lots par lots”</li>
-</ul></li>
-<li>Principe:
-<ul>
-<li>les logements, les individus et les variables sont traités les uns après les autres dans un ordre pré-établi</li>
-<li>Les variables imputées peuvent être utilisées pour imputer d’autres variables</li>
-<li>Les individus donneurs peuvent être choisis sur la base de valeurs imputées</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-4" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<p>Application : l’imputation des valeurs manquantes dans le recensement de la population</p>
-<ul>
-<li>En pratique:
-<ul>
-<li>Individus triés selon une clé primaire qui reflète leur proximité géographique</li>
-<li>Imputation par le plus proche voisin (au sens du tri), déjà redressé, ayant des caractéristiques proches et pour lequel la variable à redresser est remplie</li>
-<li>Imputation déterministe en cas d’absence de donneur ou d’incohérence</li>
-</ul></li>
-<li>Avantages:
-<ul>
-<li>Simplicité, rapidité</li>
-</ul></li>
-<li>Limites:
-<ul>
-<li>Peu de variables auxillaires utilisées</li>
-<li>Pouvoir prédictif améliorable (nombre et partionnement des variables auxiliaires)</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-5" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<ul>
-<li>Application proposée
-<ul>
-<li>Utiliser les données publiques du recensement (déjà imputées)</li>
-<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdesc séquentiel), d’un logit et d’un xgboost à partir des mêmes variables</li>
-</ul></li>
-<li>Exemple: le niveau de diplôme
-<ul>
-<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
-<li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires (issues base de sondage ou collectées par le RP)</li>
-</ul></li>
-</ul>
-</section>
-<section id="imputation-de-valeurs-manquantes-6" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
-<ul>
-<li>Pourquoi une meilleure prédiction avec la méthode xgboost ?
-<ul>
-<li>Utiliser des variables auxilaires non imputées</li>
-<li>Mieux partitionner (sélection de variables, croisements, et regroupements de modalités)</li>
-</ul></li>
-<li>Avantages attendus
-<ul>
-<li>Mieux préserver les relations entre variables?</li>
-<li>Réduire la variance des résidus et améliorer la précision des estimateurs ?</li>
-</ul></li>
-<li>Limites de la méthode xgboost
-<ul>
-<li>Temps de calcul?</li>
-</ul></li>
-<li>Questions en suspens
-<ul>
-<li>Le pouvoir prédictif est-il le principal critère ? (vs simplicité, rapidité)</li>
-</ul></li>
+<li><p>Couvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?</p></li>
+<li><p>Se comparer à l’existant ou pas?</p></li>
+<li><p>Générer des valeurs manquantes à probabilités égales ou pas?</p></li>
 </ul>
 </section>
 <section id="repondération" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
@@ -613,207 +541,55 @@
 <ul>
 <li>Qu’est-ce que la repondération ?
 <ul>
-<li>Affecter un poids à chaque individu afin de corriger les biais de non-réponse</li>
-</ul></li>
-<li>Quand repondérer ?
-<ul>
-<li>En présence de non-réponse totale</li>
-</ul></li>
-<li>Les principales méthodes actuellement utilisées
-<ul>
-<li>Les méthodes des groupes de réponse homogène
-<ul>
-<li>Les arbres de décison (algorithme CHAID appliqué à la variable la plus corrélée à la non-réponse)</li>
-<li>Les méthodes de score (logit puis partitionnement)</li>
-</ul></li>
-<li>Le calage sur marges en une étape</li>
+<li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;</li>
+<li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt</li>
+<li>La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l’échantillon final repondéré soient sans biais pour la population d’intérêt</li>
 </ul></li>
 </ul>
+<div class="fragment">
+<ul>
+<li>Méthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:
+<ul>
+<li>Modélisation de la probabilité de réponse par un modèle logit (prédiction);</li>
+<li>Construction de groupes ayant une probabilité de réponse proche (classification);</li>
+<li>Au sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération).</li>
+</ul></li>
+</ul>
+</div>
 </section>
 <section id="repondération-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repondération</h2>
 <ul>
-<li>Application: la repondération de l’enquête patrimoine
+<li>Cas d’usage: repondération d’une enquête.
 <ul>
-<li>Méthode actuelle proche conceptuellement (logit)</li>
-<li>Possibilité d’utiliser une source externe (Fidélimmo) pour comparer les performances</li>
+<li>Remplacer la partie prédictive (logit) par une méthode de bagging ou de boosting.</li>
 </ul></li>
-<li>Méthode actuelle: méthode des scores
+</ul>
+<p>Questions:</p>
 <ul>
-<li>Probabilité de réponse du ménage modélisée par un modèle logit utilisant les variables de la base de sondage (prédiction)</li>
-<li>Construction des groupes de ménages avec une probabilité de réponse proche (classification)</li>
-<li>Au sein de chaque groupes, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse du groupe</li>
-</ul></li>
-<li>Proposition:
-<ul>
-<li>Utiliser les mêmes variables</li>
-<li>Remplace la partie prédictive (logit) par une méthode de bagging (random forest) ou de boosting</li>
-</ul></li>
+<li>Les échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?</li>
+<li>Les données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?</li>
 </ul>
 </section>
-<section id="lissage-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage spatial</h2>
-</section></section>
-<section>
-<section id="le-funathon" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Le Funathon</h1>
-
+<section id="data-editing" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Data editing</h2>
+<p>Détecter des anomalies dans une source, par exemple:</p>
+<ul>
+<li><p>Repérage d’incohérences</p></li>
+<li><p>Repérage de doublons</p></li>
+</ul>
 </section>
-<section id="principe" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Principe</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<div>
+<section id="data-editing-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Data editing</h2>
+<p>Repérer des incohérences</p>
 <ul>
-<li class="fragment"><strong><span class="blue2">4 sujets</span></strong> pour découvrir différents champs de la <em>data science</em>
-<ul>
-<li class="fragment">Pas une compétition mais des <span class="orange">tutoriels pas à pas</span></li>
-<li class="fragment">Mais n’hésitez pas à tester des choses nouvelles 😍 <br><br></li>
-</ul></li>
-<li class="fragment"><span class="blue2"><strong><em>“Décollage imminent pour la data science”</em></strong></span>
-<ul>
-<li class="fragment">Thématique : statistiques sur l’aviation civile</li>
-<li class="fragment">Organisation: équipes innovation de l’Insee &amp; DGAC <br><br></li>
-</ul></li>
-<li class="fragment"><strong>Point d’entrée</strong> : <a href="https://inseefrlab.github.io/funathon2024/">inseefrlab.github.io/funathon2024/</a></li>
+<li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)</li>
+<li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées</li>
 </ul>
-</div>
-</div><div class="column" style="width:30%;">
-<p><img data-src="https://inseefrlab.github.io/funathon2024/img/best_image_funathon.png"></p>
-</div>
-</div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Ressources de l’an dernier</strong></p>
-</div>
-<div class="callout-content">
-<p>L’ensemble des ressources de l’an dernier (<em>“Du champ à l’assiette”</em>) peut être retrouvée sur <a href="https://inseefrlab.github.io/funathon2023/">inseefrlab.github.io/funathon2023/</a></p>
-</div>
-</div>
-</div>
+<p>-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé</p>
 </section>
-<section id="modalités-pratiques" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Modalités pratiques</h2>
-<ul>
-<li><strong><span class="blue2">Événement 💯% virtuel sur 2 jours</span></strong>:
-<ul>
-<li><span class="orange">Premier jour</span>: introduction à <strong>9h30</strong> ;</li>
-<li><span class="orange">Deuxième jour</span>: fin du travail sur les sujets à <strong>16h30</strong>, restitution et conclusion ensuite</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li><strong><span class="blue2">Assistance sur Tchap et Zoom</span></strong> (liens 👇️):
-<ul>
-<li>Assistance garantie: 10h-17h30 (sauf le midi 🍔) ;</li>
-<li>Ne restez pas bloqués, <span class="orange">posez des questions !</span></li>
-</ul></li>
-</ul>
-<p>:burger:</p>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Liens utiles</strong></p>
-</div>
-<div class="callout-content">
-<ul>
-<li><a href="https://matrix.to/#/#funathon2024:agent.finances.tchap.gouv.fr">Canal <code>Tchap</code> <code>Funathon 2024</code></a></li>
-<li><a href="https://insee-fr.zoom.us/j/94735555913?pwd=dEtLQjg2Y1QrRzl3ei95dkRyOEVXdz09">Canal <code>Zoom</code></a> sur les deux jours</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="les-4-sujets" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Les 4 sujets</h2>
-<ul>
-<li><strong><span class="blue2">Ressources <i class="fa-brands fa-r-project" aria-hidden="true"></i> et <i class="fa-brands fa-python" aria-hidden="true"></i> sur <em>open data</em> de la DGAC</span></strong> :
-<ul>
-<li><span class="orange">2 sujets</span> permettent de faire du <i class="fa-brands fa-r-project" aria-hidden="true"></i></li>
-<li><span class="orange">3 sujets</span> permettent de faire du <i class="fa-brands fa-python" aria-hidden="true"></i></li>
-<li>Niveaux techniques indiqués sur les sujets</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Tutoriels complets <strong><span class="blue2">avec corrections</span></strong>
-<ul>
-<li>Cherchez avant de regarder la correction, c’est le meilleur apprentissage !</li>
-<li>Objectif secondaire: <strong><span class="blue2">se former à <code>Git</code> <i class="fa-brands fa-git-alt" aria-hidden="true"></i> et à la reproductibilité</span></strong></li>
-</ul></li>
-</ul>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Plus de fun en équipe 😺</strong></p>
-</div>
-<div class="callout-content">
-<p>N’hésitez pas à traiter les sujets en équipe</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="les-4-sujets-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Les 4 sujets</h2>
-<p><strong>Présentation des 4 sujets</strong></p>
-
-<img data-src="img/sujets_funathon2024.png" class="r-stretch quarto-figure-center"><p class="caption">Retrouver les sujets sur <a href="https://inseefrlab.github.io/funathon2024/">inseefrlab.github.io/funathon2024/</a></p></section></section>
-<section>
-<section id="le-ssp-cloud-cest-quoi" class="title-slide slide level1 center" data-background-image="background.svg" data-background-size="contain">
-<h1>Le SSP Cloud, c’est quoi ?</h1>
-
-</section>
-<section id="un-environnement-idéal-pour-la-formation" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Un environnement idéal pour la formation</h2>
-<ul>
-<li>Plateforme disponible depuis <a href="https://datalab.sspcloud.fr/" class="uri">https://datalab.sspcloud.fr/</a>
-<ul>
-<li>Pour découvrir et expérimenter…</li>
-<li>… <strong>Seulement avec des données en open data</strong></li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Une plateforme pour l’administration :
-<ul>
-<li>Ouverte aux agents de l’Etat et à des formations en <em>data science</em> (ENSAE…)</li>
-<li>Des serveurs hébergés à l’Insee</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Important</strong></p>
-</div>
-<div class="callout-content">
-<p><strong>Plateforme recommandée pour cet événement</strong></p>
-<ul>
-<li>Signalez-nous si vous ne pouvez créer de compte !</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="questions" class="slide level2" data-background-image="background.svg" data-background-size="contain">
-<h2>Questions</h2>
+<section id="lissage-ou-clustering-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage ou clustering spatial</h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
