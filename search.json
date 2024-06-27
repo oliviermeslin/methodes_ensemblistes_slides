@@ -60,7 +60,7 @@
     "href": "index.html#cas-dusage-envisagés-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Cas d’usage envisagés",
-    "text": "Cas d’usage envisagés\n\nOn souhaite illustrer l’usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables.\n\n\n\nlivrables: notebooks sur des données ouvertes (autant que possible);\n\n\n\n\nQuatre cas d’usage possible:\n\nImputation;\nData editing;\nRepondération des enquêtes;\nModélisation spatiale."
+    "text": "Cas d’usage envisagés\nObjectifs:\n\nIllustrer l’usage des ME pour des cas fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables aux méthodes actuelles\n\n\n\nFaciliter l’appropriation de ces méthodes via des tutoriels\n\n\n\n\nLivrables: document méthodologique, notebooks sur données ouvertes (autant que possible);\n\n\n\n\nQuatre cas d’usage possible:\n\nImputation;\nData editing;\nRepondération des enquêtes;\nModélisation spatiale."
   },
   {
     "objectID": "index.html#imputation-de-valeurs-manquantes",
@@ -95,7 +95,7 @@
     "href": "index.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
-    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nDans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;\nLa repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.\n\n\n\n\nMéthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:\n\nModélisation de la probabilité de réponse par un modèle logit (prédiction);\nConstruction de groupes ayant une probabilité de réponse proche (classification);\nAu sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération)."
+    "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nDans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;\nLa repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt\nLa repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l’échantillon final repondéré soient sans biais pour la population d’intérêt\n\n\n\n\nMéthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:\n\nModélisation de la probabilité de réponse par un modèle logit (prédiction);\nConstruction de groupes ayant une probabilité de réponse proche (classification);\nAu sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération)."
   },
   {
     "objectID": "index.html#repondération-1",
@@ -109,13 +109,20 @@
     "href": "index.html#data-editing",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Data editing",
-    "text": "Data editing"
+    "text": "Data editing\nDétecter des anomalies dans une source, par exemple:\n\nRepérage d’incohérences\nRepérage de doublons"
   },
   {
-    "objectID": "index.html#lissage-spatial",
-    "href": "index.html#lissage-spatial",
+    "objectID": "index.html#data-editing-1",
+    "href": "index.html#data-editing-1",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Lissage spatial",
-    "text": "Lissage spatial\n\n\n\nMéthodes ensemblistes"
+    "section": "Data editing",
+    "text": "Data editing\nRepérer des incohérences\n\nApprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)\nApprentissage non supervisé en l’absence d’incohérences déjà labellisées\n\n-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé"
+  },
+  {
+    "objectID": "index.html#lissage-ou-clustering-spatial",
+    "href": "index.html#lissage-ou-clustering-spatial",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Lissage ou clustering spatial",
+    "text": "Lissage ou clustering spatial\n\n\n\nMéthodes ensemblistes"
   }
 ]

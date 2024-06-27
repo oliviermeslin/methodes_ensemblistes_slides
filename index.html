@@ -442,12 +442,18 @@
 </section>
 <section id="cas-dusage-envisagés-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Cas d’usage envisagés</h2>
+<p>Objectifs:</p>
 <ul>
-<li>On souhaite illustrer l’usage des ME sur des situations fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables.</li>
+<li>Illustrer l’usage des ME pour des cas fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables aux méthodes actuelles</li>
 </ul>
 <div class="fragment">
 <ul>
-<li>livrables: notebooks sur des données ouvertes (autant que possible);</li>
+<li>Faciliter l’appropriation de ces méthodes via des tutoriels</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Livrables: document méthodologique, notebooks sur données ouvertes (autant que possible);</li>
 </ul>
 </div>
 <div class="fragment">
@@ -536,7 +542,8 @@
 <li>Qu’est-ce que la repondération ?
 <ul>
 <li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;</li>
-<li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.</li>
+<li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt</li>
+<li>La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l’échantillon final repondéré soient sans biais pour la population d’intérêt</li>
 </ul></li>
 </ul>
 <div class="fragment">
@@ -566,9 +573,23 @@
 </section>
 <section id="data-editing" class="slide level2" data-background-image="background.svg" data-background-size="contain">
 <h2>Data editing</h2>
+<p>Détecter des anomalies dans une source, par exemple:</p>
+<ul>
+<li><p>Repérage d’incohérences</p></li>
+<li><p>Repérage de doublons</p></li>
+</ul>
 </section>
-<section id="lissage-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage spatial</h2>
+<section id="data-editing-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<h2>Data editing</h2>
+<p>Repérer des incohérences</p>
+<ul>
+<li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)</li>
+<li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées</li>
+</ul>
+<p>-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé</p>
+</section>
+<section id="lissage-ou-clustering-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage ou clustering spatial</h2>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
