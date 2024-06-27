@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
-    "href": "index.html#rattraper-le-retard-pris-par-la-statistique-publique",
+    "objectID": "index.html#faire-connaître-des-méthodes-devenues-standard",
+    "href": "index.html#faire-connaître-des-méthodes-devenues-standard",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Rattraper le retard pris par la statistique publique",
-    "text": "Rattraper le retard pris par la statistique publique\nLes approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.\n\nCes méthodes sont donc bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\n\nCes méthodes restent pourtant peu utilisées par la statistique publique."
+    "section": "Faire connaître des méthodes devenues standard",
+    "text": "Faire connaître des méthodes devenues standard\nLes approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.\n\nCes méthodes sont donc bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\n\nCes méthodes restent pourtant peu connues par la statistique publique."
   },
   {
     "objectID": "index.html#que-voulons-nous-faire",
