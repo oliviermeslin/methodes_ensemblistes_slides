@@ -28,7 +28,7 @@ from: markdown+emoji
 
 # Intro
 
-## Rattraper le retard pris par la statistique publique {.smaller}
+## Faire connaître des méthodes devenues standard {.smaller}
 
 Les approches ensemblistes à base d'arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.
 
@@ -44,7 +44,7 @@ Ces méthodes sont donc bien adaptées aux travaux de la statistique publique:
 
 . . .
 
-Ces méthodes restent pourtant __[peu utilisées par la statistique publique]{.blue2}__.
+Ces méthodes restent pourtant __[peu connues par la statistique publique]{.blue2}__.
 
 ## Que voulons-nous faire? {.smaller}
 
