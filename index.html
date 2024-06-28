@@ -606,7 +606,7 @@
 <li><p>Ce que l’on peut envisager:</p>
 <ul>
 <li>Apprentissage supervisé si l’on dispose de données labellisées (pas sûr qu’on puisse en avoir des volumes importants);</li>
-<li>Apprentissage non supervisé en l’absence de données labellisées;</li>
+<li>Apprentissage non supervisé en l’absence de données labellisées: repérage des observations suspectes par l’écart à la valeur prédite par le modèle;</li>
 </ul></li>
 <li><p>Quelles données?</p>
 <ul>
@@ -615,76 +615,48 @@
 </ul></li>
 </ul>
 </section>
+<section id="lissage-spatial-et-modélisation-spatiale" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage spatial et modélisation spatiale</h2>
+<ul>
+<li><p>Pourquoi y a-t-il un cas d’usage de méthodes ensemblistes sur ces sujets ?</p>
+<ul>
+<li>Disponibilité croissante de sources statistiques géolocalisées;</li>
+<li>Zonages administratifs ou statistiques pas toujours adaptés aux phénomènes étudiés (MAUP);</li>
+<li>Limites des méthodes traditionnelles:
+<ul>
+<li>Hypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);</li>
+<li>Méthodes pas toujours adaptées à des données volumineuses (ex: <em>kriging</em>).</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Usages possibles:
+<ul>
+<li>Représentation cartographique: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles;</li>
+<li>Interpolation spatiale: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles;</li>
+<li>Clustering spatial: construction de zones spatiales homogènes</li>
+<li>Analyse économétrique: identification de zones spatiales homogènes.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="lissage-spatial-et-modélisation-spatiale-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage spatial et modélisation spatiale</h2>
+<ul>
+<li>Principe: Approximation locale non paramétrique;</li>
+<li>Avantages:
+<ul>
+<li>La bande passante implicite est variable:
+<ul>
+<li>A COMPLETER AVEC DES ELEMENTS DU DT PRIX (points chauds, etc.)</li>
+</ul></li>
+<li>Approche performante sur le plan computationnel;</li>
+</ul></li>
+<li>Risque: surapprentissage.</li>
+</ul>
+</section>
 <section id="modélisation-spatiale" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Modélisation spatiale</h2>
-<ul>
-<li><p>Pourquoi faire du lissage ou clustering spatial ?</p>
-<ul>
-<li>S’affranchir de l’arbitraire des découpages territoriaux</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>Quelques usages:
-<ul>
-<li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles;</li>
-<li>Analyse économétrique: identification de zones spatiales homogènes
-<ul>
-<li>Une alternative aux d’indicatrices de zones géographiques pré-définies</li>
-</ul></li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="modélisation-spatiale-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Modélisation spatiale</h2>
-<ul>
-<li>Principe:
-<ul>
-<li>Approximation locale non paramétrique.</li>
-</ul></li>
-</ul>
-<div class="fragment">
-<ul>
-<li>En pratique, l’estimation dépend du choix de plusieurs paramètres:
-<ul>
-<li>La bande passante défini l’étendue du voisinage utilisé;</li>
-<li>Le noyau: défini le poids accordé aux unités voisine.</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li>Méthodes classiques:
-<ul>
-<li>Estimation par un noyau gaussien;</li>
-<li>Bande passante fixe.</li>
-</ul></li>
-<li>Méthodes alternatives: le lissage adaptatif
-<ul>
-<li>Bande passantes variable.</li>
-</ul></li>
-</ul>
-</div>
-</section>
-<section id="modélisation-spatiale-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Modélisation spatiale</h2>
-<ul>
-<li><p>Méthodes ensemblistes: un lissage adaptatif.</p>
-<ul>
-<li>Bande passante variable:
-<ul>
-<li>Mieux identifier les non-linéarités (flexibilité);</li>
-<li>Précision.</li>
-</ul></li>
-<li>Risque:
-<ul>
-<li>Surapprentissage.</li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="modélisation-spatiale-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Modélisation spatiale</h2>
 <ul>
 <li>Cas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo.
@@ -698,7 +670,8 @@
 <li>Pourquoi ce cas nous semble intéressant:
 <ul>
 <li>Densité immobilière très hétérogène sur le territoire;</li>
-<li>Forte hétérogénéité des prix de l’immobilier localement.</li>
+<li>Forte hétérogénéité des prix de l’immobilier localement;</li>
+<li>Données en <em>open data</em>.</li>
 </ul></li>
 </ul>
 
