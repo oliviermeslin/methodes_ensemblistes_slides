@@ -218,16 +218,14 @@ Questions:
 ## Repérage d'incohérences {.smaller}
 
 - De quoi s'agit-il ?
-  - Détection d'anomalies dans une source, par exemple:
-    - Valeurs aberrantes / extrêmes;
-    - Incohérences internes;
-    - Incohérences externes.
-    
+  - Des anomalies dans une source liées à un dysfonctionnement
+dans le processus de collecte;
+
 . . .
 
 - Méthodes actuelles:
-  - Cohérence d'une valeur avec celle d'une autre source;
-  - Cohérence avec les valeurs passées;
+  - Cohérence externe: comparaison d'une valeur avec celle d'une autre source/variable;
+  - Cohérence interne: comparaison avec les valeurs passées ;
   - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression.
   
 
