@@ -543,9 +543,9 @@
 <ul>
 <li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;</li>
 <li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt</li>
-<li>La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l’échantillon final repondéré soient sans biais pour la population d’intérêt</li>
 </ul></li>
 </ul>
+<!-- La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l'échantillon final repondéré soient sans biais pour la population d'intérêt -->
 <div class="fragment">
 <ul>
 <li>Méthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:
@@ -571,15 +571,20 @@
 <li>Les données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?</li>
 </ul>
 </section>
-<section id="data-editing" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="data-editing" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Data editing</h2>
-<p>Détecter des anomalies dans une source, par exemple:</p>
 <ul>
-<li><p>Repérage d’incohérences</p></li>
-<li><p>Repérage de doublons</p></li>
+<li>De quoi s’agit-il ?
+<ul>
+<li>Détection d’anomalies dans une source, par exemple:
+<ul>
+<li>Repérage d’incohérences</li>
+<li>Repérage de doublons</li>
+</ul></li>
+</ul></li>
 </ul>
 </section>
-<section id="data-editing-1" class="slide level2" data-background-image="background.svg" data-background-size="contain">
+<section id="data-editing-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Data editing</h2>
 <p>Repérer des incohérences</p>
 <ul>
@@ -594,6 +599,12 @@
 <li><p>Pourquoi faire du lissage ou clustering spatial ?</p>
 <ul>
 <li>S’affranchir de l’arbitraire des découpages territoriaux</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Quelques usages:
+<ul>
 <li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles</li>
 <li>Analyse économétrique: identification de zones spatiales homogènes
 <ul>
@@ -601,43 +612,52 @@
 </ul></li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="lissage-et-clustering-spatial-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage et clustering spatial</h2>
 <ul>
 <li>Principe:
 <ul>
-<li>Approximation locale non paramétrique</li>
+<li>Approximation locale non paramétrique.</li>
 </ul></li>
+</ul>
+<div class="fragment">
+<ul>
 <li>En pratique, l’estimation dépend du choix de plusieurs paramètres:
 <ul>
-<li>La bande passante défini l’étendue du voisinage utilisé</li>
-<li>Le noyau: défini le poids accordé aux unités voisine</li>
+<li>La bande passante défini l’étendue du voisinage utilisé;</li>
+<li>Le noyau: défini le poids accordé aux unités voisine.</li>
 </ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li>Méthodes classiques:
 <ul>
-<li>Estimation par un noyau gaussien</li>
-<li>Bande passante fixe</li>
+<li>Estimation par un noyau gaussien;</li>
+<li>Bande passante fixe.</li>
 </ul></li>
 <li>Méthodes alternatives: le lissage adaptatif
 <ul>
-<li>Bande passantes variable</li>
+<li>Bande passantes variable.</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="lissage-et-clustering-spatial-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage et clustering spatial</h2>
 <ul>
-<li><p>Méthodes ensemblistes: un lissage adaptatif</p>
+<li><p>Méthodes ensemblistes: un lissage adaptatif.</p>
 <ul>
 <li>Bande passante variable:
 <ul>
-<li>Mieux identifier les non-linéarités (flexibilité)</li>
-<li>Précision</li>
+<li>Mieux identifier les non-linéarités (flexibilité);</li>
+<li>Précision.</li>
 </ul></li>
 <li>Risque:
 <ul>
-<li>Surapprentissage</li>
+<li>Surapprentissage.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -645,16 +665,25 @@
 <section id="lissage-et-clustering-spatial-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage et clustering spatial</h2>
 <ul>
-<li>Cas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo
+<li>Cas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo.
 <ul>
-<li>Constitution de zones homogènes pour l’estimation des prix de l’immobilier</li>
-<li>Représentation cartographique lisible</li>
+<li>Constitution de zones homogènes pour l’estimation des prix de l’immobilier;</li>
+<li>Représentation cartographique précise et lisible.</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Pourquoi ce cas nous semble intéressant:
+<ul>
+<li>Densité immobilière très hétérogène sur le territoire;</li>
+<li>Forte hétérogénéité des prix de l’immobilier localement.</li>
 </ul></li>
 </ul>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Méthodes ensemblistes</p>
+</div>
 </div>
 </div>
 </section></section>

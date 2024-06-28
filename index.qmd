@@ -192,7 +192,8 @@ Questions:
 - Qu'est-ce que la repondération ?
   - Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;
   - La repondération vise à modifier les poids des unités enquêtées pour que l'échantillon final soit représentatif de la population d'intérêt
-  - La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l'échantillon final repondéré soient sans biais pour la population d'intérêt
+ 
+<!-- La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l'échantillon final repondéré soient sans biais pour la population d'intérêt --> 
   
 . . .
 
@@ -214,17 +215,16 @@ Questions:
 - Les données nécessaires à ce cas d'usage sont difficilement accessibles (données de production non publiques). Trop complexe?
 
 
-## Data editing
+## Data editing {.smaller}
 
-Détecter des anomalies dans une source,  par exemple:
-
-- Repérage d'incohérences
-
-- Repérage de doublons
-
+- De quoi s'agit-il ?
+  - Détection d'anomalies dans une source, par exemple:
+    - Repérage d'incohérences
+    - Repérage de doublons
 
 
-## Data editing
+
+## Data editing {.smaller}
 
 Repérer des incohérences
 
@@ -241,6 +241,10 @@ Repérer des incohérences
 - Pourquoi faire du lissage ou clustering spatial ?
 
   - S’affranchir de l’arbitraire des découpages territoriaux
+ 
+. . .
+
+- Quelques usages:  
   - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles
   - Analyse économétrique: identification de zones spatiales homogènes 
     - Une alternative aux d'indicatrices de zones géographiques pré-définies
@@ -249,37 +253,46 @@ Repérer des incohérences
 ## Lissage et clustering spatial {.smaller}
 
 - Principe:
-  - Approximation locale non paramétrique 
+  - Approximation locale non paramétrique.
   
+. . .
+
 - En pratique, l'estimation dépend du choix de plusieurs paramètres:
-  - La bande passante défini l'étendue du voisinage utilisé
-  - Le noyau: défini le poids accordé aux unités voisine
+  - La bande passante défini l'étendue du voisinage utilisé;
+  - Le noyau: défini le poids accordé aux unités voisine.
+
+. . .
 
 - Méthodes classiques:
-  - Estimation par un noyau gaussien
-  - Bande passante fixe
+  - Estimation par un noyau gaussien;
+  - Bande passante fixe.
 
 - Méthodes alternatives: le lissage adaptatif
-  - Bande passantes variable
+  - Bande passantes variable.
 
 ## Lissage et clustering spatial {.smaller}
 
-- Méthodes ensemblistes: un lissage adaptatif
+- Méthodes ensemblistes: un lissage adaptatif.
 
   - Bande passante variable:
-    - Mieux identifier les non-linéarités (flexibilité)
-    - Précision
+    - Mieux identifier les non-linéarités (flexibilité);
+    - Précision.
   - Risque:
-    - Surapprentissage
+    - Surapprentissage.
 
 
 ## Lissage et clustering spatial {.smaller}
 
-- Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo
-  - Constitution de zones homogènes pour l'estimation des prix de l'immobilier
-  - Représentation cartographique lisible
+- Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo.
+  - Constitution de zones homogènes pour l'estimation des prix de l'immobilier;
+  - Représentation cartographique précise et lisible.
 
+. . .
 
+- Pourquoi ce cas nous semble intéressant:
+  - Densité immobilière très hétérogène sur le territoire;
+  - Forte hétérogénéité des prix de l'immobilier localement.
+  
 
 
 
