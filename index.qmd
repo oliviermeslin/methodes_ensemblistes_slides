@@ -236,8 +236,13 @@ Repérer des incohérences
 
 
 
-## Lissage ou clustering spatial {.smaller}
+## Lissage et clustering spatial {.smaller}
 
+- Objectif: identification et représentation spatiale de groupes homogènes
 
+- Pourquoi faire du lissage ou clustering spatial ?
+  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou des groupes d'intérêt
+  - Analyse économétrique: identifier des zones spatiales homogènes 
+    - Une alternative aux d'indicatrices de zones géographiques pré-définies
 
 
