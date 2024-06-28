@@ -137,6 +137,13 @@
     "href": "index.html#lissage-et-clustering-spatial-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage et clustering spatial",
-    "text": "Lissage et clustering spatial\n\nMéthodes ensemblistes: un lissage adaptatif\n\nBande passante variable:\n\nMieux identifier les non-linéarités (flexibilité)\nPrécision\n\nRisque:\n\nSurapprentissage\n\n\n\n\n\n\nMéthodes ensemblistes"
+    "text": "Lissage et clustering spatial\n\nMéthodes ensemblistes: un lissage adaptatif\n\nBande passante variable:\n\nMieux identifier les non-linéarités (flexibilité)\nPrécision\n\nRisque:\n\nSurapprentissage"
+  },
+  {
+    "objectID": "index.html#lissage-et-clustering-spatial-3",
+    "href": "index.html#lissage-et-clustering-spatial-3",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Lissage et clustering spatial",
+    "text": "Lissage et clustering spatial\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo\n\nConstitution de zones homogènes pour l’estimation des prix de l’immobilier\nReprésentation cartographique lisible\n\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
