@@ -219,28 +219,34 @@ Questions:
 
 - De quoi s'agit-il ?
   - Détection d'anomalies dans une source, par exemple:
-    - Valeurs aberrantes / extrêmes
-    - Incohérences internes
-    - Incohérences externes
+    - Valeurs aberrantes / extrêmes;
+    - Incohérences internes;
+    - Incohérences externes.
     
 . . .
 
 - Méthodes actuelles:
-  - Cohérence d'une valeur avec celle d'une autre source
-  - Cohérence avec les valeurs passées
-  - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression 
+  - Cohérence d'une valeur avec celle d'une autre source;
+  - Cohérence avec les valeurs passées;
+  - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression.
+  
+
+. . .
+
+
+- Difficultés:
+  - Gérer les points atypiques "normaux";
+  - Les OLS sont biaisés en présences de points atypiques.
+
 
 
 ## Repérage d'incohérences {.smaller}
 
+- Ce que l'on peut envisager:
 
-
-- Apprentissage supervisé si l'on dispose d'un jeu de données avec des incohérences repérées (par exemple par des experts métier)
-- Apprentissage non supervisé en l'absence d'incohérences déjà labellisées
-
-
--> Ici, on se concentrerait plutôt sur l'apprentissage supervisé
-
+  - Apprentissage supervisé si l'on dispose d'un jeu de données avec des incohérences repérées (par exemple par des experts métier);
+  - Apprentissage non supervisé en l'absence d'incohérences déjà labellisées;
+    - C'est essentiellement le cas de figure rencontré dans la statistique publique.
 
 
 ## Lissage et clustering spatial {.smaller}
