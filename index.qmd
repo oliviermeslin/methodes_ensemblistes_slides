@@ -272,3 +272,14 @@ Repérer des incohérences
   - Risque:
     - Surapprentissage
 
+
+## Lissage et clustering spatial {.smaller}
+
+- Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo
+  - Constitution de zones homogènes pour l'estimation des prix de l'immobilier
+  - Représentation cartographique lisible
+
+
+
+
+
