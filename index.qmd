@@ -238,11 +238,37 @@ Repérer des incohérences
 
 ## Lissage et clustering spatial {.smaller}
 
-- Objectif: identification et représentation spatiale de groupes homogènes
-
 - Pourquoi faire du lissage ou clustering spatial ?
-  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou des groupes d'intérêt
-  - Analyse économétrique: identifier des zones spatiales homogènes 
+
+  - S’affranchir de l’arbitraire des découpages territoriaux
+  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles
+  - Analyse économétrique: identification de zones spatiales homogènes 
     - Une alternative aux d'indicatrices de zones géographiques pré-définies
 
+
+## Lissage et clustering spatial {.smaller}
+
+- Principe:
+  - Approximation locale non paramétrique 
+  
+- En pratique, l'estimation dépend du choix de plusieurs paramètres:
+  - La bande passante défini l'étendue du voisinage utilisé
+  - Le noyau: défini le poids accordé aux unités voisine
+
+- Méthodes classiques:
+  - Estimation par un noyau gaussien
+  - Bande passante fixe
+
+- Méthodes alternatives: le lissage adaptatif
+  - Bande passantes variable
+
+## Lissage et clustering spatial {.smaller}
+
+- Méthodes ensemblistes: un lissage adaptatif
+
+  - Bande passante variable:
+    - Mieux identifier les non-linéarités (flexibilité)
+    - Précision
+  - Risque:
+    - Surapprentissage
 
