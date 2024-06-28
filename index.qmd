@@ -215,18 +215,25 @@ Questions:
 - Les données nécessaires à ce cas d'usage sont difficilement accessibles (données de production non publiques). Trop complexe?
 
 
-## Data editing {.smaller}
+## Repérage d'incohérences {.smaller}
 
 - De quoi s'agit-il ?
   - Détection d'anomalies dans une source, par exemple:
-    - Repérage d'incohérences
-    - Repérage de doublons
+    - Valeurs aberrantes / extrêmes
+    - Incohérences internes
+    - Incohérences externes
+    
+. . .
+
+- Méthodes actuelles:
+  - Cohérence d'une valeur avec celle d'une autre source
+  - Cohérence avec les valeurs passées
+  - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression 
 
 
+## Repérage d'incohérences {.smaller}
 
-## Data editing {.smaller}
 
-Repérer des incohérences
 
 - Apprentissage supervisé si l'on dispose d'un jeu de données avec des incohérences repérées (par exemple par des experts métier)
 - Apprentissage non supervisé en l'absence d'incohérences déjà labellisées

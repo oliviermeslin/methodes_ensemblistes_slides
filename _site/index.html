@@ -571,22 +571,32 @@
 <li>Les données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?</li>
 </ul>
 </section>
-<section id="data-editing" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Data editing</h2>
+<section id="repérage-dincohérences" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repérage d’incohérences</h2>
 <ul>
 <li>De quoi s’agit-il ?
 <ul>
 <li>Détection d’anomalies dans une source, par exemple:
 <ul>
-<li>Repérage d’incohérences</li>
-<li>Repérage de doublons</li>
+<li>Valeurs aberrantes / extrêmes</li>
+<li>Incohérences internes</li>
+<li>Incohérences externes</li>
 </ul></li>
 </ul></li>
 </ul>
+<div class="fragment">
+<ul>
+<li>Méthodes actuelles:
+<ul>
+<li>Cohérence d’une valeur avec celle d’une autre source</li>
+<li>Cohérence avec les valeurs passées</li>
+<li>Ecart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression</li>
+</ul></li>
+</ul>
+</div>
 </section>
-<section id="data-editing-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Data editing</h2>
-<p>Repérer des incohérences</p>
+<section id="repérage-dincohérences-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repérage d’incohérences</h2>
 <ul>
 <li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)</li>
 <li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées</li>
