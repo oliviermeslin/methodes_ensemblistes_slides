@@ -123,6 +123,20 @@
     "href": "index.html#lissage-et-clustering-spatial",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage et clustering spatial",
-    "text": "Lissage et clustering spatial\n\nObjectif: identification et représentation spatiale de groupes homogènes\nPourquoi faire du lissage ou clustering spatial ?\n\nReprésentation cartographique: réduire le bruit pour faire apparaitre des tendances ou des groupes d’intérêt\nAnalyse économétrique: identifier des zones spatiales homogènes\n\nUne alternative aux d’indicatrices de zones géographiques pré-définies\n\n\n\n\n\n\nMéthodes ensemblistes"
+    "text": "Lissage et clustering spatial\n\nPourquoi faire du lissage ou clustering spatial ?\n\nS’affranchir de l’arbitraire des découpages territoriaux\nReprésentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles\nAnalyse économétrique: identification de zones spatiales homogènes\n\nUne alternative aux d’indicatrices de zones géographiques pré-définies"
+  },
+  {
+    "objectID": "index.html#lissage-et-clustering-spatial-1",
+    "href": "index.html#lissage-et-clustering-spatial-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Lissage et clustering spatial",
+    "text": "Lissage et clustering spatial\n\nPrincipe:\n\nApproximation locale non paramétrique\n\nEn pratique, l’estimation dépend du choix de plusieurs paramètres:\n\nLa bande passante défini l’étendue du voisinage utilisé\nLe noyau: défini le poids accordé aux unités voisine\n\nMéthodes classiques:\n\nEstimation par un noyau gaussien\nBande passante fixe\n\nMéthodes alternatives: le lissage adaptatif\n\nBande passantes variable"
+  },
+  {
+    "objectID": "index.html#lissage-et-clustering-spatial-2",
+    "href": "index.html#lissage-et-clustering-spatial-2",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Lissage et clustering spatial",
+    "text": "Lissage et clustering spatial\n\nMéthodes ensemblistes: un lissage adaptatif\n\nBande passante variable:\n\nMieux identifier les non-linéarités (flexibilité)\nPrécision\n\nRisque:\n\nSurapprentissage\n\n\n\n\n\n\nMéthodes ensemblistes"
   }
 ]

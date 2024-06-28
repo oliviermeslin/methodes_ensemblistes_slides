@@ -591,13 +591,53 @@
 <section id="lissage-et-clustering-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage et clustering spatial</h2>
 <ul>
-<li><p>Objectif: identification et représentation spatiale de groupes homogènes</p></li>
 <li><p>Pourquoi faire du lissage ou clustering spatial ?</p>
 <ul>
-<li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou des groupes d’intérêt</li>
-<li>Analyse économétrique: identifier des zones spatiales homogènes
+<li>S’affranchir de l’arbitraire des découpages territoriaux</li>
+<li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles</li>
+<li>Analyse économétrique: identification de zones spatiales homogènes
 <ul>
 <li>Une alternative aux d’indicatrices de zones géographiques pré-définies</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="lissage-et-clustering-spatial-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage et clustering spatial</h2>
+<ul>
+<li>Principe:
+<ul>
+<li>Approximation locale non paramétrique</li>
+</ul></li>
+<li>En pratique, l’estimation dépend du choix de plusieurs paramètres:
+<ul>
+<li>La bande passante défini l’étendue du voisinage utilisé</li>
+<li>Le noyau: défini le poids accordé aux unités voisine</li>
+</ul></li>
+<li>Méthodes classiques:
+<ul>
+<li>Estimation par un noyau gaussien</li>
+<li>Bande passante fixe</li>
+</ul></li>
+<li>Méthodes alternatives: le lissage adaptatif
+<ul>
+<li>Bande passantes variable</li>
+</ul></li>
+</ul>
+</section>
+<section id="lissage-et-clustering-spatial-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Lissage et clustering spatial</h2>
+<ul>
+<li><p>Méthodes ensemblistes: un lissage adaptatif</p>
+<ul>
+<li>Bande passante variable:
+<ul>
+<li>Mieux identifier les non-linéarités (flexibilité)</li>
+<li>Précision</li>
+</ul></li>
+<li>Risque:
+<ul>
+<li>Surapprentissage</li>
 </ul></li>
 </ul></li>
 </ul>
