@@ -578,9 +578,9 @@
 <ul>
 <li>Détection d’anomalies dans une source, par exemple:
 <ul>
-<li>Valeurs aberrantes / extrêmes</li>
-<li>Incohérences internes</li>
-<li>Incohérences externes</li>
+<li>Valeurs aberrantes / extrêmes;</li>
+<li>Incohérences internes;</li>
+<li>Incohérences externes.</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -588,9 +588,18 @@
 <ul>
 <li>Méthodes actuelles:
 <ul>
-<li>Cohérence d’une valeur avec celle d’une autre source</li>
-<li>Cohérence avec les valeurs passées</li>
-<li>Ecart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression</li>
+<li>Cohérence d’une valeur avec celle d’une autre source;</li>
+<li>Cohérence avec les valeurs passées;</li>
+<li>Ecart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Difficultés:
+<ul>
+<li>Gérer les points atypiques “normaux”;</li>
+<li>Les OLS sont biaisés en présences de points atypiques.</li>
 </ul></li>
 </ul>
 </div>
@@ -598,10 +607,15 @@
 <section id="repérage-dincohérences-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repérage d’incohérences</h2>
 <ul>
-<li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)</li>
-<li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées</li>
+<li><p>Ce que l’on peut envisager:</p>
+<ul>
+<li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier);</li>
+<li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées;
+<ul>
+<li>C’est essentiellement le cas de figure rencontré dans la statistique publique.</li>
+</ul></li>
+</ul></li>
 </ul>
-<p>-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé</p>
 </section>
 <section id="lissage-et-clustering-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage et clustering spatial</h2>
