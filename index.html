@@ -468,12 +468,12 @@
 </ul>
 </div>
 </section>
-<section id="imputation-de-valeurs-manquantes" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
+<section id="imputation" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation</h2>
 <ul>
 <li>Qu’est-ce que l’imputation ?
 <ul>
-<li>Affecter une valeur “plausible” à une variable dont la valeur est manquante;</li>
+<li>Affecter une valeur “plausible” à une variable dont la valeur est manquante ou aberrante;</li>
 <li>Situation fréquente dans les enquêtes et dans les données administratives.</li>
 </ul></li>
 <li>Pourquoi imputer ?
@@ -484,13 +484,13 @@
 <li>Hypothèse fondamentale:
 <ul>
 <li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires;</li>
-<li>Les paramètres de ce modèle peuvent être estimés sur la population des répondants.</li>
+<li>Ce modèle peut être estimé sur la sous-population pour laquelle la variable est connue.</li>
 </ul>
 <!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") --></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
+<section id="imputation-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation</h2>
 <ul>
 <li>Il existe une multitude d’approches:
 <ul>
@@ -499,13 +499,13 @@
 </ul></li>
 <li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
 <ul>
-<li>Une performance prédictive potentiellement supérieure</li>
-<li>Gestion des valeurs manquantes dans les variables auxiliaires.</li>
+<li>Une performance prédictive potentiellement supérieure;</li>
+<li>Gestion potentiellement plus simple des valeurs manquantes dans les variables auxiliaires (cas des imputations en cascade).</li>
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
+<section id="imputation-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation</h2>
 <ul>
 <li>Cas d’usage : imputation des valeurs manquantes dans le recensement de la population.</li>
 </ul>
@@ -518,17 +518,17 @@
 <ul>
 <li>Utiliser les données publiques du recensement;</li>
 <li>Générer des valeurs manquantes sur une variable;</li>
-<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’un xgboost à partir des mêmes variables.</li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’une méthode ensembliste.</li>
 </ul></li>
 <li>Exemple: le niveau de diplôme:
 <ul>
-<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe</li>
+<li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe;</li>
 <li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP.</li>
 </ul></li>
 </ul>
 </section>
-<section id="imputation-de-valeurs-manquantes-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Imputation de valeurs manquantes</h2>
+<section id="imputation-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation</h2>
 <p>Questions:</p>
 <ul>
 <li><p>Couvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?</p></li>
@@ -541,8 +541,8 @@
 <ul>
 <li>Qu’est-ce que la repondération ?
 <ul>
-<li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;</li>
-<li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt</li>
+<li>Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons (refus, impossible à joindre…);</li>
+<li>La repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.</li>
 </ul></li>
 </ul>
 <!-- La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l'échantillon final repondéré soient sans biais pour la population d'intérêt -->
@@ -568,11 +568,12 @@
 <p>Questions:</p>
 <ul>
 <li>Les échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?</li>
+<li>Les bases de sondage contiennent souvent un nombre restreint de variables. Est-ce trop peu?</li>
 <li>Les données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?</li>
 </ul>
 </section>
-<section id="repérage-dincohérences" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Repérage d’incohérences</h2>
+<section id="repérage-dincohérences-data-editing" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repérage d’incohérences (<em>data editing</em>)</h2>
 <ul>
 <li>De quoi s’agit-il ?
 <ul>
@@ -599,7 +600,7 @@
 </ul>
 </div>
 </section>
-<section id="repérage-dincohérences-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="repérage-dincohérences" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repérage d’incohérences</h2>
 <ul>
 <li><p>Ce que l’on peut envisager:</p>
