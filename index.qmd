@@ -131,10 +131,10 @@ Objectifs:
   - Modélisation spatiale.
 
 
-## Imputation de valeurs manquantes {.smaller}
+## Imputation {.smaller}
 
 - Qu'est-ce que l'imputation ?
-  - Affecter une valeur "plausible" à une variable dont la valeur est manquante;
+  - Affecter une valeur "plausible" à une variable dont la valeur est manquante ou aberrante;
   - Situation fréquente dans les enquêtes et dans les données administratives.
   
 - Pourquoi imputer ?
@@ -143,22 +143,22 @@ Objectifs:
 
 - Hypothèse fondamentale:
   - Il existe un modèle reliant les variables à imputer à des variables auxiliaires;
-  - Les paramètres de ce modèle peuvent être estimés sur la population des répondants.
+  - Ce modèle peut être estimé sur la sous-population pour laquelle la variable est connue.
 
   <!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") -->
 
-## Imputation de valeurs manquantes {.smaller}
+## Imputation {.smaller}
 
 - Il existe une multitude d'approches:
   - Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin ...
   - Méthodes aléatoires: hotdeck, ratio/régression avec résidus ...
 
 - Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
-  - Une performance prédictive potentiellement supérieure
-  - Gestion des valeurs manquantes dans les variables auxiliaires.
+  - Une performance prédictive potentiellement supérieure;
+  - Gestion potentiellement plus simple des valeurs manquantes dans les variables auxiliaires (cas des imputations en cascade).
     
 
-## Imputation de valeurs manquantes {.smaller}
+## Imputation {.smaller}
 
 - Cas d'usage : imputation des valeurs manquantes dans le recensement de la population.
 
@@ -170,13 +170,13 @@ Objectifs:
 - Ce que nous pourrions faire:
   - Utiliser les données publiques du recensement;
   - Générer des valeurs manquantes sur une variable;
-  - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdeck séquentiel), d'une régression linéraire/logistique et d'un xgboost à partir des mêmes variables.
+  - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdeck séquentiel), d'une régression linéraire/logistique et d'une méthode ensembliste.
 
 - Exemple: le niveau de diplôme:
-  - Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe
+  - Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe;
   - Hypothèse nouvelle: le diplôme peut dépendre d'autres variables auxiliaires disponibles dans le RP.
 
-## Imputation de valeurs manquantes {.smaller}
+## Imputation {.smaller}
 
 Questions:
 
@@ -190,8 +190,8 @@ Questions:
 ## Repondération {.smaller}
 
 - Qu'est-ce que la repondération ?
-  - Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons;
-  - La repondération vise à modifier les poids des unités enquêtées pour que l'échantillon final soit représentatif de la population d'intérêt
+  - Dans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons (refus, impossible à joindre...);
+  - La repondération vise à modifier les poids des unités enquêtées pour que l'échantillon final soit représentatif de la population d'intérêt.
  
 <!-- La repondération vise à modifier les poids des unités enquêtées pour que les estimateurs calculés sur l'échantillon final repondéré soient sans biais pour la population d'intérêt --> 
   
@@ -212,10 +212,11 @@ Questions:
 Questions:
 
 - Les échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?
+- Les bases de sondage contiennent souvent un nombre restreint de variables. Est-ce trop peu?
 - Les données nécessaires à ce cas d'usage sont difficilement accessibles (données de production non publiques). Trop complexe?
 
 
-## Repérage d'incohérences {.smaller}
+## Repérage d'incohérences (_data editing_) {.smaller}
 
 - De quoi s'agit-il ?
   - Détection d'anomalies dans une source, par exemple:
