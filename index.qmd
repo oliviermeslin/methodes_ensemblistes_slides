@@ -244,56 +244,40 @@ dans le processus de collecte;
 - Ce que l'on peut envisager:
 
   - Apprentissage supervisé si l'on dispose de données labellisées (pas sûr qu'on puisse en avoir des volumes importants);
-  - Apprentissage non supervisé en l'absence de données labellisées;
+  - Apprentissage non supervisé en l'absence de données labellisées: repérage des observations suspectes par l'écart à la valeur prédite par le modèle;
 
 - Quelles données?
   - Données d'entreprises sur les chiffres d'affaires;
   - Données sociales sur les salaires.
 
 
-## Modélisation spatiale {.smaller}
+## Lissage spatial et modélisation spatiale {.smaller}
 
-- Pourquoi faire du lissage ou clustering spatial ?
+- Pourquoi y a-t-il un cas d'usage de méthodes ensemblistes sur ces sujets ?
 
-  - S’affranchir de l’arbitraire des découpages territoriaux
- 
-. . .
-
-- Quelques usages:  
-  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles;
-  - Analyse économétrique: identification de zones spatiales homogènes 
-    - Une alternative aux d'indicatrices de zones géographiques pré-définies
-
-
-## Modélisation spatiale {.smaller}
-
-- Principe:
-  - Approximation locale non paramétrique.
-  
-. . .
-
-- En pratique, l'estimation dépend du choix de plusieurs paramètres:
-  - La bande passante défini l'étendue du voisinage utilisé;
-  - Le noyau: défini le poids accordé aux unités voisine.
+  - Disponibilité croissante de sources statistiques géolocalisées;
+  - Zonages administratifs ou statistiques pas toujours adaptés aux phénomènes étudiés (MAUP);
+  - Limites des méthodes traditionnelles:
+      - Hypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);
+      - Méthodes pas toujours adaptées à des données volumineuses (ex: _kriging_).
 
 . . .
 
-- Méthodes classiques:
-  - Estimation par un noyau gaussien;
-  - Bande passante fixe.
+- Usages possibles:  
+  - Représentation cartographique: faire apparaître des structures spatiales lisibles à partir d'un jeu de données ponctuelles;
+  - Interpolation spatiale: prédire une grandeur en un point quelconque à partir d'un ensemble de réalisations ponctuelles;
+  - Clustering spatial: construction de zones spatiales homogènes 
+  - Analyse économétrique: identification de zones spatiales homogènes.
 
-- Méthodes alternatives: le lissage adaptatif
-  - Bande passantes variable.
 
-## Modélisation spatiale {.smaller}
+## Lissage spatial et modélisation spatiale {.smaller}
 
-- Méthodes ensemblistes: un lissage adaptatif.
-
-  - Bande passante variable:
-    - Mieux identifier les non-linéarités (flexibilité);
-    - Précision.
-  - Risque:
-    - Surapprentissage.
+- Principe: Approximation locale non paramétrique;
+- Avantages:
+  - La bande passante implicite est variable: 
+    - A COMPLETER AVEC DES ELEMENTS DU DT PRIX (points chauds, etc.)
+  - Approche performante sur le plan computationnel;
+- Risque: surapprentissage.
 
 
 ## Modélisation spatiale {.smaller}
@@ -306,7 +290,8 @@ dans le processus de collecte;
 
 - Pourquoi ce cas nous semble intéressant:
   - Densité immobilière très hétérogène sur le territoire;
-  - Forte hétérogénéité des prix de l'immobilier localement.
+  - Forte hétérogénéité des prix de l'immobilier localement;
+  - Données en _open data_.
   
 
 
