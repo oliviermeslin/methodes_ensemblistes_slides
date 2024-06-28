@@ -109,7 +109,7 @@
     "href": "index.html#repérage-dincohérences",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repérage d’incohérences",
-    "text": "Repérage d’incohérences\n\nDe quoi s’agit-il ?\n\nDétection d’anomalies dans une source, par exemple:\n\nValeurs aberrantes / extrêmes;\nIncohérences internes;\nIncohérences externes.\n\n\n\n\n\nMéthodes actuelles:\n\nCohérence d’une valeur avec celle d’une autre source;\nCohérence avec les valeurs passées;\nEcart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.\n\n\n\n\n\nDifficultés:\n\nGérer les points atypiques “normaux”;\nLes OLS sont biaisés en présences de points atypiques."
+    "text": "Repérage d’incohérences\n\nDe quoi s’agit-il ?\n\nDes anomalies dans une source liées à un dysfonctionnement dans le processus de collecte;\n\n\n\n\nMéthodes actuelles:\n\nCohérence externe: comparaison d’une valeur avec celle d’une autre source/variable;\nCohérence interne: comparaison avec les valeurs passées ;\nEcart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.\n\n\n\n\n\nDifficultés:\n\nGérer les points atypiques “normaux”;\nLes OLS sont biaisés en présences de points atypiques."
   },
   {
     "objectID": "index.html#repérage-dincohérences-1",
