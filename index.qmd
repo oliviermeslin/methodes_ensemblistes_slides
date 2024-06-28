@@ -226,7 +226,7 @@ dans le processus de collecte;
 
 - Méthodes actuelles:
   - Cohérence externe: comparaison d'une valeur avec celle d'une autre source/variable;
-  - Cohérence interne: comparaison avec les valeurs passées et les autres variables ;
+  - Cohérence interne: comparaison avec les valeurs passées et les autres variables;
   - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression.
   
 
@@ -243,12 +243,15 @@ dans le processus de collecte;
 
 - Ce que l'on peut envisager:
 
-  - Apprentissage supervisé si l'on dispose d'un jeu de données avec des incohérences repérées (par exemple par des experts métier);
-  - Apprentissage non supervisé en l'absence d'incohérences déjà labellisées;
-    - C'est essentiellement le cas de figure rencontré dans la statistique publique.
+  - Apprentissage supervisé si l'on dispose de données labellisées (pas sûr qu'on puisse en avoir des volumes importants);
+  - Apprentissage non supervisé en l'absence de données labellisées;
+
+- Quelles données?
+  - Données d'entreprises sur les chiffres d'affaires;
+  - Données sociales sur les salaires.
 
 
-## Lissage et clustering spatial {.smaller}
+## Modélisation spatiale {.smaller}
 
 - Pourquoi faire du lissage ou clustering spatial ?
 
@@ -257,12 +260,12 @@ dans le processus de collecte;
 . . .
 
 - Quelques usages:  
-  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles
+  - Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles;
   - Analyse économétrique: identification de zones spatiales homogènes 
     - Une alternative aux d'indicatrices de zones géographiques pré-définies
 
 
-## Lissage et clustering spatial {.smaller}
+## Modélisation spatiale {.smaller}
 
 - Principe:
   - Approximation locale non paramétrique.
@@ -282,7 +285,7 @@ dans le processus de collecte;
 - Méthodes alternatives: le lissage adaptatif
   - Bande passantes variable.
 
-## Lissage et clustering spatial {.smaller}
+## Modélisation spatiale {.smaller}
 
 - Méthodes ensemblistes: un lissage adaptatif.
 
@@ -293,7 +296,7 @@ dans le processus de collecte;
     - Surapprentissage.
 
 
-## Lissage et clustering spatial {.smaller}
+## Modélisation spatiale {.smaller}
 
 - Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo.
   - Constitution de zones homogènes pour l'estimation des prix de l'immobilier;
