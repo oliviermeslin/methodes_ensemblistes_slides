@@ -226,7 +226,7 @@ dans le processus de collecte;
 
 - Méthodes actuelles:
   - Cohérence externe: comparaison d'une valeur avec celle d'une autre source/variable;
-  - Cohérence interne: comparaison avec les valeurs passées ;
+  - Cohérence interne: comparaison avec les valeurs passées et les autres variables ;
   - Ecart entre valeur observée et prédite par des variables auxilaires au moyen d'une régression.
   
 
@@ -239,7 +239,7 @@ dans le processus de collecte;
 
 
 
-## Repérage d'incohérences {.smaller}
+## Repérage d'incohérences (_data editing_) {.smaller}
 
 - Ce que l'on peut envisager:
 
