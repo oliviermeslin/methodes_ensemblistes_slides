@@ -585,7 +585,7 @@
 <li>Méthodes actuelles:
 <ul>
 <li>Cohérence externe: comparaison d’une valeur avec celle d’une autre source/variable;</li>
-<li>Cohérence interne: comparaison avec les valeurs passées ;</li>
+<li>Cohérence interne: comparaison avec les valeurs passées et les autres variables;</li>
 <li>Ecart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.</li>
 </ul></li>
 </ul>
@@ -600,21 +600,23 @@
 </ul>
 </div>
 </section>
-<section id="repérage-dincohérences" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Repérage d’incohérences</h2>
+<section id="repérage-dincohérences-data-editing-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repérage d’incohérences (<em>data editing</em>)</h2>
 <ul>
 <li><p>Ce que l’on peut envisager:</p>
 <ul>
-<li>Apprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier);</li>
-<li>Apprentissage non supervisé en l’absence d’incohérences déjà labellisées;
-<ul>
-<li>C’est essentiellement le cas de figure rencontré dans la statistique publique.</li>
+<li>Apprentissage supervisé si l’on dispose de données labellisées (pas sûr qu’on puisse en avoir des volumes importants);</li>
+<li>Apprentissage non supervisé en l’absence de données labellisées;</li>
 </ul></li>
+<li><p>Quelles données?</p>
+<ul>
+<li>Données d’entreprises sur les chiffres d’affaires;</li>
+<li>Données sociales sur les salaires.</li>
 </ul></li>
 </ul>
 </section>
-<section id="lissage-et-clustering-spatial" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage et clustering spatial</h2>
+<section id="modélisation-spatiale" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Modélisation spatiale</h2>
 <ul>
 <li><p>Pourquoi faire du lissage ou clustering spatial ?</p>
 <ul>
@@ -625,7 +627,7 @@
 <ul>
 <li>Quelques usages:
 <ul>
-<li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles</li>
+<li>Représentation cartographique: réduire le bruit pour faire apparaitre des tendances ou structures spatiales lisibles;</li>
 <li>Analyse économétrique: identification de zones spatiales homogènes
 <ul>
 <li>Une alternative aux d’indicatrices de zones géographiques pré-définies</li>
@@ -634,8 +636,8 @@
 </ul>
 </div>
 </section>
-<section id="lissage-et-clustering-spatial-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage et clustering spatial</h2>
+<section id="modélisation-spatiale-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Modélisation spatiale</h2>
 <ul>
 <li>Principe:
 <ul>
@@ -665,8 +667,8 @@
 </ul>
 </div>
 </section>
-<section id="lissage-et-clustering-spatial-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage et clustering spatial</h2>
+<section id="modélisation-spatiale-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Modélisation spatiale</h2>
 <ul>
 <li><p>Méthodes ensemblistes: un lissage adaptatif.</p>
 <ul>
@@ -682,8 +684,8 @@
 </ul></li>
 </ul>
 </section>
-<section id="lissage-et-clustering-spatial-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage et clustering spatial</h2>
+<section id="modélisation-spatiale-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Modélisation spatiale</h2>
 <ul>
 <li>Cas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo.
 <ul>
