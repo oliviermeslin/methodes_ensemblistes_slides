@@ -119,10 +119,10 @@
     "text": "Data editing\nRepérer des incohérences\n\nApprentissage supervisé si l’on dispose d’un jeu de données avec des incohérences repérées (par exemple par des experts métier)\nApprentissage non supervisé en l’absence d’incohérences déjà labellisées\n\n-&gt; Ici, on se concentrerait plutôt sur l’apprentissage supervisé"
   },
   {
-    "objectID": "index.html#lissage-ou-clustering-spatial",
-    "href": "index.html#lissage-ou-clustering-spatial",
+    "objectID": "index.html#lissage-et-clustering-spatial",
+    "href": "index.html#lissage-et-clustering-spatial",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Lissage ou clustering spatial",
-    "text": "Lissage ou clustering spatial\n\n\n\nMéthodes ensemblistes"
+    "section": "Lissage et clustering spatial",
+    "text": "Lissage et clustering spatial\n\nObjectif: identification et représentation spatiale de groupes homogènes\nPourquoi faire du lissage ou clustering spatial ?\n\nReprésentation cartographique: réduire le bruit pour faire apparaitre des tendances ou des groupes d’intérêt\nAnalyse économétrique: identifier des zones spatiales homogènes\n\nUne alternative aux d’indicatrices de zones géographiques pré-définies\n\n\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
