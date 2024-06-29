@@ -130,7 +130,7 @@
     "href": "index.html#lissage-spatial-et-modélisation-spatiale-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
-    "text": "Lissage spatial et modélisation spatiale\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nA COMPLETER AVEC DES ELEMENTS DU DT PRIX (points chauds, etc.)\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
+    "text": "Lissage spatial et modélisation spatiale\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nConstruction de zones d’une taille localement pertinente;\nCapacité à capter des phénomènes locaux (points chauds, etc.).\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
   },
   {
     "objectID": "index.html#modélisation-spatiale",
