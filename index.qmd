@@ -275,7 +275,8 @@ dans le processus de collecte;
 - Principe: Approximation locale non paramétrique;
 - Avantages:
   - La bande passante implicite est variable: 
-    - A COMPLETER AVEC DES ELEMENTS DU DT PRIX (points chauds, etc.)
+    - Construction de zones d'une taille localement pertinente; 
+    - Capacité à capter des phénomènes locaux (points chauds, etc.).
   - Approche performante sur le plan computationnel;
 - Risque: surapprentissage.
 
