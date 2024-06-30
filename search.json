@@ -161,17 +161,17 @@
     "text": "Lissage spatial et modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:\n\nReprésentation cartographique précise et lisible;\nPrise en compte de la localisation dans la prédiction des valeurs de marché des logements.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nForte variabilité de l’échelle géographique pertinente pour la modélisation des prix immobiliers;\nForte hétérogénéité locale des prix de l’immobilier;\nDonnées disponibles en open data pour toute la France métropolitaine."
   },
   {
-    "objectID": "index.html#lissage-spatial-paris",
-    "href": "index.html#lissage-spatial-paris",
+    "objectID": "index.html#exemple-paris",
+    "href": "index.html#exemple-paris",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Lissage spatial: Paris",
-    "text": "Lissage spatial: Paris"
+    "section": "Exemple: Paris",
+    "text": "Exemple: Paris"
   },
   {
-    "objectID": "index.html#lissage-spatial-saint-tropez",
-    "href": "index.html#lissage-spatial-saint-tropez",
+    "objectID": "index.html#exemple-saint-tropez",
+    "href": "index.html#exemple-saint-tropez",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Lissage spatial: Saint-Tropez",
-    "text": "Lissage spatial: Saint-Tropez\n\n\n\n\nMéthodes ensemblistes"
+    "section": "Exemple: Saint-Tropez",
+    "text": "Exemple: Saint-Tropez\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
