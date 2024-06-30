@@ -123,11 +123,18 @@
     "href": "index.html#lissage-spatial-et-modélisation-spatiale",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
-    "text": "Lissage spatial et modélisation spatiale\n\nPourquoi y a-t-il un cas d’usage de méthodes ensemblistes sur ces sujets ?\n\nDisponibilité croissante de sources statistiques géolocalisées;\nZonages administratifs ou statistiques pas toujours adaptés aux phénomènes étudiés (MAUP);\nLimites des méthodes traditionnelles:\n\nHypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);\nMéthodes pas toujours adaptées à des données volumineuses (ex: kriging).\n\n\n\n\n\nUsages possibles:\n\nReprésentation cartographique: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles;\nInterpolation spatiale: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles;\nClustering spatial: construction de zones spatiales homogènes\nAnalyse économétrique: identification de zones spatiales homogènes."
+    "text": "Lissage spatial et modélisation spatiale\n\nPourquoi y a-t-il un cas d’usage de méthodes ensemblistes sur ces sujets ?\n\nDisponibilité croissante de sources statistiques géolocalisées;\nZonages administratifs ou statistiques pas toujours adaptés aux phénomènes étudiés (MAUP);\nLimites des méthodes traditionnelles:\n\nHypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);\nMéthodes pas toujours adaptées à des données volumineuses (ex: kriging)."
   },
   {
     "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-1",
     "href": "index.html#lissage-spatial-et-modélisation-spatiale-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Lissage spatial et modélisation spatiale",
+    "text": "Lissage spatial et modélisation spatiale\nUsages possibles des méthodes ensemblistes:\n- Représentation cartographique: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles; - Interpolation spatiale: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles."
+  },
+  {
+    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-2",
+    "href": "index.html#lissage-spatial-et-modélisation-spatiale-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
     "text": "Lissage spatial et modélisation spatiale\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nConstruction de zones d’une taille localement pertinente;\nCapacité à capter des phénomènes locaux (points chauds, etc.).\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
