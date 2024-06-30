@@ -281,16 +281,16 @@ Usages possibles des méthodes ensemblistes:
 
 ## Modélisation spatiale {.smaller}
 
-- Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo.
-  - Constitution de zones homogènes pour l'estimation des prix de l'immobilier;
-  - Représentation cartographique précise et lisible.
+- Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo:
+  - Représentation cartographique précise et lisible;
+  - Prise en compte de la localisation dans la prédiction des valeurs de marché des logements.
 
 . . .
 
 - Pourquoi ce cas nous semble intéressant:
-  - Densité immobilière très hétérogène sur le territoire;
-  - Forte hétérogénéité des prix de l'immobilier localement;
-  - Données en _open data_.
+  - Forte variabilité de l'échelle géographique pertinente pour la modélisation des prix immobiliers;
+  - Forte hétérogénéité locale des prix de l'immobilier;
+  - Données disponibles en _open data_ pour toute la France métropolitaine.
   
 
 
