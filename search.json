@@ -144,6 +144,6 @@
     "href": "index.html#modélisation-spatiale",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Modélisation spatiale",
-    "text": "Modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo.\n\nConstitution de zones homogènes pour l’estimation des prix de l’immobilier;\nReprésentation cartographique précise et lisible.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nDensité immobilière très hétérogène sur le territoire;\nForte hétérogénéité des prix de l’immobilier localement;\nDonnées en open data.\n\n\n\n\n\nMéthodes ensemblistes"
+    "text": "Modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:\n\nReprésentation cartographique précise et lisible;\nPrise en compte de la localisation dans la prédiction des valeurs de marché des logements.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nForte variabilité de l’échelle géographique pertinente pour la modélisation des prix immobiliers;\nForte hétérogénéité locale des prix de l’immobilier;\nDonnées disponibles en open data pour toute la France métropolitaine.\n\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
