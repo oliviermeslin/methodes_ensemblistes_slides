@@ -476,11 +476,18 @@
 <li>Affecter une valeur “plausible” à une variable dont la valeur est manquante ou aberrante;</li>
 <li>Situation fréquente dans les enquêtes et dans les données administratives.</li>
 </ul></li>
+</ul>
+<div class="fragment">
+<ul>
 <li>Pourquoi imputer ?
 <ul>
 <li>Réduire les biais et la variance des estimateurs;</li>
 <li>Qualité des données diffusées.</li>
 </ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li>Hypothèse fondamentale:
 <ul>
 <li>Il existe un modèle reliant les variables à imputer à des variables auxiliaires;</li>
@@ -488,6 +495,7 @@
 </ul>
 <!-- - Variables imputées parfois utilisées pour imputer les valeurs manquantes d'autres variables (risque d'erreurs "en cascade") --></li>
 </ul>
+</div>
 </section>
 <section id="imputation-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation</h2>
@@ -497,22 +505,29 @@
 <li>Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin …</li>
 <li>Méthodes aléatoires: hotdeck, ratio/régression avec résidus …</li>
 </ul></li>
+</ul>
+<div class="fragment">
+<ul>
 <li>Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
 <ul>
 <li>Une performance prédictive potentiellement supérieure;</li>
 <li>Gestion potentiellement plus simple des valeurs manquantes dans les variables auxiliaires (cas des imputations en cascade).</li>
 </ul></li>
 </ul>
+</div>
 </section>
 <section id="imputation-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation</h2>
 <ul>
-<li>Cas d’usage : imputation des valeurs manquantes dans le recensement de la population.</li>
+<li>Cas d’usage 1 : imputation des valeurs manquantes dans le recensement de la population.</li>
 </ul>
+<div class="fragment">
 <!-- - La méthode actuelle:  -->
 <!--   - imputation aléatoire séquentielle par "hot deck"; -->
 <!--   - Traitement "lots par lots" (au fil de l'eau); -->
 <!--   - Importance de l'ordre d'imputation des différentes variables. -->
+</div>
+<div class="fragment">
 <ul>
 <li>Ce que nous pourrions faire:
 <ul>
@@ -520,14 +535,44 @@
 <li>Générer des valeurs manquantes sur une variable;</li>
 <li>Comparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’une méthode ensembliste.</li>
 </ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
 <li>Exemple: le niveau de diplôme:
 <ul>
 <li>Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe;</li>
 <li>Hypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP.</li>
 </ul></li>
 </ul>
+<p><a href="https://www.insee.fr/fr/statistiques/fichier/2526415/5.1-Redressements.pdf">Présentation générale des redressements dans le RP.</a></p>
+</div>
 </section>
 <section id="imputation-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Imputation</h2>
+<ul>
+<li>Cas d’usage 2 : imputation du salaire horaire net dans la DSN</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>La méthode actuelle:
+<ul>
+<li>Imputation déterministe à partir d’une régression OLS.</li>
+</ul></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Ce que nous pourrions faire:
+<ul>
+<li>Utiliser les données brutes (non diffusées)</li>
+<li>Comparer les performances prédictives de la méthode d’imputation actuelle et d’une méthode ensembliste.</li>
+</ul></li>
+</ul>
+<p><a href="https://www.insee.fr/fr/statistiques/1303380">Jacod, C. (2015). <em>Contrôles des rémunérations dans les déclarations annuelles de données sociales (DADS): Une analyse exploratoire pour améliorer la détection des points atypiques</em>. Document de travail n° F1504. Insee.</a></p>
+</div>
+</section>
+<section id="imputation-4" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Imputation</h2>
 <p>Questions:</p>
 <ul>
@@ -582,6 +627,17 @@
 </ul>
 <div class="fragment">
 <ul>
+<li>Pourquoi détecter (et traiter) les incohérences ?
+<ul>
+<li>Réduire les biais et la variance des estimateurs;</li>
+<li>Qualité des données diffusées.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="repérage-dincohérences-data-editing-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Repérage d’incohérences (<em>data editing</em>)</h2>
+<ul>
 <li>Méthodes actuelles:
 <ul>
 <li>Cohérence externe: comparaison d’une valeur avec celle d’une autre source/variable;</li>
@@ -589,7 +645,6 @@
 <li>Ecart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <ul>
 <li>Difficultés:
@@ -600,7 +655,7 @@
 </ul>
 </div>
 </section>
-<section id="repérage-dincohérences-data-editing-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<section id="repérage-dincohérences-data-editing-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Repérage d’incohérences (<em>data editing</em>)</h2>
 <ul>
 <li><p>Ce que l’on peut envisager:</p>
@@ -614,6 +669,7 @@
 <li>Données sociales sur les salaires.</li>
 </ul></li>
 </ul>
+<p><a href="http://www.jms-insee.fr/2018/S25_4_ACTE_CORDIER_VILLOING_JMS2018.pdf">Deroyon, T., Djiriguian, J., &amp; Villoing-Cordier, M. (2021). <em>Méthodes de Machine Learning dans le cadre de la détection d’anomalies dans les Déclarations Sociales Nominatives (DSN)</em>. Insee.</a></p>
 </section>
 <section id="lissage-spatial-et-modélisation-spatiale" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial et modélisation spatiale</h2>
@@ -632,8 +688,11 @@
 </section>
 <section id="lissage-spatial-et-modélisation-spatiale-1" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial et modélisation spatiale</h2>
-<p>Usages possibles des méthodes ensemblistes:<br>
-- <strong><span class="orange">Représentation cartographique</span></strong>: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles; - <strong><span class="orange">Interpolation spatiale</span></strong>: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles.</p>
+<p>Usages possibles des méthodes ensemblistes:</p>
+<ul>
+<li><p><strong><span class="orange">Représentation cartographique</span></strong>: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles;</p></li>
+<li><p><strong><span class="orange">Interpolation spatiale</span></strong>: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles.</p></li>
+</ul>
 </section>
 <section id="lissage-spatial-et-modélisation-spatiale-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial et modélisation spatiale</h2>
