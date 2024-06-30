@@ -137,9 +137,13 @@ Objectifs:
   - Affecter une valeur "plausible" à une variable dont la valeur est manquante ou aberrante;
   - Situation fréquente dans les enquêtes et dans les données administratives.
   
+. . .
+
 - Pourquoi imputer ?
   - Réduire les biais et la variance des estimateurs;
   - Qualité des données diffusées.
+
+. . .
 
 - Hypothèse fondamentale:
   - Il existe un modèle reliant les variables à imputer à des variables auxiliaires;
@@ -153,6 +157,8 @@ Objectifs:
   - Méthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin ...
   - Méthodes aléatoires: hotdeck, ratio/régression avec résidus ...
 
+. . .
+
 - Quelle valeur ajoutée (espérée) des méthodes ensemblistes?
   - Une performance prédictive potentiellement supérieure;
   - Gestion potentiellement plus simple des valeurs manquantes dans les variables auxiliaires (cas des imputations en cascade).
@@ -160,21 +166,50 @@ Objectifs:
 
 ## Imputation {.smaller}
 
-- Cas d'usage : imputation des valeurs manquantes dans le recensement de la population.
+- Cas d'usage 1 : imputation des valeurs manquantes dans le recensement de la population.
+
+. . .
 
 <!-- - La méthode actuelle:  -->
 <!--   - imputation aléatoire séquentielle par "hot deck"; -->
 <!--   - Traitement "lots par lots" (au fil de l'eau); -->
 <!--   - Importance de l'ordre d'imputation des différentes variables. -->
 
+. . .
+
 - Ce que nous pourrions faire:
   - Utiliser les données publiques du recensement;
   - Générer des valeurs manquantes sur une variable;
   - Comparer les performances prédictives de la méthode d'imputation actuelle (hotdeck séquentiel), d'une régression linéraire/logistique et d'une méthode ensembliste.
 
+. . .
+
 - Exemple: le niveau de diplôme:
   - Hypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe;
   - Hypothèse nouvelle: le diplôme peut dépendre d'autres variables auxiliaires disponibles dans le RP.
+
+
+[Présentation générale des redressements dans le RP.](https://www.insee.fr/fr/statistiques/fichier/2526415/5.1-Redressements.pdf)
+
+
+
+## Imputation {.smaller}
+
+- Cas d'usage 2 : imputation du salaire horaire net dans la DSN
+
+. . .
+
+- La méthode actuelle:  
+  - Imputation déterministe à partir d'une régression OLS.
+ 
+. . .
+  
+- Ce que nous pourrions faire:
+  - Utiliser les données brutes (non diffusées)
+  - Comparer les performances prédictives de la méthode d'imputation actuelle et d'une méthode ensembliste.
+
+[Jacod, C. (2015). *Contrôles des rémunérations dans les déclarations annuelles de données sociales (DADS): Une analyse exploratoire pour améliorer la détection des points atypiques*. Document de travail n° F1504. Insee.](https://www.insee.fr/fr/statistiques/1303380)
+
 
 ## Imputation {.smaller}
 
@@ -224,6 +259,14 @@ dans le processus de collecte;
 
 . . .
 
+- Pourquoi détecter (et traiter) les incohérences ?
+  - Réduire les biais et la variance des estimateurs;
+  - Qualité des données diffusées.
+
+
+
+## Repérage d'incohérences (_data editing_) {.smaller}
+
 - Méthodes actuelles:
   - Cohérence externe: comparaison d'une valeur avec celle d'une autre source/variable;
   - Cohérence interne: comparaison avec les valeurs passées et les autres variables;
@@ -251,6 +294,8 @@ dans le processus de collecte;
   - Données sociales sur les salaires.
 
 
+[Deroyon, T., Djiriguian, J., & Villoing-Cordier, M. (2021). *Méthodes de Machine Learning dans le cadre de la détection d’anomalies dans les Déclarations Sociales Nominatives (DSN)*. Insee.](http://www.jms-insee.fr/2018/S25_4_ACTE_CORDIER_VILLOING_JMS2018.pdf)
+
 ## Lissage spatial et modélisation spatiale {.smaller}
 
 - Pourquoi y a-t-il un cas d'usage de méthodes ensemblistes sur ces sujets ?
@@ -261,10 +306,13 @@ dans le processus de collecte;
       - Hypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);
       - Méthodes pas toujours adaptées à des données volumineuses (ex: _kriging_).
 
+
 ## Lissage spatial et modélisation spatiale {.smaller}
 
 Usages possibles des méthodes ensemblistes:  
+
   - __[Représentation cartographique]{.orange}__: faire apparaître des structures spatiales lisibles à partir d'un jeu de données ponctuelles;
+  
   - __[Interpolation spatiale]{.orange}__: prédire une grandeur en un point quelconque à partir d'un ensemble de réalisations ponctuelles.
   
 
