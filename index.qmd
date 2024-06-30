@@ -318,6 +318,8 @@ Usages possibles des méthodes ensemblistes:
 
 ## Lissage spatial et modélisation spatiale {.smaller}
 
+Pourquoi utiliser des méthodes ensemblistes?
+
 - Principe: Approximation locale non paramétrique;
 - Avantages:
   - La bande passante implicite est variable: 
