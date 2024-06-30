@@ -261,14 +261,12 @@ dans le processus de collecte;
       - Hypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);
       - Méthodes pas toujours adaptées à des données volumineuses (ex: _kriging_).
 
-. . .
+## Lissage spatial et modélisation spatiale {.smaller}
 
-- Usages possibles:  
-  - Représentation cartographique: faire apparaître des structures spatiales lisibles à partir d'un jeu de données ponctuelles;
-  - Interpolation spatiale: prédire une grandeur en un point quelconque à partir d'un ensemble de réalisations ponctuelles;
-  - Clustering spatial: construction de zones spatiales homogènes 
-  - Analyse économétrique: identification de zones spatiales homogènes.
-
+Usages possibles des méthodes ensemblistes:  
+  - __[Représentation cartographique]{.orange}__: faire apparaître des structures spatiales lisibles à partir d'un jeu de données ponctuelles;
+  - __[Interpolation spatiale]{.orange}__: prédire une grandeur en un point quelconque à partir d'un ensemble de réalisations ponctuelles.
+  
 
 ## Lissage spatial et modélisation spatiale {.smaller}
 
