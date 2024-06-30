@@ -327,7 +327,7 @@ Usages possibles des méthodes ensemblistes:
 - Risque: surapprentissage.
 
 
-## Modélisation spatiale {.smaller}
+## Lissage spatial et modélisation spatiale {.smaller}
 
 - Cas d'usage: l'estimation des valeurs immobilières avec la source Fidélimmo:
   - Représentation cartographique précise et lisible;
@@ -341,5 +341,12 @@ Usages possibles des méthodes ensemblistes:
   - Données disponibles en _open data_ pour toute la France métropolitaine.
   
 
+## Lissage spatial: Paris {.smaller}
+
+![](./figures/pm2_predit_apparts-paris.png)
+
+## Lissage spatial: Saint-Tropez {.smaller}
+
+![](./figures/pm2_predit_maisons_st_tropez.png)
 
 
