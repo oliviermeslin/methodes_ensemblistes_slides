@@ -340,7 +340,7 @@ Pourquoi utiliser des méthodes ensemblistes?
 - Pourquoi ce cas nous semble intéressant:
   - Forte variabilité de l'échelle géographique pertinente pour la modélisation des prix immobiliers;
   - Forte hétérogénéité locale des prix de l'immobilier;
-  - Données disponibles en _open data_ pour toute la France métropolitaine.
+  - Données disponibles en _open data_ pour toute la France métropolitaine. 
   
 
 ## Exemple: Paris {.smaller}
