@@ -1,177 +1,233 @@
 [
   {
-    "objectID": "index.html#faire-connaître-des-méthodes-devenues-standard",
-    "href": "index.html#faire-connaître-des-méthodes-devenues-standard",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Présentations codification automatique de l'APE",
+    "section": "",
+    "text": "Tous les supports sont sur le Github InseeFrLab \n\n\n\n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            \n            \n\n            \n              Description : Présentation à Sébastien Da Veiga\n\n            \n\n            \n            \n              \n                Mélina Hillion et Olivier Meslin\n                Jul 1, 2024\n              \n            \n            \n            \n              \n                \n                  \n                    \n                      \n                        Slides\n                      \n                    \n                  \n                \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            \n            \n\n            \n              Description : Réunion de rentrée\n\n            \n\n            \n            \n              \n                Mélina Hillion et Olivier Meslin\n                Sep 11, 2024\n              \n            \n            \n            \n              \n                \n                  \n                    \n                      \n                        Slides\n                      \n                    \n                  \n                \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#présentations-relatives-au-document-de-travail-sur-les-méthodes-ensemblistes",
+    "href": "index.html#présentations-relatives-au-document-de-travail-sur-les-méthodes-ensemblistes",
+    "title": "Présentations codification automatique de l'APE",
+    "section": "",
+    "text": "Tous les supports sont sur le Github InseeFrLab \n\n\n\n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            \n            \n\n            \n              Description : Présentation à Sébastien Da Veiga\n\n            \n\n            \n            \n              \n                Mélina Hillion et Olivier Meslin\n                Jul 1, 2024\n              \n            \n            \n            \n              \n                \n                  \n                    \n                      \n                        Slides\n                      \n                    \n                  \n                \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n  \n     \n      \n        \n          \n            \n          \n         \n        \n          \n            \n            \n\n            \n              Description : Réunion de rentrée\n\n            \n\n            \n            \n              \n                Mélina Hillion et Olivier Meslin\n                Sep 11, 2024\n              \n            \n            \n            \n              \n                \n                  \n                    \n                      \n                        Slides\n                      \n                    \n                  \n                \n              \n              \n            \n          \n        \n\n        \n\n      \n     \n  \n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Presentation_01_07_2024.html#faire-connaître-des-méthodes-devenues-standard",
+    "href": "Presentation_01_07_2024.html#faire-connaître-des-méthodes-devenues-standard",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Faire connaître des méthodes devenues standard",
     "text": "Faire connaître des méthodes devenues standard\nLes approches ensemblistes à base d’arbres sont particulièrment adaptées aux problèmes de régression et de classification sur données tabulaires.\n\nCes méthodes sont donc bien adaptées aux travaux de la statistique publique:\n\nOmniprésence de données tabulaires;\nMultiplicité des cas d’usage:\n\nClassification binaire: correction de la non-réponse dans les enquêtes, repérage d’outliers, modélisation, imputation (ex: emploi/chômage);\nClassification multiclasse: imputation (ex: niveau de diplôme);\nRégression: imputation de variables continues (âge, salaires, heures travaillées, prix immobiliers), prédiction de séries temporelles, lissage spatial…\n\n\n\n\nCes méthodes restent pourtant peu connues par la statistique publique."
   },
   {
-    "objectID": "index.html#que-voulons-nous-faire",
-    "href": "index.html#que-voulons-nous-faire",
+    "objectID": "Presentation_01_07_2024.html#que-voulons-nous-faire",
+    "href": "Presentation_01_07_2024.html#que-voulons-nous-faire",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Que voulons-nous faire?",
     "text": "Que voulons-nous faire?\n\nObjectif pédagogique: faciliter l’appropriation de ces méthodes par la statistique publique \\(\\Rightarrow\\) Ce n’est pas un travail de recherche.\n\n\n\nPublic: les agents de la statistique publique qui connaissent les cas d’usage et maîtrisent les méthodes économétriques traditionnelles, mais sont peu familiers du machine learning.\n\n\n\n\nDémarche: faire une présentation détaillée des méthodes ensemblistes, assortie de cas d’usage illustrant comment elles peuvent être mobilisées dans les travaux de la statistique publique \\(\\Rightarrow\\) Il s’agit d’enrichir la boîte à outils, pas de proclamer la supériorité de ces méthodes."
   },
   {
-    "objectID": "index.html#champ-couvert-1",
-    "href": "index.html#champ-couvert-1",
+    "objectID": "Presentation_01_07_2024.html#champ-couvert-1",
+    "href": "Presentation_01_07_2024.html#champ-couvert-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Champ couvert (1)",
     "text": "Champ couvert (1)\n\nObjectif: présenter en détail un nombre réduit d’approches:\n\nCART;\nBagging et forêts aléatoires;\nGradient boosting.\n\nMéthodes non couvertes:\n\nStacking;\nBoosting adaptatif."
   },
   {
-    "objectID": "index.html#champ-couvert-2",
-    "href": "index.html#champ-couvert-2",
+    "objectID": "Presentation_01_07_2024.html#champ-couvert-2",
+    "href": "Presentation_01_07_2024.html#champ-couvert-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Champ couvert (2)",
     "text": "Champ couvert (2)\n\nObjectif: présenter quelques méthodes d’interprétabilité:\n\nApproches globales (PDP, ALE plots);\nApproches locales (valeurs de Shapley, LIME);\n\nNon couvert: mesure de l’incertitude (notamment la prédiction conforme)."
   },
   {
-    "objectID": "index.html#approche-pédagogique",
-    "href": "index.html#approche-pédagogique",
+    "objectID": "Presentation_01_07_2024.html#approche-pédagogique",
+    "href": "Presentation_01_07_2024.html#approche-pédagogique",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Approche pédagogique",
     "text": "Approche pédagogique\n\nCouvrir toutes les étapes de l’appropriation de ces méthodes:\n\nPrésentation intuitive des méthodes;\nApproche mathématique détaillée (reprenant Friedman 2001 et Chen et Guestrin 2016);\nPrésentation des principaux hyper-paramètres et de leur lien avec le cadre théorique;\nMise en oeuvre pratique.\n\nProposer différents cas d’usage adaptés à la statistique publiques, avec des exemples reproductibles reposant sur des données ouvertes (autant que possible)."
   },
   {
-    "objectID": "index.html#exemple-de-figures-cart",
-    "href": "index.html#exemple-de-figures-cart",
+    "objectID": "Presentation_01_07_2024.html#exemple-de-figures-cart",
+    "href": "Presentation_01_07_2024.html#exemple-de-figures-cart",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple de figures: CART",
     "text": "Exemple de figures: CART"
   },
   {
-    "objectID": "index.html#exemple-de-figures-forêt-aléatoire",
-    "href": "index.html#exemple-de-figures-forêt-aléatoire",
+    "objectID": "Presentation_01_07_2024.html#exemple-de-figures-forêt-aléatoire",
+    "href": "Presentation_01_07_2024.html#exemple-de-figures-forêt-aléatoire",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple de figures: forêt aléatoire",
     "text": "Exemple de figures: forêt aléatoire"
   },
   {
-    "objectID": "index.html#exemple-de-figures-gradient-boosting",
-    "href": "index.html#exemple-de-figures-gradient-boosting",
+    "objectID": "Presentation_01_07_2024.html#exemple-de-figures-gradient-boosting",
+    "href": "Presentation_01_07_2024.html#exemple-de-figures-gradient-boosting",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple de figures: gradient boosting",
     "text": "Exemple de figures: gradient boosting"
   },
   {
-    "objectID": "index.html#cas-dusage-envisagés-1",
-    "href": "index.html#cas-dusage-envisagés-1",
+    "objectID": "Presentation_01_07_2024.html#cas-dusage-envisagés-1",
+    "href": "Presentation_01_07_2024.html#cas-dusage-envisagés-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Cas d’usage envisagés",
     "text": "Cas d’usage envisagés\nObjectifs:\n\nIllustrer l’usage des ME pour des cas fréquemment rencontrées par les statisticiens publics, sans prétendre prouver qu’elles sont systématiquement préférables aux méthodes actuelles\n\n\n\nFaciliter l’appropriation de ces méthodes via des tutoriels\n\n\n\n\nLivrables: document méthodologique, notebooks sur données ouvertes (autant que possible);\n\n\n\n\nQuatre cas d’usage possible:\n\nImputation;\nData editing;\nRepondération des enquêtes;\nModélisation spatiale."
   },
   {
-    "objectID": "index.html#imputation",
-    "href": "index.html#imputation",
+    "objectID": "Presentation_01_07_2024.html#imputation",
+    "href": "Presentation_01_07_2024.html#imputation",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation",
     "text": "Imputation\n\nQu’est-ce que l’imputation ?\n\nAffecter une valeur “plausible” à une variable dont la valeur est manquante ou aberrante;\nSituation fréquente dans les enquêtes et dans les données administratives.\n\n\n\n\nPourquoi imputer ?\n\nRéduire les biais et la variance des estimateurs;\nQualité des données diffusées.\n\n\n\n\n\nHypothèse fondamentale:\n\nIl existe un modèle reliant les variables à imputer à des variables auxiliaires;\nCe modèle peut être estimé sur la sous-population pour laquelle la variable est connue."
   },
   {
-    "objectID": "index.html#imputation-1",
-    "href": "index.html#imputation-1",
+    "objectID": "Presentation_01_07_2024.html#imputation-1",
+    "href": "Presentation_01_07_2024.html#imputation-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation",
     "text": "Imputation\n\nIl existe une multitude d’approches:\n\nMéthodes déterministes: colddeck, moyenne, régression, ratio, plus proche voisin …\nMéthodes aléatoires: hotdeck, ratio/régression avec résidus …\n\n\n\n\nQuelle valeur ajoutée (espérée) des méthodes ensemblistes?\n\nUne performance prédictive potentiellement supérieure;\nGestion potentiellement plus simple des valeurs manquantes dans les variables auxiliaires (cas des imputations en cascade)."
   },
   {
-    "objectID": "index.html#imputation-2",
-    "href": "index.html#imputation-2",
+    "objectID": "Presentation_01_07_2024.html#imputation-2",
+    "href": "Presentation_01_07_2024.html#imputation-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation",
     "text": "Imputation\n\nCas d’usage 1 : imputation des valeurs manquantes dans le recensement de la population.\n\n\n\n\n\n\n\n\n\nCe que nous pourrions faire:\n\nUtiliser les données publiques du recensement;\nGénérer des valeurs manquantes sur une variable;\nComparer les performances prédictives de la méthode d’imputation actuelle (hotdeck séquentiel), d’une régression linéraire/logistique et d’une méthode ensembliste.\n\n\n\n\n\nExemple: le niveau de diplôme:\n\nHypothèse actuelle: le diplôme d’un individu dépend de son âge, de sa nationalité et de son sexe;\nHypothèse nouvelle: le diplôme peut dépendre d’autres variables auxiliaires disponibles dans le RP.\n\n\nPrésentation générale des redressements dans le RP."
   },
   {
-    "objectID": "index.html#imputation-3",
-    "href": "index.html#imputation-3",
+    "objectID": "Presentation_01_07_2024.html#imputation-3",
+    "href": "Presentation_01_07_2024.html#imputation-3",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation",
     "text": "Imputation\n\nCas d’usage 2 : imputation du salaire horaire net dans la DSN\n\n\n\nLa méthode actuelle:\n\nImputation déterministe à partir d’une régression OLS.\n\n\n\n\n\nCe que nous pourrions faire:\n\nUtiliser les données brutes (non diffusées)\nComparer les performances prédictives de la méthode d’imputation actuelle et d’une méthode ensembliste.\n\n\nJacod, C. (2015). Contrôles des rémunérations dans les déclarations annuelles de données sociales (DADS): Une analyse exploratoire pour améliorer la détection des points atypiques. Document de travail n° F1504. Insee."
   },
   {
-    "objectID": "index.html#imputation-4",
-    "href": "index.html#imputation-4",
+    "objectID": "Presentation_01_07_2024.html#imputation-4",
+    "href": "Presentation_01_07_2024.html#imputation-4",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Imputation",
     "text": "Imputation\nQuestions:\n\nCouvrir tous les cas de figures (variable continue, binaire, multiclasse ordonnée et multiclasse non ordonnée)?\nSe comparer à l’existant ou pas?\nGénérer des valeurs manquantes à probabilités égales ou pas?"
   },
   {
-    "objectID": "index.html#repondération",
-    "href": "index.html#repondération",
+    "objectID": "Presentation_01_07_2024.html#repondération",
+    "href": "Presentation_01_07_2024.html#repondération",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
     "text": "Repondération\n\nQu’est-ce que la repondération ?\n\nDans les enquêtes, certaines unités échantillonnées ne sont pas enquêtées, pour de multiples raisons (refus, impossible à joindre…);\nLa repondération vise à modifier les poids des unités enquêtées pour que l’échantillon final soit représentatif de la population d’intérêt.\n\n\n\n\n\nMéthode courante: méthode des groupes de réponse homogène à la Haziza-Beaumont:\n\nModélisation de la probabilité de réponse par un modèle logit (prédiction);\nConstruction de groupes ayant une probabilité de réponse proche (classification);\nAu sein de chaque groupe, le poids de sondage des répondants est multiplié par l’inverse du taux de réponse moyen du groupe (repondération)."
   },
   {
-    "objectID": "index.html#repondération-1",
-    "href": "index.html#repondération-1",
+    "objectID": "Presentation_01_07_2024.html#repondération-1",
+    "href": "Presentation_01_07_2024.html#repondération-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repondération",
     "text": "Repondération\n\nCas d’usage: repondération d’une enquête.\n\nRemplacer la partie prédictive (logit) par une méthode de bagging ou de boosting.\n\n\nQuestions:\n\nLes échantillons sont de taille modeste (10 000 observations, souvent moins). Est-ce insuffisant?\nLes bases de sondage contiennent souvent un nombre restreint de variables. Est-ce trop peu?\nLes données nécessaires à ce cas d’usage sont difficilement accessibles (données de production non publiques). Trop complexe?"
   },
   {
-    "objectID": "index.html#repérage-dincohérences-data-editing",
-    "href": "index.html#repérage-dincohérences-data-editing",
+    "objectID": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing",
+    "href": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repérage d’incohérences (data editing)",
     "text": "Repérage d’incohérences (data editing)\n\nDe quoi s’agit-il ?\n\nDes anomalies dans une source liées à un dysfonctionnement dans le processus de collecte;\n\n\n\n\nPourquoi détecter (et traiter) les incohérences ?\n\nRéduire les biais et la variance des estimateurs;\nQualité des données diffusées."
   },
   {
-    "objectID": "index.html#repérage-dincohérences-data-editing-1",
-    "href": "index.html#repérage-dincohérences-data-editing-1",
+    "objectID": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing-1",
+    "href": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repérage d’incohérences (data editing)",
     "text": "Repérage d’incohérences (data editing)\n\nMéthodes actuelles:\n\nCohérence externe: comparaison d’une valeur avec celle d’une autre source/variable;\nCohérence interne: comparaison avec les valeurs passées et les autres variables;\nEcart entre valeur observée et prédite par des variables auxilaires au moyen d’une régression.\n\n\n\n\nDifficultés:\n\nGérer les points atypiques “normaux”;\nLes OLS sont biaisés en présences de points atypiques."
   },
   {
-    "objectID": "index.html#repérage-dincohérences-data-editing-2",
-    "href": "index.html#repérage-dincohérences-data-editing-2",
+    "objectID": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing-2",
+    "href": "Presentation_01_07_2024.html#repérage-dincohérences-data-editing-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Repérage d’incohérences (data editing)",
     "text": "Repérage d’incohérences (data editing)\n\nCe que l’on peut envisager:\n\nApprentissage supervisé si l’on dispose de données labellisées (pas sûr qu’on puisse en avoir des volumes importants);\nApprentissage non supervisé en l’absence de données labellisées: repérage des observations suspectes par l’écart à la valeur prédite par le modèle;\n\nQuelles données?\n\nDonnées d’entreprises sur les chiffres d’affaires;\nDonnées sociales sur les salaires.\n\n\nDeroyon, T., Djiriguian, J., & Villoing-Cordier, M. (2021). Méthodes de Machine Learning dans le cadre de la détection d’anomalies dans les Déclarations Sociales Nominatives (DSN). Insee."
   },
   {
-    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale",
-    "href": "index.html#lissage-spatial-et-modélisation-spatiale",
+    "objectID": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale",
+    "href": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
     "text": "Lissage spatial et modélisation spatiale\n\nPourquoi y a-t-il un cas d’usage de méthodes ensemblistes sur ces sujets ?\n\nDisponibilité croissante de sources statistiques géolocalisées;\nZonages administratifs ou statistiques pas toujours adaptés aux phénomènes étudiés (MAUP);\nLimites des méthodes traditionnelles:\n\nHypothèses paramétriques fortes (ex: choix du noyau et de la bande passante);\nMéthodes pas toujours adaptées à des données volumineuses (ex: kriging)."
   },
   {
-    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-1",
-    "href": "index.html#lissage-spatial-et-modélisation-spatiale-1",
+    "objectID": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-1",
+    "href": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-1",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
     "text": "Lissage spatial et modélisation spatiale\nUsages possibles des méthodes ensemblistes:\n\nReprésentation cartographique: faire apparaître des structures spatiales lisibles à partir d’un jeu de données ponctuelles;\nInterpolation spatiale: prédire une grandeur en un point quelconque à partir d’un ensemble de réalisations ponctuelles."
   },
   {
-    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-2",
-    "href": "index.html#lissage-spatial-et-modélisation-spatiale-2",
+    "objectID": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-2",
+    "href": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
     "text": "Lissage spatial et modélisation spatiale\nPourquoi utiliser des méthodes ensemblistes?\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nConstruction de zones d’une taille localement pertinente;\nCapacité à capter des phénomènes locaux (points chauds, etc.).\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
   },
   {
-    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-3",
-    "href": "index.html#lissage-spatial-et-modélisation-spatiale-3",
+    "objectID": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-3",
+    "href": "Presentation_01_07_2024.html#lissage-spatial-et-modélisation-spatiale-3",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
     "text": "Lissage spatial et modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:\n\nReprésentation cartographique précise et lisible;\nPrise en compte de la localisation dans la prédiction des valeurs de marché des logements.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nForte variabilité de l’échelle géographique pertinente pour la modélisation des prix immobiliers;\nForte hétérogénéité locale des prix de l’immobilier;\nDonnées disponibles en open data pour toute la France métropolitaine."
   },
   {
-    "objectID": "index.html#exemple-paris",
-    "href": "index.html#exemple-paris",
+    "objectID": "Presentation_01_07_2024.html#exemple-paris",
+    "href": "Presentation_01_07_2024.html#exemple-paris",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple: Paris",
     "text": "Exemple: Paris"
   },
   {
-    "objectID": "index.html#exemple-saint-tropez",
-    "href": "index.html#exemple-saint-tropez",
+    "objectID": "Presentation_01_07_2024.html#exemple-saint-tropez",
+    "href": "Presentation_01_07_2024.html#exemple-saint-tropez",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Exemple: Saint-Tropez",
     "text": "Exemple: Saint-Tropez\n\n\n\n\nMéthodes ensemblistes"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#constat-des-outils-adaptés-à-la-statistique-publique",
+    "href": "Presentation_11_09_2024.html#constat-des-outils-adaptés-à-la-statistique-publique",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Constat: des outils adaptés à la statistique publique",
+    "text": "Constat: des outils adaptés à la statistique publique\n\nDes méthodes performantes, flexibles et particulièrement adaptées aux données tabulaires :\n\nClassification binaire (ex: emploi/chômage)\nClassification multiclasse (ex: niveau de diplôme)\nRégression (ex: imputation de variables continues)\n\nPouvant apportant des gains de qualité (précision) et d’efficacité"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public",
+    "href": "Presentation_11_09_2024.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Objectif: Renforcer la boîte à outils du statisticien public",
+    "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nEnrichissement méthodologique :\n\nFaciliter l’appropriation de ces méthodes par les statisticiens publics\nPublic cible : Statisticiens maîtrisant l’économétrie “traditionnelle”, mais peu familiers du machine learning"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public-1",
+    "href": "Presentation_11_09_2024.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public-1",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Objectif: Renforcer la boîte à outils du statisticien public",
+    "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nDémarche : Apporter une compréhension profonde et un savoir-faire pratique :\n\nPrésentations théoriques détaillées\nCas d’usage concrets et reproductibles issus de la statistique publique\nNotebooks interactifs sur des données ouvertes"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#méthodes-ensemblistes-couvertes",
+    "href": "Presentation_11_09_2024.html#méthodes-ensemblistes-couvertes",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Méthodes ensemblistes couvertes",
+    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes\n\nArbres de décision (CART)\nBagging et forêts aléatoires\nGradient boosting (XGBoost)\n\nEclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l’algortihme\nInterprétabilité\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#interprétabilité-et-hyperparamètres",
+    "href": "Presentation_11_09_2024.html#interprétabilité-et-hyperparamètres",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Interprétabilité et hyperparamètres",
+    "text": "Interprétabilité et hyperparamètres\n\nMéthodes d’interprétation usuelles\nDémystifier les hyperparamètres :\n\nPrécision de leur rôle dans chaque méthode/algorithme\nObjectif: aider à ajuster les algorithmes aux problèmes rencontrés"
+  },
+  {
+    "objectID": "Presentation_11_09_2024.html#cas-dusage-envisagés",
+    "href": "Presentation_11_09_2024.html#cas-dusage-envisagés",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Cas d’usage envisagés",
+    "text": "Cas d’usage envisagés\n\nImputation:\n\nValeurs manquantes dans le recensement(ex: diplôme, présence d’un ascenseur)\nSalaire horaire net dans la DSN\n\nRepondération des enquêtes\nData editing (repérage d’incohérences)\nInterpolation spatiale: Estimation des valeurs immobilières\n\n\n\n\nMéthodes ensemblistes"
   }
 ]

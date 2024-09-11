@@ -1,1 +1,1 @@
-Sitemap: https://oliviermeslin.github.io/methodes_ensemblistes_slides/sitemap.xml
+Sitemap: https://inseefrlab.github.io/codif-ape-prez/sitemap.xml
