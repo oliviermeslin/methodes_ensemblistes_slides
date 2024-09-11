@@ -1,0 +1,92 @@
+---
+title: Introduction aux méthodes ensemblistes
+author: |
+  Mélina Hillion
+  Olivier Meslin
+slide-number: true
+footer: |
+  Méthodes ensemblistes
+# uncomment for French presentations:
+lang: fr-FR
+# for blind readers:
+slide-tone: false
+# for @olevitt:
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+# uncomment to use the multiplex mode:
+#multiplex: true
+format: 
+  onyxia-revealjs
+  #onyxia-dark-revealjs:
+controls: true
+css: custom.css
+from: markdown+emoji
+---
+
+# Constat: des outils adaptés à la statistique publique {.smaller}
+
+- Des méthodes performantes, flexibles et particulièrement adaptées aux données tabulaires :
+
+  - Classification binaire (ex: emploi/chômage)
+    
+  - Classification multiclasse (ex: niveau de diplôme)
+    
+  - Régression (ex: imputation de variables continues)
+  
+- Pouvant apportant des gains de qualité (précision) et d’efficacité  
+
+
+# Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
+
+- Enrichissement méthodologique : 
+
+  - Faciliter l'appropriation de ces méthodes par les statisticiens publics
+  - Public cible : Statisticiens maîtrisant l'économétrie "traditionnelle", mais peu familiers du machine learning
+
+
+# Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
+
+- Démarche : Apporter une compréhension profonde et un savoir-faire pratique :
+
+  - Présentations théoriques détaillées
+  - Cas d'usage concrets et reproductibles issus de la statistique publique
+  - Notebooks interactifs sur des données ouvertes
+
+    
+# Méthodes ensemblistes couvertes
+
+- Présentation rigoureuse et intuitive des méthodes
+  - Arbres de décision (CART)
+  - Bagging et forêts aléatoires
+  - Gradient boosting (XGBoost)
+  
+- Eclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l'algortihme
+- Interprétabilité
+- Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes
+
+
+# Interprétabilité et hyperparamètres
+
+- Méthodes d'interprétation usuelles 
+
+- Démystifier les hyperparamètres : 
+  - Précision de leur rôle dans chaque méthode/algorithme
+  - Objectif: aider à ajuster les algorithmes aux problèmes rencontrés
+    
+
+# Cas d'usage envisagés
+
+- Imputation 
+   - Valeurs manquantes dans le recensement(ex: diplôme)
+   - Salaire horaire net dans la DSN
+   
+- Repondération des enquêtes
+
+- Data editing (repérage d'incohérences)
+
+- Modélisation spatiale
+  - Estimation des valeurs immobilières
+
+
+
+
