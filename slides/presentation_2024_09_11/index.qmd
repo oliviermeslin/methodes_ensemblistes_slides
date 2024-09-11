@@ -17,7 +17,8 @@ chalkboard: # press the B key to toggle chalkboard
 #multiplex: true
 format: 
   onyxia-revealjs
-  #onyxia-dark-revealjs:
+    output-file: index.html
+#onyxia-dark-revealjs:
 controls: true
 css: custom.css
 from: markdown+emoji
