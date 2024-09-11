@@ -61,9 +61,9 @@ from: markdown+emoji
   - Bagging et forêts aléatoires
   - Gradient boosting (XGBoost)
   
-- Eclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l'algortihme
-- Interprétabilité
-- Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes
+- Eclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l'algortihme;
+- Présentation des méthodes d'interprétabilité et de leurs limites (_feature importance_, LIME, valeurs de Shapley);
+- Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes.
 
 
 ## Interprétabilité et hyperparamètres
