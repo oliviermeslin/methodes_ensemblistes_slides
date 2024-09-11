@@ -214,7 +214,7 @@
     "href": "slides/presentation_2024_09_11/index.html#méthodes-ensemblistes-couvertes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Méthodes ensemblistes couvertes",
-    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes\n\nArbres de décision (CART)\nBagging et forêts aléatoires\nGradient boosting (XGBoost)\n\nEclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l’algortihme\nInterprétabilité\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes"
+    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes\n\nArbres de décision (CART)\nBagging et forêts aléatoires\nGradient boosting (XGBoost)\n\nEclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l’algortihme;\nPrésentation des méthodes d’interprétabilité et de leurs limites (feature importance, LIME, valeurs de Shapley);\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes."
   },
   {
     "objectID": "slides/presentation_2024_09_11/index.html#interprétabilité-et-hyperparamètres",
