@@ -91,7 +91,7 @@ Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et noteboo
 
 - Data editing (repérage d'incohérences)
 
-- Interpolation spatiale: Estimation des valeurs immobilières
+- Interpolation spatiale: prédiction des prix immobiliers sur le territoire.
 
 
 
