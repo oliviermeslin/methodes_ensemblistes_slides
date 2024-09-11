@@ -28,7 +28,7 @@ website:
 
     right:
       - icon: github
-        href: "https://github.com/InseeFrLab/codif-ape-prez"
+        href: "https://github.com/oliviermeslin/methodes_ensemblistes_slides"
         aria-label: GitHub
 
     left:

@@ -1,6 +1,6 @@
 ---
 title: Présentation à Sébastien Da Veiga
-image: https://upload.wikimedia.org/wikipedia/fr/thumb/1/10/Logo_Insee.svg/1200px-Logo_Insee.svg.png
+image: https://media.licdn.com/dms/image/v2/C4D03AQHhOy4saTKw2w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517611782423?e=1731542400&v=beta&t=TxP6Ui3rN6UAbuvLhnlf8i40H5K1fFgokt0GvEsWNSg
 date: "2024-07-01"
 description: |
   <b>Description :</b> Présentation à Sébastien Da Veiga
