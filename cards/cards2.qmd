@@ -7,6 +7,6 @@ description: |
 author: Mélina Hillion et Olivier Meslin
 slides:
   text: Slides
-  url: /slides/Presentation_11_09_2024_files/index.html
+  url: /slides/presentation_2024_09_11/index.html
 order: 2
 ---

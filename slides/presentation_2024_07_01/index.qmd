@@ -17,8 +17,9 @@ chalkboard: # press the B key to toggle chalkboard
   theme: whiteboard
 # uncomment to use the multiplex mode:
 #multiplex: true
-format: 
-  onyxia-revealjs
+format:
+  onyxia-revealjs:
+    output-file: index.html
   #onyxia-dark-revealjs:
 controls: true
 css: custom.css
