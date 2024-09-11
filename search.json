@@ -203,25 +203,18 @@
     "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nEnrichissement méthodologique :\n\nFaciliter l’appropriation de ces méthodes par les statisticiens publics\nPublic cible : Statisticiens maîtrisant l’économétrie “traditionnelle”, mais peu familiers du machine learning"
   },
   {
-    "objectID": "slides/presentation_2024_09_11/index.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public-1",
-    "href": "slides/presentation_2024_09_11/index.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public-1",
-    "title": "Introduction aux méthodes ensemblistes",
-    "section": "Objectif: Renforcer la boîte à outils du statisticien public",
-    "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nDémarche : Apporter une compréhension profonde et un savoir-faire pratique :\n\nPrésentations théoriques détaillées\nCas d’usage concrets et reproductibles issus de la statistique publique\nNotebooks interactifs sur des données ouvertes"
-  },
-  {
     "objectID": "slides/presentation_2024_09_11/index.html#méthodes-ensemblistes-couvertes",
     "href": "slides/presentation_2024_09_11/index.html#méthodes-ensemblistes-couvertes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Méthodes ensemblistes couvertes",
-    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes\n\nArbres de décision (CART)\nBagging et forêts aléatoires\nGradient boosting (XGBoost)\n\nEclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l’algortihme;\nPrésentation des méthodes d’interprétabilité et de leurs limites (feature importance, LIME, valeurs de Shapley);\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes."
+    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes et des implémentations:\n\nArbres de décision (CART);\nBagging et forêts aléatoires;\nGradient boosting (XGBoost).\n\n\nTrois points d’attention:\n\nPrésentation des hyper-paramètres;\nPrésentation des méthodes d’interprétabilité;\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes."
   },
   {
     "objectID": "slides/presentation_2024_09_11/index.html#interprétabilité-et-hyperparamètres",
     "href": "slides/presentation_2024_09_11/index.html#interprétabilité-et-hyperparamètres",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Interprétabilité et hyperparamètres",
-    "text": "Interprétabilité et hyperparamètres\n\nMéthodes d’interprétation usuelles\nDémystifier les hyperparamètres :\n\nPrécision de leur rôle dans chaque méthode/algorithme\nObjectif: aider à ajuster les algorithmes aux problèmes rencontrés"
+    "text": "Interprétabilité et hyperparamètres\n\nDémystifier les hyperparamètres :\n\nDescription de leur rôle précis dans chaque méthode/algorithme\nObjectif: aider à ajuster les algorithmes aux problèmes rencontrés\n\nPrésentation des méthodes d’interprétabilité et de leurs limites (représentation des arbres, feature importance, LIME, valeurs de Shapley)."
   },
   {
     "objectID": "slides/presentation_2024_09_11/index.html#cas-dusage-envisagés",
