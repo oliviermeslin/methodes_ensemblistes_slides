@@ -7,10 +7,10 @@ project:
 
 website:
   page-navigation: true
-  title: "Présentations codification automatique de l'APE"
-  site-url: "https://inseefrlab.github.io/codif-ape-prez/"
+  title: "Présentations du document de travail sur les méthodes ensemblistes"
+  site-url: "https://oliviermeslin.github.io/methodes_ensemblistes_slides/"
 
-  repo-url: "https://github.com/InseeFrLab/codif-ape-prez"
+  repo-url: "https://github.com/oliviermeslin/methodes_ensemblistes_slides"
 
   open-graph: true
 
