@@ -8,7 +8,7 @@
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.557">
+  <meta name="generator" content="quarto-1.4.555">
 
   <meta name="author" content="Mélina Hillion Olivier Meslin">
   <title>Introduction aux méthodes ensemblistes</title>
@@ -696,7 +696,6 @@
 </section>
 <section id="lissage-spatial-et-modélisation-spatiale-2" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
 <h2>Lissage spatial et modélisation spatiale</h2>
-<p>Pourquoi utiliser des méthodes ensemblistes?</p>
 <ul>
 <li>Principe: Approximation locale non paramétrique;</li>
 <li>Avantages:
@@ -711,8 +710,8 @@
 <li>Risque: surapprentissage.</li>
 </ul>
 </section>
-<section id="lissage-spatial-et-modélisation-spatiale-3" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Lissage spatial et modélisation spatiale</h2>
+<section id="modélisation-spatiale" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
+<h2>Modélisation spatiale</h2>
 <ul>
 <li>Cas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:
 <ul>
@@ -729,19 +728,11 @@
 <li>Données disponibles en <em>open data</em> pour toute la France métropolitaine.</li>
 </ul></li>
 </ul>
-</div>
-</section>
-<section id="exemple-paris" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Exemple: Paris</h2>
 
-<img data-src="./figures/pm2_predit_apparts-paris.png" class="r-stretch"></section>
-<section id="exemple-saint-tropez" class="slide level2 smaller" data-background-image="background.svg" data-background-size="contain">
-<h2>Exemple: Saint-Tropez</h2>
-
-
-<img data-src="./figures/pm2_predit_maisons_st_tropez.png" class="r-stretch"><div class="quarto-auto-generated-content">
+<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>Méthodes ensemblistes</p>
+</div>
 </div>
 </div>
 </section></section>
@@ -1035,7 +1026,7 @@
       });
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/oliviermeslin\.github\.io\/methodes_ensemblistes_slides\/");
+          var filterRegex = new RegExp('/' + window.location.host + '/');
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
