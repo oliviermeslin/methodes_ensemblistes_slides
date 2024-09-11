@@ -1,0 +1,12 @@
+---
+title: Réunion de rentrée
+image: https://upload.wikimedia.org/wikipedia/fr/thumb/1/10/Logo_Insee.svg/1200px-Logo_Insee.svg.png
+date: "2024-09-11"
+description: |
+  <b>Description :</b> Réunion de rentrée
+author: Mélina Hillion et Olivier Meslin
+slides:
+  text: Slides
+  url: /Presentation_11_09_2024_files/index.html
+order: 2
+---
