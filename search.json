@@ -207,7 +207,7 @@
     "href": "slides/presentation_2024_09_11/index.html#méthodes-ensemblistes-couvertes",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Méthodes ensemblistes couvertes",
-    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes et des implémentations:\n\nArbres de décision (CART);\nBagging et forêts aléatoires;\nGradient boosting (XGBoost).\n\n\nTrois points d’attention:\n\nPrésentation des hyper-paramètres;\nPrésentation des méthodes d’interprétabilité;\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes."
+    "text": "Méthodes ensemblistes couvertes\n\nPrésentation rigoureuse et intuitive des méthodes et des implémentations:\n\nArbres de décision (CART);\nBagging et forêts aléatoires;\nGradient boosting (XGBoost).\n\n\nTrois points d’attention: hyper-paramètres, interprétabilité, mise en oeuvre pratique.\n\nProjet mené en discussion avec Sébastien Da Veiga (Crest/Ensai)"
   },
   {
     "objectID": "slides/presentation_2024_09_11/index.html#interprétabilité-et-hyperparamètres",
@@ -221,6 +221,6 @@
     "href": "slides/presentation_2024_09_11/index.html#cas-dusage-envisagés",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Cas d’usage envisagés",
-    "text": "Cas d’usage envisagés\n\nImputation:\n\nValeurs manquantes dans le recensement(ex: diplôme, présence d’un ascenseur)\nSalaire horaire net dans la DSN\n\nRepondération des enquêtes\nData editing (repérage d’incohérences)\nInterpolation spatiale: Estimation des valeurs immobilières\n\n\n\n\nMéthodes ensemblistes"
+    "text": "Cas d’usage envisagés\nMise en œuvre pratique : faciliter l’appropriation via des tutoriels et notebooks sur données ouvertes.\n\n\nImputation:\n\nValeurs manquantes dans le recensement (ex: diplôme, présence d’un ascenseur)\nSalaire horaire net dans la DSN\n\nRepondération des enquêtes\nData editing (repérage d’incohérences)\nInterpolation spatiale: Estimation des valeurs immobilières\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
