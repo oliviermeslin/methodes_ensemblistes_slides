@@ -200,7 +200,7 @@
     "href": "slides/presentation_2024_09_11/index.html#objectif-renforcer-la-boîte-à-outils-du-statisticien-public",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Objectif: Renforcer la boîte à outils du statisticien public",
-    "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nEnrichissement méthodologique :\n\nFaciliter l’appropriation de ces méthodes par les statisticiens publics\nPublic cible : Statisticiens maîtrisant l’économétrie “traditionnelle”, mais peu familiers du machine learning"
+    "text": "Objectif: Renforcer la boîte à outils du statisticien public\n\nEnrichissement méthodologique :\n\nFaciliter l’appropriation de ces méthodes par les statisticiens publics\nPublic cible : Statisticiens maîtrisant l’économétrie “traditionnelle”, mais peu familiers du machine learning\n\n\n\n\nDémarche : Apporter une compréhension profonde et un savoir-faire pratique :\n\nPrésentations théoriques détaillées\nCas d’usage concrets et reproductibles issus de la statistique publique\nNotebooks interactifs sur des données ouvertes"
   },
   {
     "objectID": "slides/presentation_2024_09_11/index.html#méthodes-ensemblistes-couvertes",
