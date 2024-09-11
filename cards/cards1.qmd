@@ -1,9 +1,9 @@
 ---
-title: Présentation à Sébastien Da Veiga
+title: Discussion avec Sébastien Da Veiga
 image: https://media.licdn.com/dms/image/v2/C4D03AQHhOy4saTKw2w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517611782423?e=1731542400&v=beta&t=TxP6Ui3rN6UAbuvLhnlf8i40H5K1fFgokt0GvEsWNSg
 date: "2024-07-01"
 description: |
-  <b>Description :</b> Présentation à Sébastien Da Veiga
+  <b>Description :</b> Discussion avec Sébastien Da Veiga
 author: Mélina Hillion et Olivier Meslin
 slides:
   text: Slides
