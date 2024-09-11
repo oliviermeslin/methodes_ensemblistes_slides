@@ -23,7 +23,7 @@ css: custom.css
 from: markdown+emoji
 ---
 
-# Constat: des outils adaptés à la statistique publique {.smaller}
+## Constat: des outils adaptés à la statistique publique {.smaller}
 
 - Des méthodes performantes, flexibles et particulièrement adaptées aux données tabulaires :
 
@@ -36,7 +36,7 @@ from: markdown+emoji
 - Pouvant apportant des gains de qualité (précision) et d’efficacité  
 
 
-# Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
+## Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
 
 - Enrichissement méthodologique : 
 
@@ -44,7 +44,7 @@ from: markdown+emoji
   - Public cible : Statisticiens maîtrisant l'économétrie "traditionnelle", mais peu familiers du machine learning
 
 
-# Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
+## Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
 
 - Démarche : Apporter une compréhension profonde et un savoir-faire pratique :
 
@@ -53,7 +53,7 @@ from: markdown+emoji
   - Notebooks interactifs sur des données ouvertes
 
     
-# Méthodes ensemblistes couvertes
+## Méthodes ensemblistes couvertes {.smaller}
 
 - Présentation rigoureuse et intuitive des méthodes
   - Arbres de décision (CART)
@@ -65,7 +65,7 @@ from: markdown+emoji
 - Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes
 
 
-# Interprétabilité et hyperparamètres
+## Interprétabilité et hyperparamètres
 
 - Méthodes d'interprétation usuelles 
 
@@ -74,18 +74,17 @@ from: markdown+emoji
   - Objectif: aider à ajuster les algorithmes aux problèmes rencontrés
     
 
-# Cas d'usage envisagés
+## Cas d'usage envisagés
 
-- Imputation 
-   - Valeurs manquantes dans le recensement(ex: diplôme)
+- Imputation:
+   - Valeurs manquantes dans le recensement(ex: diplôme, présence d'un ascenseur)
    - Salaire horaire net dans la DSN
    
 - Repondération des enquêtes
 
 - Data editing (repérage d'incohérences)
 
-- Modélisation spatiale
-  - Estimation des valeurs immobilières
+- Interpolation spatiale: Estimation des valeurs immobilières
 
 
 
