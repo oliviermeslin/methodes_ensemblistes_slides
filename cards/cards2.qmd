@@ -1,6 +1,6 @@
 ---
 title: Réunion de rentrée
-image: img/Meilame.png
+image: https://github.com/oliviermeslin/methodes_ensemblistes_slides/blob/master/img/Meilame.png
 date: "2024-09-11"
 description: |
   <b>Description :</b> Réunion de rentrée
