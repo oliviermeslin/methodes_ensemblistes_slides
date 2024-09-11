@@ -45,7 +45,7 @@ from: markdown+emoji
   - Public cible : Statisticiens maîtrisant l'économétrie "traditionnelle", mais peu familiers du machine learning
 
 
-## Objectif: Renforcer la boîte à outils du statisticien public {.smaller} 
+---
 
 - Démarche : Apporter une compréhension profonde et un savoir-faire pratique :
 
@@ -54,26 +54,28 @@ from: markdown+emoji
   - Notebooks interactifs sur des données ouvertes
 
     
-## Méthodes ensemblistes couvertes {.smaller}
+## Méthodes ensemblistes couvertes
 
-- Présentation rigoureuse et intuitive des méthodes
-  - Arbres de décision (CART)
-  - Bagging et forêts aléatoires
-  - Gradient boosting (XGBoost)
+- Présentation rigoureuse et intuitive des méthodes et des implémentations:
+  - Arbres de décision (CART);
+  - Bagging et forêts aléatoires;
+  - Gradient boosting (XGBoost).
   
-- Eclairer le choix des hyper-paramètres: pratiques courantes et rôle précis dans l'algortihme;
-- Présentation des méthodes d'interprétabilité et de leurs limites (_feature importance_, LIME, valeurs de Shapley);
+Trois points d'attention:  
+  
+- Présentation des hyper-paramètres;
+- Présentation des méthodes d'interprétabilité;
 - Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes.
 
 
 ## Interprétabilité et hyperparamètres
 
-- Méthodes d'interprétation usuelles 
-
 - Démystifier les hyperparamètres : 
-  - Précision de leur rôle dans chaque méthode/algorithme
+  - Description de leur rôle précis dans chaque méthode/algorithme
   - Objectif: aider à ajuster les algorithmes aux problèmes rencontrés
     
+- Présentation des méthodes d'interprétabilité et de leurs limites (représentation des arbres, _feature importance_, LIME, valeurs de Shapley).
+
 
 ## Cas d'usage envisagés
 
