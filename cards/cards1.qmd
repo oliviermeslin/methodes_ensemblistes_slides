@@ -1,0 +1,12 @@
+---
+title: Présentation à Sébastien Da Veiga
+image: https://upload.wikimedia.org/wikipedia/fr/thumb/1/10/Logo_Insee.svg/1200px-Logo_Insee.svg.png
+date: "2024-07-01"
+description: |
+  <b>Description :</b> Présentation à Sébastien Da Veiga
+author: Mélina Hillion et Olivier Meslin
+slides:
+  text: Slides
+  url: /Presentation_01_07_2024_files/index.html
+order: 1
+---
