@@ -45,7 +45,7 @@ from: markdown+emoji
   - Public cible : Statisticiens maîtrisant l'économétrie "traditionnelle", mais peu familiers du machine learning
 
 
----
+. . .
 
 - Démarche : Apporter une compréhension profonde et un savoir-faire pratique :
 
