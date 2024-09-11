@@ -151,13 +151,27 @@
     "href": "index.html#lissage-spatial-et-modélisation-spatiale-2",
     "title": "Introduction aux méthodes ensemblistes",
     "section": "Lissage spatial et modélisation spatiale",
-    "text": "Lissage spatial et modélisation spatiale\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nConstruction de zones d’une taille localement pertinente;\nCapacité à capter des phénomènes locaux (points chauds, etc.).\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
+    "text": "Lissage spatial et modélisation spatiale\nPourquoi utiliser des méthodes ensemblistes?\n\nPrincipe: Approximation locale non paramétrique;\nAvantages:\n\nLa bande passante implicite est variable:\n\nConstruction de zones d’une taille localement pertinente;\nCapacité à capter des phénomènes locaux (points chauds, etc.).\n\nApproche performante sur le plan computationnel;\n\nRisque: surapprentissage."
   },
   {
-    "objectID": "index.html#modélisation-spatiale",
-    "href": "index.html#modélisation-spatiale",
+    "objectID": "index.html#lissage-spatial-et-modélisation-spatiale-3",
+    "href": "index.html#lissage-spatial-et-modélisation-spatiale-3",
     "title": "Introduction aux méthodes ensemblistes",
-    "section": "Modélisation spatiale",
-    "text": "Modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:\n\nReprésentation cartographique précise et lisible;\nPrise en compte de la localisation dans la prédiction des valeurs de marché des logements.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nForte variabilité de l’échelle géographique pertinente pour la modélisation des prix immobiliers;\nForte hétérogénéité locale des prix de l’immobilier;\nDonnées disponibles en open data pour toute la France métropolitaine.\n\n\n\n\n\nMéthodes ensemblistes"
+    "section": "Lissage spatial et modélisation spatiale",
+    "text": "Lissage spatial et modélisation spatiale\n\nCas d’usage: l’estimation des valeurs immobilières avec la source Fidélimmo:\n\nReprésentation cartographique précise et lisible;\nPrise en compte de la localisation dans la prédiction des valeurs de marché des logements.\n\n\n\n\nPourquoi ce cas nous semble intéressant:\n\nForte variabilité de l’échelle géographique pertinente pour la modélisation des prix immobiliers;\nForte hétérogénéité locale des prix de l’immobilier;\nDonnées disponibles en open data pour toute la France métropolitaine."
+  },
+  {
+    "objectID": "index.html#exemple-paris",
+    "href": "index.html#exemple-paris",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Exemple: Paris",
+    "text": "Exemple: Paris"
+  },
+  {
+    "objectID": "index.html#exemple-saint-tropez",
+    "href": "index.html#exemple-saint-tropez",
+    "title": "Introduction aux méthodes ensemblistes",
+    "section": "Exemple: Saint-Tropez",
+    "text": "Exemple: Saint-Tropez\n\n\n\n\nMéthodes ensemblistes"
   }
 ]
