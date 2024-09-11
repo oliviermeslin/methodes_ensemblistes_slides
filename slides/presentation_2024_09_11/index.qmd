@@ -61,11 +61,11 @@ from: markdown+emoji
   - Bagging et forêts aléatoires;
   - Gradient boosting (XGBoost).
   
-Trois points d'attention:  
-  
-- Présentation des hyper-paramètres;
-- Présentation des méthodes d'interprétabilité;
-- Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes.
+Trois points d'attention: hyper-paramètres, interprétabilité, mise en oeuvre pratique.
+
+. . .
+
+Projet mené en discussion avec Sébastien Da Veiga (Crest/Ensai)
 
 
 ## Interprétabilité et hyperparamètres
@@ -79,8 +79,12 @@ Trois points d'attention:
 
 ## Cas d'usage envisagés
 
+Mise en œuvre pratique : faciliter l'appropriation via des tutoriels et notebooks sur données ouvertes.
+
+. . .
+
 - Imputation:
-   - Valeurs manquantes dans le recensement(ex: diplôme, présence d'un ascenseur)
+   - Valeurs manquantes dans le recensement (ex: diplôme, présence d'un ascenseur)
    - Salaire horaire net dans la DSN
    
 - Repondération des enquêtes
